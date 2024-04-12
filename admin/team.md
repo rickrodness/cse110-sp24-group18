@@ -5,6 +5,7 @@ TEAM INTRO HERE
 - Ishika Agrawal
 - Sam Hormozian
 - Elijah Hosaka
+- Aritra Dutta
 
 ## Ishika Agrawal
 
@@ -13,3 +14,5 @@ TEAM INTRO HERE
 ## Elijah Hosaka
 
 ## Sarena Pham
+
+## Aritra Dutta
