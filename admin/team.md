@@ -1,4 +1,4 @@
-# Triton Financial Solutions
+# Triton Financial Solutions (Group 18)
 TEAM INTRO HERE
 
 # Team Members
