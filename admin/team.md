@@ -3,8 +3,11 @@ TEAM INTRO HERE
 
 # Team Members
 - Ishika Agrawal
--Sam Hormozian
+- Sam Hormozian
+- Elijah Hosaka
 
 ## Ishika Agrawal
 
 ## Sam Hormozian
+
+## Elijah Hosaka
