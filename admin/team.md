@@ -18,6 +18,7 @@ https://github.com/ishikaa2504/cse110/
 ## Sarena Pham
 
 ## Aritra Dutta
+https://ar-dutta2026.github.io/Lab1/
 
 ## Ryan Seidl
 https://rseidl25.github.io/cse110-lab-1/
