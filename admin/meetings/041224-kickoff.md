@@ -12,6 +12,7 @@
 - Sam Hormozian
 - Aritra Dutta
 - Sarena Pham
+- Bernico Jansen Chandra
 ## Agenda
 + Define roles and responsibilities
 + Establish team rules
