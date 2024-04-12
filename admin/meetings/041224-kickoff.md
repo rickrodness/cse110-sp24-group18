@@ -79,7 +79,7 @@
 
 
 ## Action Items
-+ Bernico: Design logo
++ Bernico and Michael: Design logo
 + Ryan: Design mascot
 + Sarena: Compile videos
 + Michael: Create notes for each meeting
