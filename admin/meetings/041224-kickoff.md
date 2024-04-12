@@ -13,6 +13,8 @@
 - Aritra Dutta
 - Sarena Pham
 - Bernico Jansen Chandra
+- Elijah Hosaka
+  
 ## Agenda
 + Define roles and responsibilities
 + Establish team rules
