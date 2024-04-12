@@ -8,6 +8,7 @@ TEAM INTRO HERE
 - Aritra Dutta
 
 ## Ishika Agrawal
+https://github.com/ishikaa2504/cse110/
 
 ## Sam Hormozian
 
