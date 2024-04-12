@@ -8,6 +8,7 @@ TEAM INTRO HERE
 - Aritra Dutta
 - Ryan Seidl
 - Rick Rodness
+- Taiki Yoshino
 
 ## Ishika Agrawal
 https://github.com/ishikaa2504/cse110/
