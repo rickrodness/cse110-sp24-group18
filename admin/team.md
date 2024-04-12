@@ -23,3 +23,6 @@ https://ar-dutta2026.github.io/Lab1/
 
 ## Ryan Seidl
 https://rseidl25.github.io/cse110-lab-1/
+
+## Rick Rodness
+https://github.com/rickrodness/CSE-110-Lab-1
