@@ -7,6 +7,7 @@
 
 ## Attendance
 - Minsang (Min) Kim
+- Ryan Seidl
 ## Agenda
 + Define roles and responsibilities
 + Establish team rules
