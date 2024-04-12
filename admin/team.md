@@ -14,7 +14,7 @@ TEAM INTRO HERE
 https://github.com/ishikaa2504/cse110/
 
 ## Sam Hormozian
-
+[Github Page](https://samhormozian1.github.io/CSE110GithubPagesProject/)
 ## Elijah Hosaka
 [Github Page](https://elijah-hosaka.github.io/cse110-lab-1/)
 
