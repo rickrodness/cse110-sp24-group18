@@ -6,8 +6,7 @@
 **Location:** Price Center
 
 ## Attendance
-Ishika Agrawal
-
+- Minsang (Min) Kim
 ## Agenda
 + Define roles and responsibilities
 + Establish team rules
