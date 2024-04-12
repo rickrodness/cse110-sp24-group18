@@ -14,6 +14,7 @@
 - Sarena Pham
 - Bernico Jansen Chandra
 - Elijah Hosaka
+- Taiki Yoshino
   
 ## Agenda
 + Define roles and responsibilities
