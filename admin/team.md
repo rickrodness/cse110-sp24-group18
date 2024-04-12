@@ -5,7 +5,6 @@ TEAM INTRO HERE
 - Ishika Agrawal
 - Sam Hormozian
 - Elijah Hosaka
-    [Github Page](https://elijah-hosaka.github.io/cse110-lab-1/)
 - Aritra Dutta
 - Ryan Seidl
 
@@ -15,6 +14,7 @@ https://github.com/ishikaa2504/cse110/
 ## Sam Hormozian
 
 ## Elijah Hosaka
+[Github Page](https://elijah-hosaka.github.io/cse110-lab-1/)
 
 ## Sarena Pham
 
