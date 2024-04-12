@@ -8,6 +8,7 @@
 ## Attendance
 - Minsang (Min) Kim
 - Ryan Seidl
+- Ishika Agrawal
 ## Agenda
 + Define roles and responsibilities
 + Establish team rules
