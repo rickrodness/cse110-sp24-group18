@@ -78,6 +78,13 @@
 + Max 2.5mins long
 
 
-## Conclusion
+## Action Items
++ Bernico: Design logo
++ Ryan: Design mascot
++ Sarena: Compile videos
++ Michael: Create notes for each meeting
++ Ishika: Write team brand/intro paragraph
++ Everyone: Send intro video
+
 
 
