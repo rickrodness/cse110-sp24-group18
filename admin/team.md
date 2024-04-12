@@ -8,6 +8,7 @@ TEAM INTRO HERE
     [Github Page](https://elijah-hosaka.github.io/cse110-lab-1/)
 - Aritra Dutta
 - Ryan Seidl
+- Rick Rodness
 
 ## Ishika Agrawal
 https://github.com/ishikaa2504/cse110/
