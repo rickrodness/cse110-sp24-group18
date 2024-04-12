@@ -11,6 +11,7 @@
 - Ishika Agrawal
 - Sam Hormozian
 - Aritra Dutta
+- Sarena Pham
 ## Agenda
 + Define roles and responsibilities
 + Establish team rules
