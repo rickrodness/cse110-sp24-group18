@@ -15,7 +15,7 @@
 - Bernico Jansen Chandra
 - Elijah Hosaka
 - Taiki Yoshino
-  
+- Rick Rodness
 ## Agenda
 + Define roles and responsibilities
 + Establish team rules
