@@ -29,3 +29,6 @@ https://rseidl25.github.io/cse110-lab-1/
 
 ## Rick Rodness
 https://github.com/rickrodness/CSE-110-Lab-1
+
+## Minsang Kim
+https://github.com/minsang011/cse110_lab1
