@@ -10,6 +10,7 @@
 - Ryan Seidl
 - Ishika Agrawal
 - Sam Hormozian
+- Aritra Dutta
 ## Agenda
 + Define roles and responsibilities
 + Establish team rules
