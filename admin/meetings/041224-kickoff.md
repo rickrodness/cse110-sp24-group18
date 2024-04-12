@@ -9,6 +9,7 @@
 - Minsang (Min) Kim
 - Ryan Seidl
 - Ishika Agrawal
+- Sam Hormozian
 ## Agenda
 + Define roles and responsibilities
 + Establish team rules
