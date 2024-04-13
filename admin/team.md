@@ -33,3 +33,6 @@ https://github.com/rickrodness/CSE-110-Lab-1
 
 ## Minsang Kim
 https://github.com/minsang011/cse110_lab1
+
+## Taiki Yoshino 
+https://taiki-yoshino.github.io/cse110-lab1/
