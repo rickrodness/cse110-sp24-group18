@@ -9,6 +9,7 @@ TEAM INTRO HERE
 - Ryan Seidl
 - Rick Rodness
 - Taiki Yoshino
+- Sarena Pham
 
 ## Ishika Agrawal
 https://github.com/ishikaa2504/cse110/
@@ -19,7 +20,7 @@ https://github.com/ishikaa2504/cse110/
 [Github Page](https://elijah-hosaka.github.io/cse110-lab-1/)
 
 ## Sarena Pham
-[https://github.com/sarenap/GitHub-Pages-/blob/main/index.md](https://sarenap.github.io/Lab2_Starter/)
+[[https://github.com/sarenap/GitHub-Pages-/blob/main/index.md](https://sarenap.github.io/Lab2_Starter/)](https://sarenap.github.io/Lab2_Starter/)
 
 ## Aritra Dutta
 https://ar-dutta2026.github.io/Lab1/
