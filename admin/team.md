@@ -3,6 +3,7 @@ TEAM INTRO HERE
 
 # Team Members
 - Ishika Agrawal
+- Bernico Jansen Chandra
 - Sam Hormozian
 - Elijah Hosaka
 - Aritra Dutta
