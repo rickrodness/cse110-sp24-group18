@@ -1,7 +1,7 @@
 # Triton Financial Solutions (Group 18)
 TEAM INTRO HERE
 
-# Team Members
+# Team Roster
 - Ishika Agrawal
 - Bernico Jansen Chandra
 - Sam Hormozian
@@ -17,6 +17,9 @@ TEAM INTRO HERE
 
 ## Bernico Jansen Chandra
 [Github Page](https://github.com/BernicoJC)
+
+Hi! My name is **Bernico**, and I am a second year CS Major at Revelle College. I came from Indonesia, and the way to pronounce my name is more akin to _bear-nee-koh_. My favorite programming language is Python, although my favorite branch of CS that I would love to work in is Game Developing.
+
 
 ## Sam Hormozian
 [Github Page](https://samhormozian1.github.io/CSE110GithubPagesProject/)
