@@ -52,4 +52,4 @@ Hi! My name is **Bernico**, and I am a second year CS Major at Revelle College. 
 
 ## Taiki Yoshino 
 [Github Page](https://taiki-yoshino.github.io/cse110-lab1/)  
-Hello, I'm Taiki Yoshino! I'm a 2nd-year CSE major at UCSD, and passionate about research and projects about machine learning and computer graphics. I enjoy learning new technologies and contributing to different communities.
+Hello, I'm Taiki Yoshino! I'm a 2nd-year CSE major at UCSD, passionate about research and projects about machine learning and computer graphics. I enjoy learning new technologies and contributing to different communities.
