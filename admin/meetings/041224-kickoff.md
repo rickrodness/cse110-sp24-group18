@@ -32,7 +32,7 @@
     - UI/UX designer
     - Sub-lead
  
-We looked into splitting into subteams based on our individual skills. Currently mainly deciding on whether each person wants to do frontend or backend related tasks. We also discussed if anyone had particular skills with tools like Node, Mongo, SQL, etc. in order to better determine what teams we could go into. However, there was also general confusion about what our project actually is and how our team setup would even work with that.
+_**Post-meeting note:**_ We looked into splitting into subteams based on our individual skills. Currently mainly deciding on whether each person wants to do frontend or backend related tasks. We also discussed if anyone had particular skills with tools like Node, Mongo, SQL, etc. in order to better determine what teams we could go into. However, there was also general confusion about what our project actually is and how our team setup would even work with that.
 
 TLDR: Roles explained, role assignment to be decided
  
@@ -42,7 +42,7 @@ TLDR: Roles explained, role assignment to be decided
 + All meetings are **mandatory**
 + Remain respectful and mindful of every group member’s opinions and feelings
 
-We discussed team rules, what method of communication we are using (slack), communication curtsey, etc. Everyone agreed to the rules and there were no disputes overall. Importantly, the strike system was introducted as a way to keep ourselves accountable and everyone was informed of it.
+_**Post-meeting note:**_ We discussed team rules, what method of communication we are using (slack), communication curtsey, etc. Everyone agreed to the rules and there were no disputes overall. Importantly, the strike system was introducted as a way to keep ourselves accountable and everyone was informed of it.
 
 ### Team Contract
 + **Responsibilities**
@@ -68,7 +68,7 @@ We discussed team rules, what method of communication we are using (slack), comm
     - Logo
     - Mascot
  
-Branding: General confusion about what the actual project is so everyone was unsure as to what directrion to go in with branding. Current idea is that we focus on 3 issues on campus, e.g. mental health, housing prices, etc. Then split into teams to build tools for those things. Then we discussed simplifying and condensing this idea down to just one or two of those things. Financial literacy was decided on in the case that we are meant to build a webapp around it.
+_**Post-meeting note:**_ Branding: General confusion about what the actual project is so everyone was unsure as to what directrion to go in with branding. Current idea is that we focus on 3 issues on campus, e.g. mental health, housing prices, etc. Then split into teams to build tools for those things. Then we discussed simplifying and condensing this idea down to just one or two of those things. Financial literacy was decided on in the case that we are meant to build a webapp around it.
 
 Name: The team name we decided on was Triton Financial Solutions as a satirical take on other startups. Hoping for some startup vibes with logo and presentation/branding.
 
@@ -89,7 +89,7 @@ Important Values: Financial literacy, how to save money, how to spend less, advo
     - Roster of team members
     - Brief overview of each member with a link to their personal Github page
  
-Discussed and everyone is just adding their part to the github page.
+_**Post-meeting note:**_ Discussed and everyone is just adding their part to the github page.
 
 
 ### Team Video
@@ -97,7 +97,7 @@ Discussed and everyone is just adding their part to the github page.
 + Ideas?
 + Max 2.5mins long
 
-We discussed making a video with all members, introducing each person with our team name, then individual introductions. Shoot part of it at statue at UCSD then record individual parts. Did not go with all in person video because of background noise concerns. Send to Sarena to edit. Each person records for 15 seconds with Name, Major, Hobby.
+_**Post-meeting note:**_ We discussed making a video with all members, introducing each person with our team name, then individual introductions. Shoot part of it at statue at UCSD then record individual parts. Did not go with all in person video because of background noise concerns. Send to Sarena to edit. Each person records for 15 seconds with Name, Major, Hobby.
 
 ## Action Items
 + Bernico and Michael: Design logo
