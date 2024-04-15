@@ -2,6 +2,8 @@
 Hi! We are the **Triton Financial Solutions**, and we are from Group 18 of CSE 110 Spring 2024.
 
 ## Our Brand
+![Team Icon](/../main/admin/branding/icon.png)
+
 Our team color scheme is blue and yellow, similar to that of UCSD, as our effort represents helping the people, especially students in UCSD.
 Our team's logo is a Triton emblem representing a coin, with our group number and our name.
 Our team's mascot is MonopoTriton, to represent our focus, while also relating to the UCSD theme.
