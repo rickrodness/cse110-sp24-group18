@@ -50,7 +50,7 @@ I'm Rick Rodness, a 3rd-year Computer Science major at UC San Diego, passionate 
 
 ## Minsang Kim
 [Github Page](https://github.com/minsang011/cse110_lab1)
-
+Hello, I'm Min Kim and currently fourth year BS/MS Computer Engineering student at UC San Diego. Currently pursuing to study and research on the area of machine learning. I will be delightful to discuss about the major and anything else related with my hobby (photography and gaming)!
 ## Taiki Yoshino 
 [Github Page](https://taiki-yoshino.github.io/cse110-lab1/)  
 Hello, I'm Taiki Yoshino! I'm a 2nd-year CSE major at UCSD, passionate about research and projects about machine learning and computer graphics. I enjoy learning new technologies and contributing to different communities.
