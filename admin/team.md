@@ -44,6 +44,7 @@ Hello, I'm Aritra Dutta and I am a second year Computer Engineering student at U
 
 ## Ryan Seidl
 [Github Page](https://rseidl25.github.io/cse110-lab-1/)
+
 Hey, I'm Ryan Seidl. I'm a second year Computer Science major with a minor in Business, and I'm hoping to graduate in 2026. I'm not exactly sure what I'd like to use my degree for after college, but I'm hoping to find which corner of the industry suits me best through upcoming intern work. I like to spend my free time outdoors whether it be surfing, hiking, or just walking around. 
 
 ## Rick Rodness
