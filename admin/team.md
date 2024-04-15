@@ -46,6 +46,7 @@ Hi! My name is **Bernico**, and I am a second year CS Major at Revelle College. 
 
 ## Rick Rodness
 [Github Page](https://github.com/rickrodness/CSE-110-Lab-1)
+Hello, I'm Rick Rodness, I am a 3rd-year Computer Science major at UC San Diego, and my passion lies in machine learning and its applications in quantitative finance. Currently, as an undergraduate researcher, I am involved with Neural Radiance Fields (NeRF) and Gaussian Splatting for advanced view synthesis. I am working on implementing these differentiable rendering algorithms using Slang, a cutting-edge GPU programming language developed by NVIDIA.
 
 ## Minsang Kim
 [Github Page](https://github.com/minsang011/cse110_lab1)
