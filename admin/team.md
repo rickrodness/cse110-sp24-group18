@@ -34,6 +34,8 @@ Hi! My name is **Bernico**, and I am a second year CS Major at Revelle College. 
 ## Sam Hormozian
 [Github Page](https://samhormozian1.github.io/CSE110GithubPagesProject/)
 
+My name is **Sam**, and I am a third year Math-CS Major at ERC. I am intested in pursuing a career in Software Engineering.
+
 ## Elijah Hosaka
 [Github Page](https://elijah-hosaka.github.io/cse110-lab-1/)
 Hey, I'm Elijah Hosaka. I'm from Tokyo and San Francisco, and I'm a second-year CS major at UCSD. I'm interested in many things such as software engineering, cybersecurity, and AI/ML.
