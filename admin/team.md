@@ -36,6 +36,7 @@ Hi! My name is **Bernico**, and I am a second year CS Major at Revelle College. 
 
 ## Elijah Hosaka
 [Github Page](https://elijah-hosaka.github.io/cse110-lab-1/)
+Hey, I'm Elijah Hosaka. I'm from Tokyo and San Francisco, and I'm a second-year CS major at UCSD. I'm interested in many things such as software engineering, cybersecurity, and AI/ML.
 
 ## Sarena Pham
 [Github Page](https://github.com/sarenap/GitHub-Pages-/blob/indexbranch/index.md)
