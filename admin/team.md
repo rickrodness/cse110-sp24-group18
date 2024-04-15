@@ -40,7 +40,7 @@ Hi! My name is **Bernico**, and I am a second year CS Major at Revelle College. 
 
 ## Aritra Dutta
 [Github Page](https://ar-dutta2026.github.io/Lab1/)<br>
-Hello, I'm Aritra Dutta and I am a second year Computer Engineering Major student at UC San Diego. My goal is to pursue software engineering in industry and I am passionate about Machine Learning and Cybersecurity. 
+Hello, I'm Aritra Dutta and I am a second year Computer Engineering student at UC San Diego. My goal is to pursue software engineering in industry and I am passionate about Machine Learning and Cybersecurity. 
 
 ## Ryan Seidl
 [Github Page](https://rseidl25.github.io/cse110-lab-1/)
