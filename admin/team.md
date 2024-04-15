@@ -38,7 +38,8 @@ Hi! My name is **Bernico**, and I am a second year CS Major at Revelle College. 
 [Github Page](https://elijah-hosaka.github.io/cse110-lab-1/)
 
 ## Sarena Pham
-[Github Page](https://sarenap.github.io/Lab2_Starter/)
+[Github Page](https://github.com/sarenap/GitHub-Pages-/blob/indexbranch/index.md)
+Hi, I'm Sarena Pham. I'm a 2nd year computer engineering major in Warren College. In my free time I like to hike and watch tv.  I want to pursue a career in software. I'm currently learning about robotics and 3d printing.
 
 ## Aritra Dutta
 [Github Page](https://ar-dutta2026.github.io/Lab1/)<br>
