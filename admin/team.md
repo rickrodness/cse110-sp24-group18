@@ -25,6 +25,8 @@ As you have probably already guessed from our name, our team focuses mainly on t
 ## Ishika Agrawal
 [Github Page](https://github.com/ishikaa2504/cse110/)
 
+Hi, I’m a second-year CS major at Revelle. I am really excited to be taking this class, can't wait to see what project we come up with.
+
 ## Bernico Jansen Chandra
 [Github Page](https://github.com/BernicoJC)
 
