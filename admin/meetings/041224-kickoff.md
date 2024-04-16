@@ -16,6 +16,7 @@
 - Elijah Hosaka
 - Taiki Yoshino
 - Rick Rodness
+- Michael Cheung
 ## Agenda
 + Define roles and responsibilities
 + Establish team rules
