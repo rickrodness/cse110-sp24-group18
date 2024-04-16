@@ -1,2 +1,3 @@
 ## Please click on link below to access team intro.
-[Team Intro Video](https://drive.google.com/file/d/1iI8TEmHzFY6NuKekiT4-EKInc5ReC0ok/view?usp=sharing)
+
+[Team intro video](https://drive.google.com/file/d/12Z45PYu3Fd2Fcg2omegxoj9PqNLLXJN9/view?usp=sharing)
