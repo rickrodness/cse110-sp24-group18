@@ -16,11 +16,13 @@ As you have probably already guessed from our name, our team focuses mainly on t
 - Bernico Jansen Chandra
 - Sam Hormozian
 - Elijah Hosaka
+- Sarena Pham
 - Aritra Dutta
 - Ryan Seidl
 - Rick Rodness
+- Minsang Kim
 - Taiki Yoshino
-- Sarena Pham
+- Michael Cheung
 
 ## Ishika Agrawal
 [Github Page](https://github.com/ishikaa2504/cse110/)
