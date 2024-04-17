@@ -18,7 +18,8 @@ Creation April 12, 2024; Revised April 16, 2024
 
 ## Communication and Expectations
 1. The main communication method will be through Slack; the announcement channel will be the primary meeting and scheduling information hub, general channel will be for the discussions.
-2. Each member is required to reply to messages and announcements within **24 hours** for smooth and effective communication. **In the event of regular inactivity** or two continuous missed messages/meetings without an explanation, it will count as a strike ([see below](#rule-violations))
+2. Each member is required to reply to messages and announcements within **24 hours** for smooth and effective communication. **In the event of regular inactivity** or two continuous missed messages/meetings without an explanation, it will count as a strike ([see below](#rule-violations)).
+3. As a consequence of clause 2, each member is expected to have their Slack notification on.
 
 ## Scheduled Meetings
 1. In-person / Online meeting will be **mandatory every week**.
