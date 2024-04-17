@@ -54,6 +54,4 @@ For the success of the team, I hereby agree to all of the rules and have noted t
 
 (Signature)
 
-Signed, (name)
-
-(date)
+Signed, (name), (MM/DD/YYYY)
