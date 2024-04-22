@@ -15,7 +15,9 @@
 - Taiki Yoshino
 - Rick Rodness
 - Michael Cheung
-- Elijah Hosaka
+- Elijah
+
+### Missing: Sam
 
 ## Agenda
 + Decide which widget to work on
@@ -23,17 +25,41 @@
 + Tests and Documentation
 + SWOT Analysis
 + Delegating Work
++ YouTube Video
 
 ## Meeting Minutes
 ### Decide which widget to work on
 + Task List
+- Ryan 
+- Rick
+- Michael
+- Min
+- Taiki
+
  
 ### Designing and Planning
 + Features
+   - Option to add tasks
+   - Input: 
+      - Title
+      - Dscription
+      - Date/time
+      - Check box for Priority
+      - Drop-down menu for pre-defined 'tags' (different color for each tag)
+          - Classes
+          - Work
+          - Home/Personal
+          - Miscellaneous 
+      - Will add customized tags if time allows
+   - Delete 
+
+- Sorting based on 
 
 ### Tests and Documentation
 
 ### SWOT Analysis
+
+### YouTube Video
 
 
 ### Delegating Work
