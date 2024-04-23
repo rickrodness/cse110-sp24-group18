@@ -22,24 +22,25 @@
 ## Agenda
 + Decide which widget to work on
 + Designing and Planning
-+ Tests and Documentation
-+ SWOT Analysis
-+ Delegating Work
-+ YouTube Video
++ Tests, Documentation, SWOT Analysis, and YouTube Video
++ Action Items, Delegation, and Deadlines
 
 ## Meeting Minutes
 ### Decide which widget to work on
-+ Task List
-- Ryan 
-- Rick
++ Task List (submitting this for sure)
 - Michael
 - Min
 - Taiki
++ Sentiment Widget (submitting if time allows)
+- Aritra
+- Ryan
+- Elijah
 
  
 ### Designing and Planning
 + Features
    - Option to add tasks
+   - Sorting based on priority/due date
    - Input: 
       - Title
       - Dscription
@@ -52,22 +53,35 @@
           - Miscellaneous 
       - Will add customized tags if time allows
    - Delete 
++ Created a proper diagram for UI/UX
 
-- Sorting based on 
+### Tests, Documentation, SWOT Analysis, and YouTube Video
++ Documentation
+   - We will be using the diagrams made during the meeting for the documentation
+   - Will be creating a template for the documentation
+   - Members working on each widget will collaborate with Rick to get it done on time
++ YouTube Video
+   - Finish that up on Friday once everything is ready
++ Tests
+   - Ishika will be looking into it
 
-### Tests and Documentation
 
-### SWOT Analysis
-
-### YouTube Video
-
-
-### Delegating Work
-
-## Action Items
-+ Bernico and Michael: Design logo
-+ Ryan: Design mascot
-+ Sarena: Compile videos
-+ Michael: Create notes for each meeting
-+ Ishika: Write team brand/intro paragraph
-+ Everyone: Send intro video
+## Action Items, Delegation, and Deadlines
++ Finish Task List (Widget that we will be submitting)
+   - People working on this: Michael, Min, Taiki
+   - Deadline: Wednesday 1pm (need to have draft 1 ready before the meeting with our TA)
++ Finish Sentiment Widget (will be submitting if time allows)
+   - People working on this: Ryan, Aritra, Elijah
+   - Deadline: Wednesday 1pm (need to have draft 1 ready before the meeting with our TA)
++ Documentation
+   - Ishika: Create template
+   - Rick: Make sure people fill this in according to the code they are wokring on
+   - Sarena: Convert whiteboard diagrams into proper diagrams that can be used for documentation
++ SWOT Analysis
+   - Bernico and Ishika
++ Tests
+   - Ishika
+   - Thursday
++ YouTube Video
+   - Ishika and Sam (and whoever wants to contribute)
+   - Friday
