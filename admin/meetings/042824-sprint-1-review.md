@@ -1,7 +1,11 @@
 # Sprint 1 Review Meeting
 
 ## Attendance
-- 
+- Bernico Jansen Chandra
+- Minsang Kim
+- Michael Cheung
+- Sam Hormozian
+- Aritra Dutta
 
 ## Quick Review on Past Sprint
 ### What we did during the week:
