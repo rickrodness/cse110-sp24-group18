@@ -8,9 +8,11 @@
 - Aritra Dutta
 
 ## Quick Review on Past Sprint
-### What we did during the week:
-- Show what was done during the week (what was accomplished during the warmup)
-- 
+### Slider Widget
+- Describe it and list the features
+
+### Task List Widget
+- Describe it and list the features
 
 ## Notes on What Went Well
 - 
