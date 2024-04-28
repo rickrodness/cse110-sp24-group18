@@ -7,6 +7,7 @@
 - 
 
 ## What We Should Do / Try Next Time As a Team
+- 
 
 ## Pre meeting note
 Retrospective is about quality control for the team, how it's structured, run, and not about the project itself.
