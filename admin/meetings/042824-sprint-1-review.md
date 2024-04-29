@@ -12,6 +12,7 @@ Important thing to keep in mind: this review is supposed to quality control the 
 - Sam Hormozian
 - Aritra Dutta
 - Ryan Seidl
+- Taiki Yoshino
 
 ## Quick Review on Past Sprint
 ### Slider Widget
