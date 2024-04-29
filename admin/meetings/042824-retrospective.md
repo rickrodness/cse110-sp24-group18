@@ -17,10 +17,11 @@ From these, put in your input in all of the sections, if you have any. This can 
 - Ryan Seidl
 - Taiki Yoshino
 - Rick Rodness
+- Elijah Hosaka
 
 ## What Went Well For The Team
 - Communication was really smooth, each member is very responsive.
-- The organization by the leadership (especially Ishika) was very helpful. All of the templates for each member is already made so everyone can easily finish their jobs.
+- The organization by the leadership (especially Ishika and Bernico) was very helpful. All of the templates for each member is already made so everyone can easily finish their jobs.
 - The team's atmosphere was great. Everyone's ideas are accepted / considered and everyone got along.
 
 ## What Didn't Go As Well For The Team
@@ -34,4 +35,5 @@ From these, put in your input in all of the sections, if you have any. This can 
 - Next time, don't split the works between JavaScript / HTML / CSS, but instead by features.
 - Don't leave the work until last minute.
 - Keep going with the good and responsive communication within the team.
-- In the event that some members are more busy than the others during the week, they should inform everyone and remain responsive communication-wise; they need to still be in the loop with what's being worked on. 
+- In the event that some members are more busy than the others during the week, they should inform everyone and remain responsive communication-wise; they need to still be in the loop with what's being worked on.
+- The assignment should be given to us with more advanced notice so we can actually plan time to work on the assignment instead of scrambling to delegate work to people who are less busy for that given couple of days.
