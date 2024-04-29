@@ -11,13 +11,23 @@ Important thing to keep in mind: this review is supposed to quality control the 
 - Michael Cheung
 - Sam Hormozian
 - Aritra Dutta
+- Ryan Seidl
 
 ## Quick Review on Past Sprint
 ### Slider Widget
-- Details the process (from ideas, planning, wireframing, code, testing, documentation / demoing, and everything in between)
+- Met on Monday afternoon at the beginning of the week to plan and design the Slider widget
+- Discussed the Slider widget demonstrated by Prof. Powell; what ideas we should use in our Slider and what new ideas we wanted to implement
+- Considered all aspects of the Slider (UI, functionality, ease of use, quality of life) from the user's perspective and recorded what we thought would work best from that POV
+- Created the general wireframe for the Slider on a whiteboard, adding and subtracting features until we had a design we all liked
+- Divided the work between HTML, CSS, JavaScript, and documentation, assigning each team member to a respective aspect of the project
+- Wrote the general code to get the Slider working (mostly functionality, not much in terms of UI or new features)
+- Discussed the baseline implementation of the Slider, decided we were ready to continue with current version
+- Implemented new features such as feeling messages, background colors, and money falling from the top of the screen
+- Began testing process
+- Fixed a display bug so that the widget correctly responds to any size screen it is displayed on
+- Documented design process, created a demo video for the widget and its design process
 
 ### Task List Widget
-- Details the process (from ideas, planning, wireframing, code, testing, documentation / demoing, and everything in between)
 - Came together as a group to discuss ideas for basic overview/required features
 - Took inspiration from some other tasklists
 - Planning and wireframing done through hand drawn diagrams then through more finalized computer drawn diagrams
