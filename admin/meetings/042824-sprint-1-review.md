@@ -14,6 +14,7 @@ Important thing to keep in mind: this review is supposed to quality control the 
 - Ryan Seidl
 - Taiki Yoshino
 - Rick Rodness
+- Elijah Hosaka
 
 ## Quick Review on Past Sprint
 ### Slider Widget
@@ -43,7 +44,7 @@ Important thing to keep in mind: this review is supposed to quality control the 
 
 ## Notes On What To Do Next Time
 - Use whiteboard more to draw up ideas, planning, and research.
-- Utilize the Github tools more efficiently.
+- Utilize the Github tools more efficiently, especially issues so we know what to do beforehand and branching so there's no merge conflicts.
 - Plant to split the works better between components of the product.
 - Use branching systems of Github more. Like discussed with the TA before, we should have one branch for each member. This is to keep the branches ahead.
 - Write on the documentations while doing the codes.
