@@ -13,6 +13,7 @@ Important thing to keep in mind: this review is supposed to quality control the 
 - Aritra Dutta
 - Ryan Seidl
 - Taiki Yoshino
+- Rick Rodness
 
 ## Quick Review on Past Sprint
 ### Slider Widget
