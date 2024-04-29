@@ -18,6 +18,7 @@ From these, put in your input in all of the sections, if you have any. This can 
 - Taiki Yoshino
 - Rick Rodness
 - Elijah Hosaka
+- Sarena Pham
 
 ## What Went Well For The Team
 - Communication was really smooth, each member is very responsive.
