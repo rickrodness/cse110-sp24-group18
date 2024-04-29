@@ -14,6 +14,7 @@ From these, put in your input in all of the sections, if you have any. This can 
 - Michael Cheung
 - Sam Hormozian
 - Aritra Dutta
+- Ryan Seidl
 
 ## What Went Well For The Team
 - Communication was really smooth, each member is very responsive.
