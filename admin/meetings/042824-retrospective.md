@@ -1,6 +1,14 @@
 # Retrospective 1
 
-## Attendance (during the meeting)
+## Notes for what to add
+Retrospective is about quality control for the team, how it's structured, run, and not about the project itself.
+- Any thing about the structure and how the tasks are split?
+- Any thing about the process (meeting, assigning of tasks, submissions, communications, etc)?
+- Any other thing to note?
+
+From these, put in your input in all of the sections, if you have any. This can be informal, or something specific like "I wished we did more meeting" or anything of sort.
+
+## Attendance
 - Bernico Jansen Chandra
 - Minsang Kim
 - Michael Cheung
@@ -24,10 +32,3 @@
 - Don't leave the work until last minute.
 - Keep going with the good and responsive communication within the team.
 - In the event that some members are more busy than the others during the week, they should inform everyone and remain responsive communication-wise; they need to still be in the loop with what's being worked on. 
-
-## Notes for what to add
-Retrospective is about quality control for the team, how it's structured, run, and not about the project itself.
-
-- Any thing about the structure and how the tasks are split?
-- Any thing about the process (meeting, assigning of tasks, submissions, communications, etc)?
-- Any other thing to note?
