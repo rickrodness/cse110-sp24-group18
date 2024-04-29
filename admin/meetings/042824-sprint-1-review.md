@@ -18,6 +18,16 @@ Important thing to keep in mind: this review is supposed to quality control the 
 
 ### Task List Widget
 - Details the process (from ideas, planning, wireframing, code, testing, documentation / demoing, and everything in between)
+- Came together as a group to discuss ideas for basic overview/required features
+- Took inspiration from some other tasklists
+- Planning and wireframing done through hand drawn diagrams then through more finalized computer drawn diagrams
+- Wrote the codebase for the task list
+- Documented everything
+- Tested everything
+- Fixed the code based on the tests
+- Implemented extra guards for vulnerabilities revealed by tests
+- Created demo video
+- Documented design process
 
 ## Notes On What To Do Next Time
 - Use whiteboard more to draw up ideas, planning, and research.
