@@ -14,10 +14,10 @@ Important thing to keep in mind: this review is supposed to quality control the 
 
 ## Quick Review on Past Sprint
 ### Slider Widget
-- Process (from ideas, planning, wireframing, code, testing, documentation, and everything in between)
+- Details the process (from ideas, planning, wireframing, code, testing, documentation / demoing, and everything in between)
 
 ### Task List Widget
-- Process (from ideas, planning, wireframing, code, testing, documentation, and everything in between)
+- Details the process (from ideas, planning, wireframing, code, testing, documentation / demoing, and everything in between)
 
 ## Notes On What To Do Next Time
 - Use whiteboard more to draw up ideas, planning, and research.
