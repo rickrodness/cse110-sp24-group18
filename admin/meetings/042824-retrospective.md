@@ -16,6 +16,7 @@ From these, put in your input in all of the sections, if you have any. This can 
 - Aritra Dutta
 - Ryan Seidl
 - Taiki Yoshino
+- Rick Rodness
 
 ## What Went Well For The Team
 - Communication was really smooth, each member is very responsive.
