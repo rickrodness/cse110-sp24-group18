@@ -39,7 +39,7 @@
 - Created demo video
 - Documented design process
 
-## Notes On What To Do Next Time
+## Notes On What We Should Do Next Time
 - Use whiteboard more to draw up ideas, planning, and research.
 - Utilize the Github tools more efficiently, especially issues so we know what to do beforehand and branching so there's no merge conflicts.
 - Plant to split the works better between components of the product.
