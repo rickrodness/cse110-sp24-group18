@@ -15,6 +15,7 @@ Important thing to keep in mind: this review is supposed to quality control the 
 - Taiki Yoshino
 - Rick Rodness
 - Elijah Hosaka
+- Sarena Pham
 - Ishika Agrawal
 
 ## Quick Review on Past Sprint
