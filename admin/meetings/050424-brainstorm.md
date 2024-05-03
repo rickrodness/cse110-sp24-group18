@@ -81,6 +81,16 @@ __Requirements__
 - Also a copy in markdown
 - Schedule time with mentor
 
+Slides
+- Cover slide
+- Introducing DevDiary
+- Statement of Purpose
+- Requirements/features
+- Wireframes
+- Target consumer/user stories
+- Additional features
+- Theme
+
 
 ### Future Assignments
 - ADR (Architectural Decision Records)
@@ -88,3 +98,7 @@ __Requirements__
 
 
 ## Action Items
+- First half of slidedeck: Ryan and Aritra
+- Second half: Ishika and Rick
+- User stories: Ishika and Min
+- Wireframes (finishing it up): Michael
