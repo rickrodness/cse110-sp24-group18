@@ -60,14 +60,20 @@ __Clarify definitions and requirements:__
 
 
 __Users and their expectations:__
+- Individuals and groups of developers
+- They expect easy to use app to organize their work and easily manage their budgets so that their developing process is more efficiently done.
 
 __App's theme or mood:__
 - Professional and minimalistic
 - Customized buttons / logos / etc
-
+- Dark mode
 
 __Survey the competition__
+- Github
+- Slack
+- Notetaking apps like OneNote
 
+Although other apps mentioned above fulfill somewhat similar purposes as our apps, our project encompasses a more specific and focused target audience being the organization and budget managing of developers. It is also a lot more emphasized around groups and finance, unlike what we assume is more common with other teams.
 
 ### Work on Pitch Deck
 __Requirements__
