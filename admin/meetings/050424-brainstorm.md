@@ -42,6 +42,7 @@ Phase 1 (Essentials):
 - Text styling
 - Rendering
 - Organization system for all notes (Ability to look at old diaries / entries, foldered)
+- Dark mode
 
 Phase 2 (Extra features):
 - User login / signup
@@ -52,10 +53,15 @@ Phase 3 (Group personalization):
 - Budgeting / Finance for the developers in the group (spending and such of the group)
 
 __Clarify definitions and requirements:__
+- Database of some kind would be used (MongoDB, SQL, etc)
+
 
 __Users and their expectations:__
 
 __App's theme or mood:__
+- Professional and minimalistic
+- Customized buttons / logos / etc
+
 
 __Survey the competition__
 
