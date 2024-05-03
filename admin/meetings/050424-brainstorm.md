@@ -33,6 +33,7 @@ __Project theme: "Developer Journal", "Budget App for Developers"__
 __Problem we're solving: Financial Problems of Developers__
 
 __Features a system would need to address it:__
+Phase 1 (Essentials):
 - Process of developing to refer back to
 - Trial and errors tracking
 - Sectioning based on idea / project / frame work
@@ -41,10 +42,13 @@ __Features a system would need to address it:__
 - Rendering
 - Organization system for all notes (Ability to look at old diaries / entries, foldered)
 
-Extra things to implement:
+Phase 2 (Extra features):
 - User login / signup
 - Collaboration: join groups / project with other developers
 - Theme customizations
+
+Phase 3 (Group personalization):
+- Budgeting / Finance for the developers in the group (spending and such of the group)
 
 __Clarify definitions and requirements:__
 
