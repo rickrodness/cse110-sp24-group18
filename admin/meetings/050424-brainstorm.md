@@ -33,6 +33,7 @@ __Project theme: "Developer Journal", "Budget App for Developers"__
 __Problem we're solving: Financial Problems of Developers__
 
 __Features a system would need to address it:__
+
 Phase 1 (Essentials):
 - Process of developing to refer back to
 - Trial and errors tracking
