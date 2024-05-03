@@ -19,11 +19,17 @@ __Miro Board__
 - Link: [Join Miro Board Here](https://miro.com/welcomeonboard/OEwxU2VkeVpPVVJBNkNobFY4TEl6U1U3SUwzeTFqWjdaVXp4SDF3WkJLUExSUmNRdHZFMVdSQ01lS3cyWVhnNnwzNDU4NzY0NTg2NzY5Njk2NDA3fDI=?share_link_id=167173472649)
 
 __Project theme: "Developer Journal"__
+
 __Problem we're solving__
+
 __Features a system would need to address it__
+
 __Clarify definitions and requirements__
+
 __Users and their expectations__
+
 __App's theme or mood__
+
 __Survey the competition__
 
 
