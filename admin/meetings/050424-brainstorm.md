@@ -40,7 +40,10 @@ __Features a system would need to address it:__
 - Text styling
 - Rendering
 - Organization system for all notes (Ability to look at old diaries / entries, foldered)
-- 
+- User login / signup
+
+Extra things to implement:
+- Collaboration: join groups / project with other developers
 
 __Clarify definitions and requirements:__
 
