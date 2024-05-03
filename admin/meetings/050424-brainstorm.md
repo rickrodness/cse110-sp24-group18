@@ -101,4 +101,4 @@ Slides
 - First half of slidedeck: Ryan and Aritra
 - Second half: Ishika and Rick
 - User stories: Ishika and Min
-- Wireframes (finishing it up): Michael
+- Wireframes (finishing it up): Michael and Bernico
