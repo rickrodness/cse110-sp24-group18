@@ -49,8 +49,11 @@ Phase 2 (Extra features):
 - Collaboration: join groups / project with other developers
 - Theme customizations
 
-Phase 3 (Group personalization):
+Phase 3 (Group personalization for budgeting):
 - Budgeting / Finance for the developers in the group (spending and such of the group)
+- Allocate budget to subteams / specific features / etc
+- Expenditure per month on a specific database
+- Group chat log / announcements
 
 __Clarify definitions and requirements:__
 - Database of some kind would be used (MongoDB, SQL, etc)
