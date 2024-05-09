@@ -3,7 +3,7 @@
 
 **Time:** 6:20pm-7:30pm; 1-3pm
 
-**Location:** CTL 0125, Remote
+**Location:** Remote
 
 ## Attendance
 - 
@@ -13,6 +13,9 @@
 + CI/CD Pipeline
 
 ## Meeting Minutes
+### Determining UI / Designer
+Who should be the lead designer to make our UI look good?
+
 ### ADR (Decision Records)
 - Formally writing down our plans and other decisions
   - Database used with SQL or not?
