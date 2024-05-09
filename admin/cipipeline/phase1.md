@@ -8,9 +8,14 @@ A short 2 page (roughly) status on the pipeline in terms of what is currently fu
 Temporary? Placeholder? Testing phase?
 
 ### What is functional
-- ...
+- Name
+  - Description: 
+- Name
+  - Description: 
 
 ### What is planned / in progress
-- ...
+- Name
+  - Description: 
 
 ## Diagram embed
+{Copy the diagram here also}
