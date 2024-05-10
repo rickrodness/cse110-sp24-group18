@@ -14,13 +14,13 @@
 name: Codacy Security Scan
 
 on:
-  workflow_run:
-    workflows: ["Linting"]
+  push:
     branches: [ "main" ]
-    types:
-      - completed
-    paths-ignore:
-      - '**/*.md'
+    paths-ignore: 
+    - '**/*.md'
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "main" ]
   schedule:
     - cron: '24 15 * * 0'
 
