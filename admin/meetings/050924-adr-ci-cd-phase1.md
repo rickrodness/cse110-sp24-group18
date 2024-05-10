@@ -6,7 +6,17 @@
 **Location:** Remote
 
 ## Attendance
-- 
+- Bernico Jansen Chandra
+- Ishika Agrawal
+- Minsang Kim
+- Michael Cheung
+- Sam Hormozian
+- Aritra Dutta
+- Ryan Seidl
+- Taiki Yoshino
+- Rick Rodness
+- Elijah Hosaka
+- Sarena Pham
 
 ## Agenda
 + ADR (Decision Records)
