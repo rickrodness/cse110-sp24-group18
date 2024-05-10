@@ -6,7 +6,7 @@
  * @param {number} b - The second number.
  * @returns {number} The sum of the two numbers.
  */
-export function add(a, b) {
+function add(a, b) {
   return a + b;
 }
 
@@ -16,7 +16,7 @@ export function add(a, b) {
  * @param {number} b - The second number.
  * @returns {number} The result of subtracting the second number from the first.
  */
-export function subtract(a, b) {
+function subtract(a, b) {
   return a - b;
 }
 
