@@ -7,7 +7,7 @@ let page;
 beforeAll(async () => {
   browser = await puppeteer.launch();
   page = await browser.newPage();
-  await page.goto(`${path.resolve(__dirname, '../index.html')}`);
+  await page.goto(`file://${path.resolve(__dirname, '../index.html')}`);
 });
 
 afterAll(async () => {
