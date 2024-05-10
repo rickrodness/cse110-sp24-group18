@@ -50,4 +50,7 @@ Who should be the lead designer to make our UI look good?
 - Addressing the TA's other insights / concerns
 
 ## Action Items
-- 
+- CI/CD Diagram: Ryan
+- Pipeline status report md: TBD after diagram
+- Testing / demoing the pipelines (video): Michael
+- Filling out ADR's: Ishika
