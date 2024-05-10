@@ -3,11 +3,11 @@ name: JSDocs
 on: {pull_request}
 
 jobs:
-  Generate Docs:
+  JSDocs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Install Dependencies
         run: npm install
-      - name: Linting
+      - name: Docs
         run: npm run docs
