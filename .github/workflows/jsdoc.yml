@@ -3,7 +3,7 @@ name: JSDocs
 on: {pull_request}
 
 jobs:
-  Generate Docs:
+  JSDocs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
