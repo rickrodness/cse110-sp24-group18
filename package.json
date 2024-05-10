@@ -13,7 +13,7 @@
     "postversion": "git push --follow-tags"
   },
   "devDependencies": {
-    "eslint": "^7.7.0",
+    "eslint": "^7.32.0",
     "jsdoc": "^4.0.3"
   },
   "engines": {
