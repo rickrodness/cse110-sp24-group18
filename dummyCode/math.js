@@ -6,7 +6,7 @@
  * @param {number} b - The second number.
  * @returns {number} The sum of the two numbers.
  */
-function add(a, b) {
+function addtion(a, b) {
   return a + b;
 }
 
@@ -16,8 +16,8 @@ function add(a, b) {
  * @param {number} b - The second number.
  * @returns {number} The result of subtracting the second number from the first.
  */
-function subtract(a, b) {
+function subtraction(a, b) {
   return a - b;
 }
 
-module.exports = { add, subtract };
+module.exports = { addtion, subtraction };
