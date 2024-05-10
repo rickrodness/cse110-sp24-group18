@@ -19,3 +19,5 @@ export function add(a, b) {
 export function subtract(a, b) {
   return a - b;
 }
+
+module.exports = { add, subtract };
