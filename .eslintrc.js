@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-undef
 module.exports = {
   root: true,
+  ignorePatterns: ['docs/'],
   env: {
     browser: true,
     es2020: true,
