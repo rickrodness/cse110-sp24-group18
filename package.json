@@ -15,7 +15,8 @@
   },
   "devDependencies": {
     "eslint": "^7.32.0",
-    "jsdoc": "^4.0.3"
+    "jsdoc": "^4.0.3",
+    "puppeteer": "^22.8.0"
   },
   "engines": {
     "node": ">=14"
