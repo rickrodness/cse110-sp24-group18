@@ -1,0 +1,48 @@
+name: Main Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+    paths-ignore: 
+    - '**/*.md'
+    - 'docs/**'
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "main" ]
+  schedule:
+    - cron: '24 15 * * 0'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Install Dependencies
+        run: npm install
+      - name: Linting
+        run: npm run lint:check
+      - name: Fixing
+        run: npm run lint:fix
+
+  testing:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Install Dependencies
+        run: npm install
+      - name: Unit Test
+        run: npm test
+
+  documentation:
+    runs-on: ubuntu-latest
+    needs: testing
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Install Dependencies
+        run: npm install
+      - name: Docs
+        run: npm run docs
