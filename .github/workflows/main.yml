@@ -37,6 +37,8 @@ jobs:
   documentation:
     runs-on: ubuntu-latest
     needs: testing
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
