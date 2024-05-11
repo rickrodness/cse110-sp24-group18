@@ -18,4 +18,4 @@ Temporary? Placeholder? Testing phase?
   - Description: 
 
 ## Diagram embed
-{Copy the diagram here also}
+![diagram](phase1.drawio.png)
