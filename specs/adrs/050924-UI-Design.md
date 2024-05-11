@@ -17,9 +17,6 @@ date: 2024-05-09
 
 ## Context and Problem Statement
 
-{Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story.
- You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.}
-
  After the meeting with our TA, we realized that our UI design is not the strongest. Hence, the team has decided to work on a better wireframe and design for the final project.
 
 <!-- This is an optional element. Feel free to remove. -->
@@ -34,8 +31,7 @@ date: 2024-05-09
 
 ## Decision Outcome
 
-Chosen option: "Revision of UI", because
-{justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)}.
+Chosen option: "Revision of UI", because that's the only reasonable option.
 
 <!-- This is an optional element. Feel free to remove. -->
 ## More Information
