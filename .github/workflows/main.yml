@@ -5,8 +5,6 @@ on:
     branches: [ "main" ]
     paths-ignore: 
     - '**/*.md'
-    - 'docs/**'
-    - 'package.json'
     - 'jsdocsgenerated/**'
   pull_request:
     # The branches below must be a subset of the branches above
@@ -35,30 +33,3 @@ jobs:
         run: npm install
       - name: Unit Test
         run: npm test
-
-  documentation:
-    runs-on: ubuntu-latest
-    needs: testing
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
-        # uses: actions/checkout@v4
-        # # with: 
-        # #   ref: ${{ github.ref_name }}
-      - name: Install Dependencies
-        run: npm install
-      - name: Generate docs
-        run: npm run docs
-      # - name: Copy generated docs
-      #   run: cp -R jsdocsgenerated/* docs
-      # - name: Commit changes
-      #   run: |
-      #     git config --local user.email "action@github.com"
-      #     git config --local user.name "Github Action"
-      #     git add -A
-      #     git commit -m "Generated JSDocs"
-      #     git push
