@@ -2,7 +2,7 @@ name: Documentation Workflow
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "documentation" ]
 
 jobs:
   documentation:
