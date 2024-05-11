@@ -5,7 +5,7 @@
     "lint:check": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "npx jest",
-    "docs": "jsdoc dummyCode/ -d docs",
+    "docs": "jsdoc dummyCode/ -d jsdocsgenerated; git config --local user.email 'action@github.com'; git config --local user.name 'Github Action'; git add -A; git commit -m 'Generated JSDocs'; git push",
     "serve": "echo 'TODO: Add your serve command here",
     "start": "npm run serve",
     "build": "mkdir -p build && cp src/*.js build # TODO: Replace with your build command",
