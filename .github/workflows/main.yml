@@ -44,3 +44,15 @@ jobs:
         run: npm install
       - name: Generate docs
         run: npm run docs
+      - name: Copy generated docs
+        run: cp -R jsdocsgenerated/* docs
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Github Action"
+          git add .
+          git commit -m "Generated JSDocs"
+      - name: Push changes
+        uses: ad-m/github-push-action@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
