@@ -42,5 +42,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Install Dependencies
         run: npm install
-      - name: Docs
+      - name: Generate docs
         run: npm run docs
