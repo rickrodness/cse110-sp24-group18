@@ -1,11 +1,11 @@
 name: Main Workflow
 
 on:
-  push:
-    branches: [ "main" ]
-    paths-ignore: 
-    - '**/*.md'
-    - 'docs/**'
+  # push:
+  #   branches: [ "main" ]
+  #   paths-ignore: 
+  #   - '**/*.md'
+  #   - 'docs/**'
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ "main" ]
