@@ -31,3 +31,10 @@ The pipeline is currently completed, however, modifications may be necessary as 
 
 ## Diagram embed
 ![diagram](phase1.drawio.png)
+### Pipeline Diagram Description
+The diagram illustrates the development pipeline, starting from the initial commit by the developer. It outlines the process through various stages such as source control, building, testing, and deployment.
+- **Commit Stage**: Begins with developers committing code to a source control system.
+- **Source Control**: Features branch protection rules to prevent direct commits to the main branch and enforces code review through pull requests.
+- **Build Phase**: Involves compiling the code, which includes linting for stylistic correctness, and analyzing code quality through Codacy.
+- **Test Phase**: Consists of unit testing with Jest to ensure module functionality, followed by end-to-end testing to confirm the system operates as intended.
+- **Deployment Phase**: Final steps include generating documentation via JSDocs, merging changes into the main branch, and deploying the application using GitHub Pages.
