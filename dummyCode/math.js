@@ -21,4 +21,8 @@ function subtraction(a, b) {
   return a - b;
 }
 
-module.exports = { addtion, subtraction };
+function dummyFunction() {
+  return '';
+}
+
+module.exports = { addtion, subtraction, dummyFunction() };
