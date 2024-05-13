@@ -32,7 +32,9 @@
 - 
 
 ## Action Items
-- UI Skeleton for testings of functionalities
+- UI Skeleton for testings of functionalities: ?
 - Files and folders: Michael, Sarena
 - UI concept: Min
-- Ryan, Elijah
+- ?: Ryan, Elijah
+- Week 8: basic functionalities
+- Week 9: final draft of the project
