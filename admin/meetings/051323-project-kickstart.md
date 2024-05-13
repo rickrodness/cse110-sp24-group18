@@ -35,9 +35,20 @@
 - Diary: Select day > show a screen that can be overlapped with a few widgets.
 - These widgets are: emotion, sleep, num of lines coded, task list
 - Weekly summary on top of it, showing the progress and such (this is for the home page)
-- Slider at the bottom as the timeline of journals
 - Text editors with medias and such, need to be stringified to json.
 
 ## Action Items
 - Week 8: basic functionalities
 - Week 9: final draft of the project
+
+- Wireframe: Min, Ishika
+- Emotion: Ryan
+- Sleep: Taiki
+- Lines of code: Aritra
+- Summary: Sam
+- Task list and tree: TBD (phase 2)
+- Skeleton: Ishika, Bernico (and the others)
+- Text editor: Ryan, Elijah
+- Json, backend: Michael
+- Date, calendar (choose date, scroll): Sarena
+- Animation: Rick
