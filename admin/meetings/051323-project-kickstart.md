@@ -24,7 +24,7 @@
 
 ## Meeting Minutes
 ### UI Redesign
-- 
+- Day selector as wheel (sort by month)
 
 ### Set goals and subtasks
 - Phase 1 being the one focused on
@@ -33,9 +33,6 @@
 - 
 
 ## Action Items
-- UI Skeleton for testings of functionalities: ?
-- Files and folders: Michael, Sarena
-- UI concept: Min
-- ?: Ryan, Elijah
+- 
 - Week 8: basic functionalities
 - Week 9: final draft of the project
