@@ -31,9 +31,12 @@
 ### Set goals and subtasks
 - Phase 1 being the one focused on
 - Database no longer needed
-- Task list on top of the diary: Date/time, text, sentiment feature, etc for 1 task. These will be shared between all the days.
+- Task list on top of the diary. These will be shared between all the days.
 - Diary: Select day > show a screen that can be overlapped with a few widgets.
-- These widgets are: emotion, time of sleep, productivity, summaries, task list, day / date, number of tasks completed this day
+- These widgets are: emotion, sleep, num of lines coded, task list
+- Weekly summary on top of it, showing the progress and such (this is for the home page)
+- Slider at the bottom as the timeline of journals
+- Text editors with medias and such, need to be stringified to json.
 
 ## Action Items
 - Week 8: basic functionalities
