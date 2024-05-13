@@ -30,6 +30,7 @@
 ### Set goals and subtasks
 - Phase 1 being the one focused on
 - Database no longer needed
+- Task list on top of the diary: Date/time, text, sentiment feature, etc for 1 task.
 - 
 
 ## Action Items
