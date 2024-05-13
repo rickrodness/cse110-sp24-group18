@@ -15,6 +15,8 @@
 - Ryan Seidl
 - Sarena Pham
 - Elijah Hosaka
+- Aritra Dutta
+- Sam Hormozian
 
 ## Agenda
 + UI Redesign
