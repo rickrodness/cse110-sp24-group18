@@ -25,6 +25,7 @@
 ## Meeting Minutes
 ### UI Redesign
 - Growing beanstalk with infinite scrolling that grows as the tasks and diaries are done.
+- Basic UI / dashboard version can be done along with it.
 
 ### Set goals and subtasks
 - Phase 1 being the one focused on
