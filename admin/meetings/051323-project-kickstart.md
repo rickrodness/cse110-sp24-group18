@@ -38,7 +38,8 @@
 - Text editors with medias and such, need to be stringified to json.
 
 ## Action Items
-- Week 8: basic functionalities
+- Week 7: Very basic for each functionalities below
+- Week 8: Combined functionalities
 - Week 9: final draft of the project
 
 - Wireframe: Min, Ishika
