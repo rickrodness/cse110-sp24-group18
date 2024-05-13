@@ -8,6 +8,12 @@
 ## Attendance
 - Bernico Jansen Chandra
 - Ishika Agrawal
+- Taiki Yoshino
+- Michael Cheung
+- Min Sang Kim
+- Rick Rodness
+- Ryan Seidl
+- Sarena Pham
 
 ## Agenda
 + UI Redesign
