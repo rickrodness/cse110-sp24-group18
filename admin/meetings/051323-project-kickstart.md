@@ -25,6 +25,7 @@
 ## Meeting Minutes
 ### UI Redesign
 - Day selector as wheel (sort by month)
+- Growing tree to represent progress
 
 ### Set goals and subtasks
 - Phase 1 being the one focused on
