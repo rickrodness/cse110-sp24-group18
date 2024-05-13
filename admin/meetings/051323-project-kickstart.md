@@ -14,6 +14,7 @@
 - Rick Rodness
 - Ryan Seidl
 - Sarena Pham
+- Elijah Hosaka
 
 ## Agenda
 + UI Redesign
