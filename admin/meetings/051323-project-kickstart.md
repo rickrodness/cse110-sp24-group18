@@ -27,6 +27,12 @@
 
 
 ### Set goals and subtasks
-
+- Phase 1 being the one focused on
+- Database no longer needed
+- 
 
 ## Action Items
+- UI Skeleton for testings of functionalities
+- Files and folders: Michael, Sarena
+- UI concept: Min
+- Ryan, Elijah
