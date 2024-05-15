@@ -1,0 +1,17 @@
+.wrapper {
+    display: flex;
+    color: red;
+}
+
+#nav-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(236, 236, 236);
+}
+
+#text-container {
+    background-color: aliceblue;
+    padding: 10px;
+    width: 300px;
+}
