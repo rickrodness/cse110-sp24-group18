@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
 .wrapper {
     display: flex;
     color: red;
@@ -6,12 +8,234 @@
 #nav-container {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    background-color: rgb(236, 236, 236);
+    padding: 0.5em;
+    background-color: #FDFDFD;
+    font-family: "Poppins";
+    overflow: hidden;
+    max-height: 50em;
+    max-width: 21.5em;
+    padding-right: 10em;
+}
+
+#nav-container:hover {
+    overflow:auto
 }
 
 #text-container {
     background-color: aliceblue;
-    padding: 10px;
-    width: 300px;
+    padding: 1em;
+    width: 50em;
 }
+
+
+.nav-buttons-list {
+    list-style-type:none;
+    margin: 0 0 0 0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-buttons-list li {
+    width:20em;
+    height:5em;
+    position:relative;
+    margin: auto;
+    margin-bottom: 0.8em;
+    font-size: 1.5em;
+    overflow: hidden;
+}
+
+.nav-buttons-list li:hover label {
+    filter: brightness(0.95);
+}
+
+.nav-buttons-list label, .nav-buttons-list input {
+   display:block;
+   position:absolute;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   border-radius: 1.5em;
+   margin: auto;
+}
+
+.nav-buttons-list label:hover, .nav-buttons-list input:hover {
+    cursor:grab;
+ }
+
+.nav-buttons-list input[type="radio"] {
+   opacity:0.011;
+   z-index:100;
+}
+
+.nav-buttons-list input[type="radio"]:checked + label {
+    filter: brightness(0.9);
+}
+
+.nav-buttons-list label {
+    padding: 0.6em;
+    background-color: #C9F6FF;
+    cursor:pointer;
+    z-index:90;
+    padding-left: 5em;
+    color: #1A76AE;
+    font-weight: 600;
+}
+
+.nav-buttons-list label p {
+    font-size: 0.7em;
+    color: #1CB6F0;
+    margin: 0 0 0 0;
+    max-width: 50em;
+    overflow: hidden;
+    font-weight: 300;
+}
+
+.nav-buttons-list label h2 {
+    font-size: 0.5em;
+    padding-bottom: 0;
+    padding-top: 0.1em;
+    color:#1A76AE;
+    font-weight: 400;
+}
+
+.nav-buttons-list li:hover h2, .nav-buttons-list li:hover p, .nav-buttons-list li:hover label {
+    color: #171720;
+}
+
+.nav-buttons-list label:hover {
+    background:#E0E0DF;
+}
+
+
+
+
+
+#nav-filter-options {
+    padding: 1em 0 1em 0;
+    font-family: 'Poppins';
+    background: #FDFDFD;
+    color: #8E8E8E;
+}
+
+.nav-filter-buttons {
+    list-style-type: none;
+    margin: 0 0 0 0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    list-style-position: inside;
+}
+
+.nav-filter-buttons li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-filter-buttons input[type="text"] {
+    margin-left: 0.3em;
+    max-width: 9.2em;
+    border-radius: 0.5em;
+    border: 1.5px solid #F4F2F0;
+    font-family: 'Poppins';
+    height: 1.3em;
+}
+
+.nav-filter-buttons input[type="radio"], .nav-filter-buttons input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.nav-filter-buttons label {
+    background: #FDFDFD;
+    padding: 0.5em;
+    border-radius: 0.8em;
+    border: 2px solid #F4F2F0;
+}
+
+.nav-filter-buttons label:hover{
+    filter: brightness(0.9);
+}
+
+.nav-filter-buttons input[type="radio"]:checked + label {
+    background: #F4F2F0;
+    color: #141415;
+}
+
+.nav-filter-buttons input[type="checkbox"]:checked + label {
+    background: #F4F2F0;
+    color: #141415;
+}
+
+
+
+
+
+
+time.icon
+{
+  font-size: 1em; /* change icon size */
+  display: block;
+  position: relative;
+  width: 7em;
+  height: 7em;
+  background-color: #fff;
+  border-radius: 0.6em;
+  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+  overflow: hidden;
+}
+
+time.icon *
+{
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+
+time.icon strong
+{
+  position: absolute;
+  top: 0;
+  padding: 0.4em 0;
+  color: #fff;
+  background-color: #1CB6F0;
+  border-bottom: 1px dashed #195B8B;
+  box-shadow: 0 2px 0 #1CB6F0;
+}
+
+time.icon em
+{
+  position: absolute;
+  bottom: 0.3em;
+  color: #1CB6F0;
+}
+
+time.icon span
+{
+  font-size: 2.8em;
+  letter-spacing: -0.05em;
+  padding-top: 0.8em;
+  color: #195B8B;
+}
+
+.calendar-icon {
+    font-size:0.5em;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+    position: relative;
+    z-index: 100;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
