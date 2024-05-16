@@ -63,7 +63,7 @@
 
 .nav-buttons-list label:hover, .nav-buttons-list input:hover {
     cursor:grab;
- }
+}
 
 .nav-buttons-list input[type="radio"] {
    opacity:0.011;
@@ -168,6 +168,10 @@
 .nav-filter-buttons input[type="checkbox"]:checked + label {
     background: #F4F2F0;
     color: #141415;
+}
+
+.nav-filter-buttons label:hover, .nav-filter-buttons input:hover {
+    cursor:grab;
 }
 
 
