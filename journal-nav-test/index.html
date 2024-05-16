@@ -5,22 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Webpage</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="assets/scripts/fileSys.js"></script>
     <script src="assets/scripts/script.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <div id="nav-container">
-            <p>Nav container</p>
-            <input type="radio" id="html" name="fav_language" value="HTML">
-            <label for="html">HTML</label><br>
-            <input type="radio" id="css" name="fav_language" value="CSS">
-            <label for="css">CSS</label><br>
-            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">JavaScript</label>
+        <div class="component-wrapper">
+            <div id="nav-filter-options">
+                <ul class="nav-filter-buttons">
+                    <li>
+                        <input type="radio" id="latest" name="order" />
+                        <label for="latest">Latest</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="earliest" name="order" />
+                        <label for="earliest">Earliest</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="thisMonth" name="monthFilter" />
+                        <label for="thisMonth">This month</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="select" name="monthFilter" />
+                        <label for="select">
+                            Select
+                            <input type="text" id="textQuery">
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div id="nav-container">
+                
+            </div>
         </div>
         <div id="text-container">
-            <p>Text container</p>
+            Default text
         </div>
     </div>
 </body>
