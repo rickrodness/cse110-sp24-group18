@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emotion Widget</title>
+  <link rel="stylesheet" href="emotion-widget.css">
+</head>
+<body>
+  <div class="container">
+    <div class="containerText">
+      <p>How would you describe your mood today?</p>
+    </div>
+    <div class="containerFace">
+      <img src="media/faceMeh.png" id="face">
+      <p id="emotionText">Meh</p>
+    </div>
+    <div class="containerSliderImg">
+      <img src="media/emotion-slider.png">
+    </div>
+    <div class="containerArrow" id="arrowContainer">
+      <img src="media/arrow.png">
+    </div>
+    <div class="containerSlider">
+      <input type="range" min="1" max="5" value="3" class="slider" id="emotionSlider">
+    </div>
+  </div>
+
+  <script src="emotion-widget.js"> </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+.container {
+  /* Alignment, size properties */
+  width: 30%;
+  height: 80%;
+  border: 2px solid #000; /* Adjust border properties as needed */
+  border-radius: 10px; /* Adjust border radius as needed for rounding */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #f8f4f3;
+}
+
+.containerText {
+  /* Alignment, size properties */
+  width: 80%;
+  height: 30%;
+  /* border: 2px solid #000; */ /* Adjust border properties as needed */
+  border-radius: 10px; /* Adjust border radius as needed for rounding */
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* Text properties */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centers text horizontally */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+}
+
+.containerFace {
+  /* Alignment, size properties */
+  width: 30%;
+  height: 23%;
+  /* border: 2px solid #000; */ /* Adjust border properties as needed */
+  border-radius: 10px; /* Adjust border radius as needed for rounding */
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.containerFace img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.containerFace p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centers text horizontally */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.5em;
+}
+
+.containerSliderImg {
+  /* Alignment, size properties */
+  width: 80%;
+  height: 40%;
+  /* border: 2px solid #000; */ /* Adjust border properties as needed */
+  border-radius: 10px; /* Adjust border radius as needed for rounding */
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.containerSliderImg img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.containerSlider {
+  /* Alignment, size properties */
+  width: 70%;
+  height: 10%;
+  /*border: 2px solid #000;*/ /* Adjust border properties as needed */
+  border-radius: 10px; /* Adjust border radius as needed for rounding */
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.containerArrow {
+  /* Alignment, size properties */
+  width: 15%;
+  height: 20%;
+  /*border: 2px solid #000; */ /* Adjust border properties as needed */
+  border-radius: 10px; /* Adjust border radius as needed for rounding */
+  position: absolute;
+  top: 83%;
+  left: 51.5%;
+  transform: translate(-50%, -50%);
+}
+
+.containerArrow img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Style for the slider, with a specified width, height, and background color */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height:34%;
+  background: #d3d3d3;
+  border-radius: 10px;
+  outline: solid;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/* Changes the opacity of the slider when hovered over */
+.slider:hover {
+  opacity: 1;
+}
+
+/* Custom styling for the slider thumb in webkit browsers */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #483429;
+  cursor: pointer;
+}
+
+/* Custom styling for the slider thumb in Mozilla browsers */
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #483429;
+  cursor: pointer;
+}
