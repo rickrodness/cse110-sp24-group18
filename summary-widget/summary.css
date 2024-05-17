@@ -1,10 +1,10 @@
 body {
-  display: flex;
+  display: flex; /*centered content in the middle of page*/
   justify-content: center;
   align-items: center;
   height: 90vh; /* Adjusted height to move everything up */
   margin: 0;
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; /*temporoary backround color*/
   font-family: Arial, sans-serif;
 }
 
@@ -14,60 +14,63 @@ body {
 }
 
 .dropdown-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 8px;
+  padding: 10px 20px; /*button padding*/
+  font-size: 16px; /*font size*/
+  cursor: pointer; /*gives pointer cursor when hovering over button*/
+  border-radius: 8px; /*rounded corners*/
   border: none; /* Removed outline */
-  background-color: #fff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #195B8B; /*button color blue*/
+  color: #fff; /*white text color*/
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /*box shadow*/
   font-weight: bold; /* Bold text */
 }
 
 .dropdown-content {
-  display: none;
+  display: none; /* Initially hidden */
   position: absolute;
   background-color: transparent; /* Removed white background */
-  min-width: 600px;
-  z-index: 1;
-  padding: 20px;
-  border-radius: 8px;
+  min-width: 600px; /* Minimum width */
+  z-index: 1; /* Stack above other elements */
+  padding: 20px; /* Padding inside dropdown */
+  border-radius: 8px; /* Rounded corners */
   top: 50px; /* Position dropdown below the button */
-  left: 50%;
+  left: 50%; /* Center the dropdown */
   transform: translateX(-50%); /* Center the dropdown */
 }
 
 .day-entry, .column-titles {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Align items vertically centered */
+  justify-content: space-between; /* Space between items */
   margin-bottom: 20px; /* Added gap between rows */
-  padding: 10px;
-  border-radius: 25px;
-  background-color: #fff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px; /* Padding inside each entry */
+  border-radius: 25px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Box shadow for depth */
   border: 1px solid #195B8B; /*blue outline to ovals*/
+  width: 100%; /* Full width */
 }
 
 .day-entry label {
-  flex: 1;
-  text-align: right;
-  margin-right: 10px;
+  flex: 1; /* Take available space */
+  text-align: left;  /* Align text to the left */
+  margin-right: 10px; /* Margin to the right */
 }
 
 .day-entry input {
-  flex: 1;
-  margin-left: 5px;
-  padding: 5px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  flex: 1;  /* Take available space */
+  margin-left: 15px; /* Margin to the left */
+  padding: 5px; /* Padding inside input */
+  border-radius: 8px;  /* Rounded corners */
+  border: 1px solid #ccc; /* Light gray border */
+  text-align: center; /* Centered text */
 }
 
 .column-titles {
   font-weight: bold;
   text-align: center;
   width: 100%; /* Make column titles take full width */
-  padding: 5px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -76,12 +79,12 @@ body {
   flex: 1;
   padding: 0 5px;
   text-align: center; /* Center titles with their text boxes */
-  margin-left: -60px;
+  margin-left: -60px; /*left shit for alingment*/S
 }
 
 .day-label {
-  flex: 1;
-  font-weight: bold;
-  text-align: right;
-  margin-right: 10px;
+  flex: 1; /* Take available space */
+  font-weight: bold; /* Bold text */
+  text-align: left;  /* Align text to the left */
+  margin-right: 10px; /* Margin to the right */
 }
