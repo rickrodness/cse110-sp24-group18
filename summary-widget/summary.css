@@ -46,6 +46,7 @@ body {
   border-radius: 25px;
   background-color: #fff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #195B8B; /*blue outline to ovals*/
 }
 
 .day-entry label {
