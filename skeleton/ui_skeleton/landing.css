@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+font-family: 'Lora', serif;
+  background-color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 650;
+  font-style: italic;
+}
+
+.date {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  color: #195B8B;
+  font-size: 24px; /* Increase the font size */
+  padding: 10px; /* Add padding to make the area larger */
+  border: dotted;
+  border-radius: 30px;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-right: 1.5px dashed #195B8B;
+}
+
+.sidebar h2 {
+  margin-top: 20px;
+  color: #195B8B;
+}
+
+.sidebar-border {
+  border-radius: 30px;
+  box-shadow: 2px 2px 60px #b5b5b5;
+  background: rgba(224, 224, 223, 1);
+  border: 5px double rgb(192, 192, 192);
+  min-height: 100%;
+  max-width: 100%;
+  /* margin-top: auto;
+  margin-bottom: auto */
+}
+
+.body-border {
+  border-radius: 30px;
+  box-shadow: 1px 1px 90px #b5b5b5;
+  background: rgb(214, 214, 213);
+  border: 5px double rgb(192, 192, 192);
+  min-height: 100%;
+  max-width: 100%;
+}
+
+.journals {
+  margin-top: 20px;
+}
+
+.journal {
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: #eaeaea;
+  border: 1px solid #195B8B;
+  border-radius: 100px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.journal {
+  font-family: 'Lora', serif;
+  text-align: center;
+  color: #195B8B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-journal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #195B8B;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 20px auto 0;
+  transition: background-color 0.3s ease;
+}
+
+.add-journal .material-icons {
+  font-size: 24px;
+
+}
+
+.body {
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  position: relative;
+}
+
+
+.widgets {
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.sleep-button, .emotion-button, .code-button, .list-button {
+  width: 120px;
+  height: 120px;
+  background-color: #195B8B;
+  color: #E0E0DF;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sleep-button:hover,
+.emotion-button:hover,
+.code-button:hover,
+.list-button:hover,
+.add-journal:hover {
+  background-color: #1CB6F0;
+}
+
+.sleep-button .material-icons,
+.emotion-button .material-icons,
+.code-button .material-icons,
+.list-button .material-icons {
+  font-size: 70px;
+}
+

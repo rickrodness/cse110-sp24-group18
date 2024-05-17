@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sleep-widget.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-border">
+                <h2>Welcome, User!</h2> <!-- Placeholder, should dynamically change by the user name -->
+                <div class="journals">
+                    <div class="journal">This</div>
+                    <div class="journal"></div>
+                </div>
+                <button class="add-journal">
+                    <span class="material-icons">add</span>
+                </button>
+            </div>
+        </div>
+        <div class="body">
+            <div class="body-border">
+                <div class="diary">
+                    <!-- Sleep Widget Content -->
+                    <div class="sleep-widget">
+                        <div class="sleep-icon">
+                            <span class="material-icons">bedtime</span>
+                        </div>
+                        <div class="sleep-content">
+                            <textarea placeholder="How was your sleep? (Putting sleep quality scale)"></textarea>
+                        </div>
+                        <button class="confirm-button">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="date"> <!-- The calendar widget goes here -->
+            May 13, 2024 <!-- Placeholder -->
+        </div>
+    </div>
+</body>
+</html>
