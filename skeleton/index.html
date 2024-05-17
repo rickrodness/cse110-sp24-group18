@@ -3,49 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${DevDiary}</title>
+    <title>Journal Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/scripts/script.js"></script>
+    <!-- <link rel="stylesheet" href="sleep-widget.css"> -->
 </head>
 <body>
     <div class="container">
-        <div class="left-sidebar">
-            <h3>Welcome, (name here)!</h3>
+        <div class="sidebar">
+            <div class="sidebar-border">
+                <h2>Welcome, User!</h2> <!--Placeholder, should dynamically change by the user name-->
+                <div class="journals">
+                    <div class="journal">This</div>
+                    <div class="journal"></div>
+                </div>
+                <button class="add-journal">
+                    <span class="material-icons">add</span>
+                </button>
+            </div>
+            
         </div>
-        <div class="content">
-            <h2>Diary Title (?)</h2>
-            <p class="diary-entry">Diary diary diary diary diary diary diary </p>
+        <div class="body">
+            <div class="body-border">
+                <div class="diary">
+                    <!--Diary should be shown here-->
+                    <h2>Diary Title (?)</h2>
+                    <p class="diary-entry">Diary diary diary diary diary diary diary </p>
+                </div>
+                <div class="widgets">
+                    <button class="widgetButton" data-target="sleep">
+                        <span class="material-icons">brightness_2</span>
+                    </button>
+                    <button class="widgetButton" data-target="moods">
+                        <span class="material-icons">mood</span>
+                    </button>
+                    <button class="widgetButton" data-target="code-lines">
+                        <span class="material-icons">code</span>
+                    </button>
+                    <button class="widgetButton" data-target="list">
+                        <span class="material-icons">list</span>
+                    </button>
+                </div>
+            </div>
+            
         </div>
-        <div class="right-sidebar">
-            <div class="date-display">(May 13th, 2024)</div>
-            <button class="widgetButton" data-target="sleep">Sleep</button><br>
-            <button class="widgetButton" data-target="emotions">Emotions</button><br>
-            <button class="widgetButton" data-target="code-lines">Code Lines</button><br>
-            <button class="widgetButton" data-target="summary">Summary</button><br>
-            <button class="widgetButton" data-target="tasks">Tasks</button><br>
+        <div class="date"> <!--The calendar should be dynamically changeable-->
+            May 13, 2024 <!--Placeholder-->
         </div>
-    </div>
 
-    <!-- The widgets -->
-    <div class="widgetContainer" id="sleep">
-        <p>Sleep Widget</p>
-        <button class="closeWidgetButton">Close</button>
-    </div>
-    <div class="widgetContainer" id="emotions">
-        <p>Emotions Widget</p>
-        <button class="closeWidgetButton">Close</button>
-    </div>
-    <div class="widgetContainer" id="code-lines">
-        <p>Code Lines Widget</p>
-        <button class="closeWidgetButton">Close</button>
-    </div>
-    <div class="widgetContainer" id="summary">
-        <p>Summary Widget</p>
-        <button class="closeWidgetButton">Close</button>
-    </div>
-    <div class="widgetContainer" id="tasks">
-        <p>Tasks Widget</p>
-        <button class="closeWidgetButton">Close</button>
+        <!-- Add the widgets here and make sure to change their id to correspond the above buttons-->
+        <div class="sleep-widget" id="sleep">
+            <div class="sleep-icon">
+                <span class="material-icons">bedtime</span>
+            </div>
+            <div class="sleep-content">
+                <textarea placeholder="How was your sleep? (Putting sleep quality scale)"></textarea>
+            </div>
+            <button class="confirm-button">Confirm</button>
+        </div>
     </div>
 </body>
 </html>

@@ -9,13 +9,11 @@ function initWidgetButtons(){
             const targetWidget = document.getElementById(btn.dataset.target);
 
             if(targetWidget){
-                // targetWidget.style.right = "40px"; // old way
-                targetWidget.style.display = "flex";
+                targetWidget.style.right = "0";
 
-                const closeButton = targetWidget.querySelector(".confirm-button");
+                const closeButton = targetWidget.querySelector(".closeWidgetButton");
                 closeButton.addEventListener("click", () => {
-                    targetWidget.style.display = "none";
-                    // Insert how to save it to database here
+                    targetWidget.style.right = "-1000px";
                 });
             }
         });

@@ -1,6 +1,7 @@
 body {
   margin: 0;
-font-family: 'Lora', serif;
+  padding: 0;
+  font-family: 'Lora', serif;
   background-color: #ffffff;
 }
 
@@ -46,8 +47,6 @@ h2 {
   border: 5px double rgb(192, 192, 192);
   min-height: 100%;
   max-width: 100%;
-  /* margin-top: auto;
-  margin-bottom: auto */
 }
 
 .body-border {
@@ -72,9 +71,6 @@ h2 {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.journal {
   font-family: 'Lora', serif;
   text-align: center;
   color: #195B8B;
@@ -103,6 +99,10 @@ h2 {
 
 }
 
+.add-journal:hover {
+  background-color: #1CB6F0;
+}
+
 .body {
   flex-grow: 1;
   background-color: #ffffff;
@@ -110,9 +110,8 @@ h2 {
   position: relative;
 }
 
-
 .widgets {
-  position: absolute;
+  position: fixed;
   top: 50%;
   right: 60px;
   transform: translateY(-50%);
@@ -121,7 +120,7 @@ h2 {
   gap: 50px;
 }
 
-.sleep-button, .emotion-button, .code-button, .list-button {
+.widgetButton {
   width: 120px;
   height: 120px;
   background-color: #195B8B;
@@ -135,18 +134,97 @@ h2 {
   transition: background-color 0.3s ease;
 }
 
-.sleep-button:hover,
-.emotion-button:hover,
-.code-button:hover,
-.list-button:hover,
-.add-journal:hover {
+.widgetButton:hover {
   background-color: #1CB6F0;
 }
 
-.sleep-button .material-icons,
+/* .sleep-button .material-icons,
 .emotion-button .material-icons,
 .code-button .material-icons,
 .list-button .material-icons {
   font-size: 70px;
+} */
+
+.material-icons{
+  font-size: 70px;
+} 
+
+.sleep-widget {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Changed to center the content vertically */
+  background-color: #195B8B;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  height: 70%;
+  width: 30%;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  box-shadow: 1px 1px 15px #6a6a6a;
+  right: 40px;
+
+  /* This is how you toggle on or off, remember to put this for other widgets */
+  display: none;
+
+  /* old, changed on how to hide this, but just in case
+  right: -1000px; */
 }
 
+.sleep-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #195B8B;
+  margin-bottom: 20px;
+}
+
+.sleep-content {
+  display: flex; /* Changed to flex for centering */
+  align-items: center;
+  justify-content: center; /* Centering the text area horizontally and vertically */
+  flex-grow: 1;
+  width: 92%;
+  background-color: #e0e0df;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 4px double #538db7;
+}
+
+.sleep-content textarea {
+  width: 95%;
+  height: 95%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  resize: none;
+}
+
+.confirm-button {
+  font-family: 'Lora', serif;
+  font-weight: 550;
+  background-color: #ffffff;
+  color: #195B8B;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 4px double #538db7;
+}
+
+.confirm-button:hover {
+  background-color: #1CB6F0;
+  color: #ffffff;
+}

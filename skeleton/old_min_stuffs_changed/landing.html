@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="landing.css">
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" href="sleep-widget.css"> -->
 </head>
 <body>
     <div class="container">
@@ -27,18 +29,20 @@
             <div class="body-border">
                 <div class="diary">
                     <!--Diary should be shown here-->
+                    <h2>Diary Title (?)</h2>
+                    <p class="diary-entry">Diary diary diary diary diary diary diary </p>
                 </div>
                 <div class="widgets">
-                    <button class="sleep-button">
+                    <button class="widgetButton" data-target="sleep">
                         <span class="material-icons">brightness_2</span>
                     </button>
-                    <button class="emotion-button">
+                    <button class="widgetButton" data-target="moods">
                         <span class="material-icons">mood</span>
                     </button>
-                    <button class="code-button">
+                    <button class="widgetButton" data-target="code-lines">
                         <span class="material-icons">code</span>
                     </button>
-                    <button class="list-button">
+                    <button class="widgetButton" data-target="list">
                         <span class="material-icons">list</span>
                     </button>
                 </div>
@@ -47,6 +51,17 @@
         </div>
         <div class="date"> <!--The calendar should be dynamically changeable-->
             May 13, 2024 <!--Placeholder-->
+        </div>
+
+        <!-- Add the widgets here and make sure to change their id to correspond the above buttons-->
+        <div class="sleep-widget" id="sleep">
+            <div class="sleep-icon">
+                <span class="material-icons">bedtime</span>
+            </div>
+            <div class="sleep-content">
+                <textarea placeholder="How was your sleep? (Putting sleep quality scale)"></textarea>
+            </div>
+            <button class="confirm-button">Confirm</button>
         </div>
     </div>
 </body>
