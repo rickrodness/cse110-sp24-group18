@@ -65,6 +65,7 @@ function forceCreate(data, date, title) {
  * @param {string} date date to query
  */
 function writeFile(newData, date) {
+    console.log('NEW DATA INC: ' + JSON.stringify(newData));
     const dateToday = formatToday(); // todays date
     let journals = getJournals(); // dictionary of all journals
 
@@ -74,6 +75,8 @@ function writeFile(newData, date) {
         const jsonString = JSON.stringify(journals); // stringify and add to local storage
         localStorage.setItem('journals', jsonString);
         console.log(`Modified JSON file: '${date}' and added to localStorage.`);
+        console.log(newData);
+        console.log(getJournals());
     } else { // if it doesn't exist
         forceCreate(newData['data'], date); // create a file on the day with text data
         writeFile(newData, date); // write to newly created file with all data

@@ -111,11 +111,7 @@ function buttonListeners() {
  */
 function changeText(date) {
     console.log(`Changing text area: '${date}'.`)
-    const textContainer = document.getElementById('text-container'); // get the text container
-    textContainer.innerHTML = ''; // reset the html
-
-    const journal = readFile(date); // read the data in the journal
-    textContainer.textContent = journal['data']; // update the text in container
+    updateText(date);
 }
 
 /**
@@ -194,4 +190,5 @@ function init() {
     generateExample();
     filterButtons();
     setDate();
+    textEditorListeners();
 }
