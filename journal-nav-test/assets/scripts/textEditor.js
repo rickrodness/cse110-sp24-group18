@@ -22,41 +22,21 @@ colorBtn.addEventListener("input", () => {
     document.execCommand("forecolor", false, colorBtn.value)  // change the text color on button click
 })
 
-// Enable editing of the note title on click
-noteTitle.addEventListener('click', () => {
-  const input = document.createElement('input');  // create new input element
-  input.type = 'text';  // set input element to text box
-  input.value = noteTitle.textContent;  // set current input value to current note title
-  input.className = 'title-input';  // set input element class name
-  noteTitle.replaceWith(input); // replace noteTitle element with input element
-  input.focus();  // focus on input element
 
-  input.addEventListener('blur', () => {
-      const newTitle = document.createElement('span');  // create new newTitle element
-      newTitle.innerHTML = `<b>${input.value}</b>`; // set innerHTML content of newTitle to input value
-      newTitle.className = 'title'; // set newTitle element class name
-      input.replaceWith(newTitle);  // replace input element with newTitle element
-      newTitle.addEventListener('click', () => {
-          input.value = newTitle.textContent; // set current input value to newTitle value
-          newTitle.replaceWith(input);  // replace newTitle with input element
-          input.focus();  // focus on input element
-      });
-  });
-});
 
 /**
  * Sets the id of noteTitle element to the current date
  */
 function setDate(){
   noteTitle.id = formatToday();
+  updateText(formatToday());
 }
 
 function updateJournal(date, contentHTML){
     if (content && content.getAttribute('contenteditable') === 'true') {
         let journals = getJournals();
         let journal = journals[date];
-        journal['data'] = contentHTML
-        console.log('TESTESTEST' + JSON.stringify(journal));
+        journal['data'] = contentHTML;
         writeFile(journal, date);
     } else {
       return 'Container not found or not contenteditable';
@@ -70,6 +50,37 @@ function textEditorListeners() {
         updateJournal(currDate, contentHTML);
         filterButtons();
     })
+
+    // Enable editing of the note title on click
+noteTitle.addEventListener('click', () => {
+    const input = document.createElement('input');  // create new input element
+    input.type = 'text';  // set input element to text box
+    input.value = noteTitle.textContent;  // set current input value to current note title
+    input.className = 'title-input';  // set input element class name
+    noteTitle.replaceWith(input); // replace noteTitle element with input element
+    input.focus();  // focus on input element
+  
+    input.addEventListener('blur', () => {
+      const getId = noteTitle.id;
+      console.log(getId);
+        const newTitle = document.createElement('h4');  // create new newTitle element
+        
+        let journals = getJournals();
+        let journal = journals[getId];
+        journal['title'] = input.value;
+        writeFile(journal, getId);
+        filterButtons();
+  
+        newTitle.innerHTML = `<b>${input.value}</b>`; // set innerHTML content of newTitle to input value
+        newTitle.className = 'title'; // set newTitle element class name
+        input.replaceWith(newTitle);  // replace input element with newTitle element
+        newTitle.addEventListener('click', () => {
+            input.value = newTitle.textContent; // set current input value to newTitle value
+            newTitle.replaceWith(input);  // replace newTitle with input element
+            input.focus();  // focus on input element
+        });
+    });
+  });
 }
 
 function updateText(date) {
@@ -83,7 +94,7 @@ function updateText(date) {
     const contentElement = document.getElementById('content');
 
     contentElement.innerHTML = text;
-    titleDisplay.textContent = title;
+    titleDisplay.innerHTML = `<b>${title}</b>`;
 
     titleDisplay.id = date;
 }
