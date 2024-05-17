@@ -1,0 +1,40 @@
+#title {
+  color: #000;
+  font-size: 2em;
+  padding-top: 0.5em;
+}
+
+.controls {
+  display: flex; 
+}
+
+.title-container {
+  display: flex;
+  padding-left: 1em;
+}
+
+.control-btn-container {
+  display: flex;
+  padding-left: 19em;
+  justify-content: right;
+}
+
+.control-btn {
+  margin-left: 8px;
+  width: 50px;
+  height: 100%;
+}
+
+#filename-input {
+  margin-left: 10px;
+}
+
+#content {
+  padding: 20px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  outline: none;
+  min-height: 300px;
+  margin: 30px 0;
+  color: black;
+  background-color: white;
+}
