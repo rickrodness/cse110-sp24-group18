@@ -17,32 +17,32 @@
     <script src="assets/scripts/script.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="component-wrapper">
-            <div id="nav-filter-options">
-                <ul class="nav-filter-buttons">
+    <div class="wrapper"> <!--Wrapper for entire test-->
+        <div class="component-wrapper"> <!--Wrapper for the side bar component-->
+            <div id="nav-filter-options"> <!--Wrapper for the filtering options-->
+                <ul class="nav-filter-buttons"> <!--List to house the buttons-->
                     <li>
-                        <input type="radio" id="latest" name="order" />
+                        <input type="radio" id="latest" name="order" /> <!--Button to sort by descending order-->
                         <label for="latest">Latest</label>
                     </li>
                     <li>
-                        <input type="radio" id="earliest" name="order" />
+                        <input type="radio" id="earliest" name="order" /> <!--Button to sort by ascending order-->
                         <label for="earliest">Earliest</label>
                     </li>
                     <li>
-                        <input type="checkbox" id="thisMonth" name="monthFilter" />
+                        <input type="checkbox" id="thisMonth" /> <!--Button to filter current month-->
                         <label for="thisMonth">This month</label>
                     </li>
                     <li>
-                        <input type="checkbox" id="select" name="monthFilter" />
+                        <input type="checkbox" id="select" /> <!--Button to filter by a text query-->
                         <label for="select">
                             Select
-                            <input type="text" id="textQuery">
+                            <input type="text" id="textQuery"> <!--Text query to filter by-->
                         </label>
                     </li>
                 </ul>
             </div>
-            <div id="nav-container">
+            <div id="nav-container"> <!--Container to house the different file selections-->
                 
             </div>
         </div>
@@ -66,7 +66,6 @@
                 </div>
             </div>
             <div id="content" contenteditable="true" spellcheck="false"></div>
-        </div>
     </div>
     <script src="assets/scripts/textEditor.js"></script>
     
