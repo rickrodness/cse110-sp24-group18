@@ -7,19 +7,18 @@
   <link rel="stylesheet" href="emotion-widget.css">
 </head>
 <body>
-  <div class="container">
-    <div class="containerText">
+  <div class="container"> <!--Container for entire widget-->
+    <div class="containerText"> <!--Container for title text-->
       <p>How would you describe your mood today?</p>
     </div>
-    <div class="containerFace">
-      <img src="media/faceMeh.png" id="face">
+    <div class="containerFace"> <!--Container for the face emotion image-->
+      <img src="media/faceMeh.png" id="face"> <!--Image for the selected face emotion-->
       <p id="emotionText">Meh</p>
     </div>
-    <div class="gauge" id="gauge">
-      <div class="needle" id="needle" style="--score:50">
+    <div class="gauge" id="gauge"> <!--Container for the gauage emotion selector-->
+      <div class="needle" id="needle" style="--score:50"> <!--Container for the needle pointing at current selection on gauge-->
       </div>
-    </div>
-    
+    </div>  
   </div>
 
   <script src="emotion-widget.js"> </script>
