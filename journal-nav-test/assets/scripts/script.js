@@ -193,4 +193,5 @@ function generateExample() {
 function init() {
     generateExample();
     filterButtons();
+    setDate();
 }
