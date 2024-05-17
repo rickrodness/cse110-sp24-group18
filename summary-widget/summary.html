@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Developer Diary Dropdown</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="dropdown">
+    <button onclick="toggleDropdown()" class="dropdown-button">Weekly Summary</button>
+    <div class="dropdown-content" id="dropdownContent">
+        <div class="column-titles">
+            <div>Day</div>
+            <div>Emotion</div>
+            <div>Sleep</div>
+            <div>Lines Coded</div>
+        </div>
+        <div id="day-entries">
+            <div class="day-entry">
+                <div class="day-label">Sunday</div>
+                <input type="text" id="emotion-sunday" name="emotion-sunday" placeholder="Emotion">
+                <input type="number" id="sleep-sunday" name="sleep-sunday" placeholder="Sleep">
+                <input type="number" id="lines-sunday" name="lines-sunday" placeholder="Lines Coded">
+            </div>
+            <div class="day-entry">
+                <div class="day-label">Monday</div>
+                <input type="text" id="emotion-monday" name="emotion-monday" placeholder="Emotion">
+                <input type="number" id="sleep-monday" name="sleep-monday" placeholder="Sleep">
+                <input type="number" id="lines-monday" name="lines-monday" placeholder="Lines Coded">
+            </div>
+            <div class="day-entry">
+                <div class="day-label">Tuesday</div>
+                <input type="text" id="emotion-tuesday" name="emotion-tuesday" placeholder="Emotion">
+                <input type="number" id="sleep-tuesday" name="sleep-tuesday" placeholder="Sleep">
+                <input type="number" id="lines-tuesday" name="lines-tuesday" placeholder="Lines Coded">
+            </div>
+            <div class="day-entry">
+                <div class="day-label">Wednesday</div>
+                <input type="text" id="emotion-wednesday" name="emotion-wednesday" placeholder="Emotion">
+                <input type="number" id="sleep-wednesday" name="sleep-wednesday" placeholder="Sleep">
+                <input type="number" id="lines-wednesday" name="lines-wednesday" placeholder="Lines Coded">
+            </div>
+            <div class="day-entry">
+                <div class="day-label">Thursday</div>
+                <input type="text" id="emotion-thursday" name="emotion-thursday" placeholder="Emotion">
+                <input type="number" id="sleep-thursday" name="sleep-thursday" placeholder="Sleep">
+                <input type="number" id="lines-thursday" name="lines-thursday" placeholder="Lines Coded">
+            </div>
+            <div class="day-entry">
+                <div class="day-label">Friday</div>
+                <input type="text" id="emotion-friday" name="emotion-friday" placeholder="Emotion">
+                <input type="number" id="sleep-friday" name="sleep-friday" placeholder="Sleep">
+                <input type="number" id="lines-friday" name="lines-friday" placeholder="Lines Coded">
+            </div>
+            <div class="day-entry">
+                <div class="day-label">Saturday</div>
+                <input type="text" id="emotion-saturday" name="emotion-saturday" placeholder="Emotion">
+                <input type="number" id="sleep-saturday" name="sleep-saturday" placeholder="Sleep">
+                <input type="number" id="lines-saturday" name="lines-saturday" placeholder="Lines Coded">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
