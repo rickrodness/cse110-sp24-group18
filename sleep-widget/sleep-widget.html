@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Quality Assessment</title>
+    <link rel="stylesheet" href="sleep-widget.css">
+</head>
+<body>
+  <div class="container">
+      <h1>How would you rate your sleep quality?</h1>
+      <div class="slider-container">
+          <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
+          <div class="labels">
+              <div class="label">
+                  <img src="media/faceSad.png" alt="Worst" width="100px">
+                  <p>Worst</p>
+                  <div class="time-display">
+                    <img src="media/clock.png" alt="Worst" width="15px">
+                    <span>&lt; 3 HOURS</span>
+                  </div>
+              </div>
+              <div class="label"> 
+                  <img src="media/faceMiserable.png" alt="Poor" width="100px">
+                  <p>Poor</p>
+                  <div class="time-display">
+                    <img src="media/clock.png" alt="Worst" width="15px">
+                    <span>3-4 HOURS</span>
+                  </div>
+              </div>
+              <div class="label">
+                  <img src="media/faceMeh.png" alt="Fair" width="100px">
+                  <p>Fair</p>
+                  <div class="time-display">
+                    <img src="media/clock.png" alt="Worst" width="15px">
+                    <span>5 HOURS</span>
+                  </div>
+              </div>
+              <div class="label">
+                  <img src="media/faceGood.png" alt="Good" width="100px">
+                  <p>Good</p>
+                  <div class="time-display">
+                    <img src="media/clock.png" alt="Worst" width="15px">
+                    <span>6-7 HOURS</span>
+                  </div>
+              </div>
+              <div class="label">
+                  <img src="media/faceAmazing.png" alt="Excellent" width="100px">
+                  <p>Excellent</p>
+                  <div class="time-display">
+                    <img src="media/clock.png" alt="Worst" width="15px">
+                    <span>7-9 HOURS</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div id="output">Your selection: <span id="value">Fair</span></div>
+      <script src="sleep-widget.js"></script>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
