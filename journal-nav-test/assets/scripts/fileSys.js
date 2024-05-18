@@ -5,7 +5,7 @@
 function createFile(data) {
     const dateToday = formatToday(); // todays date
     let journals = getJournals(); // dictionary of all journals
-    const defaultTitle = 'Untitled'; // default title when there is no title
+    const defaultTitle = dateToday; // default title when there is no title
     
     const templateJson = { // template for data
         'data': data, // text data
@@ -13,7 +13,7 @@ function createFile(data) {
         'lastMod': dateToday, // date of modification
         'title': defaultTitle, // title for journal
         'filter': true, // whether a journal passes filter
-        'mood': '', // mood on the day
+        'mood': 'neutral', // mood on the day
         'currentlySelected': false // current selection
     };
 
@@ -33,12 +33,16 @@ function createFile(data) {
  * @param {string} date date created
  * @param {string} title display title
  */
-function forceCreate(data, date, title) {
+function forceCreate(data, date, title, mood) {
     const dateToday = formatToday(); // same as createFile() with ability to set certain fields
     let journals = getJournals();
 
     if (!title) {
         title = 'Untitled';
+    }
+
+    if (!mood) {
+        mood = 'neutral';
     }
 
     const templateJson = {
@@ -47,7 +51,7 @@ function forceCreate(data, date, title) {
         'lastMod': dateToday,
         'title': title,
         'filter': true,
-        'mood': '',
+        'mood': mood,
         'currentlySelected': false
     };
 

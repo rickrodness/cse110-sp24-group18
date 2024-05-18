@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', init); // set init to run on documen
  * Refreshes the file navigation with current journals in storage.
  */
 function loadButtons() {
+    let currentMood = 'neutral';
     const navContainer = document.getElementById('nav-container'); // get the journals container
     navContainer.innerHTML = ''; // reset the HTML inside container
 
@@ -64,12 +65,17 @@ function loadButtons() {
 
         if (listJournals[journal]['currentlySelected']) {
             radioButton.checked = true;
-            console.log('checking journal')
+            currentMood = listJournals[journal]['mood'];
+            console.log('checking journal: '+currentMood)
+            const gradBackground = document.getElementsByClassName('background')[0];
+            gradBackground.style.background = `linear-gradient(360deg,${returnColorForMood(currentMood)['background']},#fdfdfd)`;
         }
 
         const label = document.createElement("label"); // create label for journal entry
         label.setAttribute("for", id); // attatch label to button
         label.textContent = listJournals[journal]['title']; // set text for label
+        label.style.backgroundColor = returnColorForMood(listJournals[journal]['mood'])['background'];
+        label.style.color = returnColorForMood(listJournals[journal]['mood'])['text'];
 
         // add logic to create a max length for description
         let dots = ''; // default ellipsis to nothing in case short string
@@ -80,8 +86,10 @@ function loadButtons() {
             length = length - 3; // accomodate for ellipsis being added
         }
         desc.textContent = listJournals[journal]['data'].substring(0, length) + dots; // cut string short
+        desc.style.color = returnColorForMood(listJournals[journal]['mood'])['desc'];
 
         mod.textContent = 'Last Modified: ' + listJournals[journal]['lastMod']; // add last modified date
+        mod.style.color = returnColorForMood(listJournals[journal]['mood'])['mod'];
 
         label.appendChild(desc); // append the description and date modified
         label.appendChild(mod);
@@ -96,6 +104,23 @@ function loadButtons() {
     navContainer.appendChild(navButtonsList); // append the list to the navigation container
 }
 
+function returnColorForMood(mood) {
+    switch (mood) {
+        case 'neutral':
+            return {'background':'#C9F6FF', 'text':'#84A2A8', 'desc':'#9CBFC6', 'mod':'#70898E'};
+        case 'angry':
+            return {'background':'#FBC3BC', 'text':'#A27F7A', 'desc':'#C19791', 'mod':'#886A66'};
+        case 'happy':
+            return {'background':'#C7F9CC', 'text':'#82A285', 'desc':'#9AC19F', 'mod':'#6C8870'};
+        case 'sad':
+            return {'background':'#e2c9ff', 'text':'#9584A8', 'desc':'#AF9CC6', 'mod':'#7E708D'};
+        case 'excited':
+            return {'background':'#fffec9', 'text':'#A8A784', 'desc':'#C6C49C', 'mod':'#8D8B6F'};
+        default:
+            return {'background':'#C9F6FF', 'text':'#84A2A8', 'desc':'#9CBFC6', 'mod':'#70898E'};
+    }
+}
+
 /**
  * Attatches event listeners to all buttons that update text.
  */
@@ -107,6 +132,11 @@ function buttonListeners() {
         radioButton.addEventListener('click', function(event) {
             changeText(id); // change the text of text field based on data in queried data
             selectDate(id); // keep current journal selected
+
+            const journals = getJournals();
+            console.log('activating button event');
+            const gradBackground = document.getElementsByClassName('background')[0];
+            gradBackground.style.background = `linear-gradient(360deg,${returnColorForMood(journals[id]['mood'])['background']},#fdfdfd)`;
         });
     });
 }
@@ -177,16 +207,20 @@ function filterButtons() {
  */
 function generateExample() {
     clearLocal();
-    forceCreate('What is this? Where am I?', '2024-04-14', 'Who are you?');
-    forceCreate('I hope this works!', '2024-05-17', 'yay!');
-    forceCreate('This is a test!', '2024-04-23', 'This is not a drill');
-    forceCreate('Hello there', '2024-05-15', 'Hi');
-    forceCreate('Graphic design is my passion', '2024-04-19', 'test');
-    forceCreate('Flexpidition', '2024-05-10', '');
-    forceCreate('trettggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg', '2024-05-09', 'long word');
-    forceCreate('this is a test this is a test this is a test this is a test this is a test', '2024-05-08', 'long sentence');
+    forceCreate('What is this? Where am I?', '2024-04-14', 'Who are you?', 'angry');
+    forceCreate('I hope this works!', '2024-05-18', 'yay!', 'excited');
+    forceCreate('This is a test!', '2024-04-23', 'This is not a drill', 'happy');
+    forceCreate('Hello there', '2024-05-15', 'Hi', 'sad');
+    forceCreate('Graphic design is my passion', '2024-04-19', 'test', 'excited');
+    forceCreate('Flexpidition', '2024-05-10', '', 'angry');
+    forceCreate('trettggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg', '2024-05-09', 'long word', 'happy');
+    forceCreate('this is a test this is a test this is a test this is a test this is a test', '2024-05-08', 'long sentence', 'neutral');
     loadButtons();
     buttonListeners();
+}
+
+function generateToday() {
+    createFile('');
 }
 
 /**
@@ -195,6 +229,8 @@ function generateExample() {
 function init() {
     generateExample();
     setDate();
+    generateToday();
+
     textEditorListeners();
     filterButtons();
     attatchSplashListener()

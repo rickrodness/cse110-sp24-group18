@@ -85,8 +85,14 @@ function textEditorListeners() {
 }
 
 function updateText(date) {
-    const journals = getJournals();
-    const currJournal = journals[date];
+    let journals = getJournals();
+    let currJournal = journals[date];
+    if (!currJournal) {
+        generateToday();
+        journals = getJournals();
+        currJournal = journals[date];
+    }
+
     const text = currJournal.data;
     const title = currJournal.title;
 
