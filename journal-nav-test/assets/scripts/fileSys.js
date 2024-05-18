@@ -13,7 +13,8 @@ function createFile(data) {
         'lastMod': dateToday, // date of modification
         'title': defaultTitle, // title for journal
         'filter': true, // whether a journal passes filter
-        'mood': '' // mood on the day
+        'mood': '', // mood on the day
+        'currentlySelected': false // current selection
     };
 
     if (dateToday in journals) { // deny creation if journal day exists
@@ -46,7 +47,8 @@ function forceCreate(data, date, title) {
         'lastMod': dateToday,
         'title': title,
         'filter': true,
-        'mood': ''
+        'mood': '',
+        'currentlySelected': false
     };
 
     if (date in journals) {
@@ -57,6 +59,22 @@ function forceCreate(data, date, title) {
         localStorage.setItem('journals', jsonString);
         console.log(`Force created JSON file: '${date}' and added to localStorage.`);
     }
+}
+
+function selectDate(date) {
+    let journals = getJournals();
+    for (journal in journals) {
+        if (journal === date) {
+            journals[journal]['currentlySelected'] = true;
+            console.log('SELECTING: ' + journal);
+        } else {
+            journals[journal]['currentlySelected'] = false;
+            console.log('NOT SELECTING: ' + journal);
+        }
+    }
+    console.log(journals);
+    const jsonString = JSON.stringify(journals);
+    localStorage.setItem('journals', jsonString);
 }
 
 /**

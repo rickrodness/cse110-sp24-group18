@@ -62,6 +62,11 @@ function loadButtons() {
         radioButton.setAttribute("id", id);
         radioButton.setAttribute("name", name);
 
+        if (listJournals[journal]['currentlySelected']) {
+            radioButton.checked = true;
+            console.log('checking journal')
+        }
+
         const label = document.createElement("label"); // create label for journal entry
         label.setAttribute("for", id); // attatch label to button
         label.textContent = listJournals[journal]['title']; // set text for label
@@ -101,6 +106,7 @@ function buttonListeners() {
         const id = radioButton.id; // take the current date of journal
         radioButton.addEventListener('click', function(event) {
             changeText(id); // change the text of text field based on data in queried data
+            selectDate(id); // keep current journal selected
         });
     });
 }
@@ -188,7 +194,8 @@ function generateExample() {
  */
 function init() {
     generateExample();
-    filterButtons();
     setDate();
     textEditorListeners();
+    filterButtons();
+    attatchSplashListener()
 }
