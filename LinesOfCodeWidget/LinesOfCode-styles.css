@@ -1,0 +1,165 @@
+/* Basic font styling margin color, etc. */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* The entire initial box for the widget */
+.widget {
+    background-color: white;
+    border: 2px solid #000080;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; /* Ensure confetti stays within the box */
+}
+
+/* Confetti that stays within the box */
+#confetti-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicks through the canvas */
+}
+
+/* Ensures that the content of the widget is properly centered */
+.widget .content {
+    z-index: 1; /* Ensure content appears above the canvas */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the code symbol element within the widget */
+.widget .code-symbol {
+    background-color: #000080;
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Style for h3 elements within the widget */
+.widget h3 {
+    margin: 10px 0;
+    color: #000080;
+    font-size: 18px;
+}
+
+/* Style for the controls container within the widget */
+.widget .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Style for buttons within the widget */
+.widget button {
+    background-color: #000080;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+/* Style for button hover effect within the widget */
+.widget button:hover {
+    background-color: #0000cc; /* Darker blue on hover */
+}
+
+/* Style for button focus effect within the widget */
+.widget button:focus {
+    outline: none;
+}
+
+/* Style for the number input field within the widget */
+.widget .number {
+    font-size: 30px;
+    margin: 0 20px;
+    width: 50px; /* Decreased width */
+    text-align: center;
+    height: 40px;
+    border: 2px solid #000080;
+    border-radius: 5px;
+    /* Hide the spinners */
+    -moz-appearance: textfield;
+}
+
+/* Remove arrows from number input field in WebKit browsers */
+.widget .number::-webkit-outer-spin-button,
+.widget .number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Style for the confirm button within the widget */
+.widget .confirm-btn {
+    background-color: #000080;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+/* Style for confirm button hover effect within the widget */
+.widget .confirm-btn:hover {
+    background-color: #0000cc; /* Darker blue on hover */
+}
+
+/* Style for confirm button focus effect within the widget */
+.widget .confirm-btn:focus {
+    outline: none;
+}
+
+/* Style for the confirmation message container */
+.confirmation-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Style for h3 elements within the confirmation message */
+.confirmation-message h3 {
+    margin: 5px 0; /* Reduced spacing between text */
+    color: #000080;
+    font-size: 24px; /* Increased font size */
+}
+
+/* Style for the emoji within the confirmation message */
+.confirmation-message .emoji {
+    font-size: 50px;
+    margin-top: 10px;
+}
