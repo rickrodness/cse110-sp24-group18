@@ -33,7 +33,8 @@ function textEditorListeners() {
         let currDate = noteTitle.id;
         const contentHTML = content.innerHTML;
         updateJournal(currDate, contentHTML);
-        filterButtons();
+        loadButtons();
+        buttonListeners();
     })
 
     // Enable editing of the note title on click
@@ -47,14 +48,14 @@ function textEditorListeners() {
   
         input.addEventListener('blur', () => {
         const getId = noteTitle.id;
-        console.log(getId);
             const newTitle = document.createElement('h4');  // create new newTitle element
             
             let journals = getJournals();
             let journal = journals[getId];
             journal['title'] = input.value;
             writeFile(journal, getId);
-            filterButtons();
+            loadButtons();
+            buttonListeners();
     
             newTitle.innerHTML = `<b>${input.value}</b>`; // set innerHTML content of newTitle to input value
             newTitle.className = 'title'; // set newTitle element class name

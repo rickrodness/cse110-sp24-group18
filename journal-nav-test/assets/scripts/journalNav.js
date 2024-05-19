@@ -52,6 +52,13 @@ function loadButtons() {
         month.textContent = monthNames[dateObj.getMonth()]; // update text for month
         day.textContent = id.slice(-2); // update text for day
 
+        month.style.backgroundColor = returnColorForMood(listJournals[journal]['mood'])['icon-top'];
+        month.style.boxShadow = '0 2px 0 ' + returnColorForMood(listJournals[journal]['mood'])['icon-top'];
+        month.style.borderBottom = '1px dashed ' + returnColorForMood(listJournals[journal]['mood'])['icon-bottom'];
+
+        week.style.color = returnColorForMood(listJournals[journal]['mood'])['icon-top'];
+        day.style.color = returnColorForMood(listJournals[journal]['mood'])['icon-bot'];
+
         calendar.appendChild(week); // append all to calendar
         calendar.appendChild(month);
         calendar.appendChild(day);
@@ -66,7 +73,6 @@ function loadButtons() {
         if (listJournals[journal]['currentlySelected']) {
             radioButton.checked = true;
             currentMood = listJournals[journal]['mood'];
-            console.log('checking journal: '+currentMood)
             const gradBackground = document.getElementsByClassName('background')[0];
             gradBackground.style.background = `linear-gradient(360deg,${returnColorForMood(currentMood)['background']},#fdfdfd)`;
         }
@@ -116,17 +122,17 @@ function loadButtons() {
 function returnColorForMood(mood) {
     switch (mood) {
         case 'neutral':
-            return {'background':'#C9F6FF', 'text':'#84A2A8', 'desc':'#9CBFC6', 'mod':'#70898E'};
+            return {'background':'#C9F6FF', 'text':'#84A2A8', 'desc':'#9CBFC6', 'mod':'#70898E', 'icon-top':'#91D0DC', 'icon-bot':'#63BBCC'};
         case 'angry':
-            return {'background':'#FBC3BC', 'text':'#A27F7A', 'desc':'#C19791', 'mod':'#886A66'};
+            return {'background':'#FBC3BC', 'text':'#A27F7A', 'desc':'#C19791', 'mod':'#886A66', 'icon-top':'#E6958B', 'icon-bot':'#D77265'};
         case 'happy':
-            return {'background':'#C7F9CC', 'text':'#82A285', 'desc':'#9AC19F', 'mod':'#6C8870'};
+            return {'background':'#C7F9CC', 'text':'#82A285', 'desc':'#9AC19F', 'mod':'#6C8870', 'icon-top':'#93E39B', 'icon-bot':'#63D06E'};
         case 'sad':
-            return {'background':'#e2c9ff', 'text':'#9584A8', 'desc':'#AF9CC6', 'mod':'#7E708D'};
+            return {'background':'#e2c9ff', 'text':'#9584A8', 'desc':'#AF9CC6', 'mod':'#7E708D', 'icon-top':'#B892E4', 'icon-bot':'#925ED0'};
         case 'excited':
-            return {'background':'#fffec9', 'text':'#A8A784', 'desc':'#C6C49C', 'mod':'#8D8B6F'};
+            return {'background':'#fffec9', 'text':'#A8A784', 'desc':'#C6C49C', 'mod':'#8D8B6F', 'icon-top':'#DFDE8A', 'icon-bot':'#CBC957'};
         default:
-            return {'background':'#C9F6FF', 'text':'#84A2A8', 'desc':'#9CBFC6', 'mod':'#70898E'};
+            return {'background':'#C9F6FF', 'text':'#84A2A8', 'desc':'#9CBFC6', 'mod':'#70898E', 'icon-top':'#91D0DC', 'icon-bot':'#63BBCC'};
     }
 }
 
@@ -143,27 +149,21 @@ function buttonListeners() {
             selectDate(id); // keep current journal selected
 
             const journals = getJournals();
-            console.log('activating button event');
             const gradBackground = document.getElementsByClassName('background')[0];
             gradBackground.style.background = `linear-gradient(360deg,${returnColorForMood(journals[id]['mood'])['background']},#fdfdfd)`;
         });
 
         const deleteButton = radioButton.parentElement.querySelector('.nav-delete-btn');
         deleteButton.addEventListener('click', function(event) {
-            console.log('activate delete');
             let journals = getJournals();
-            console.log(journals);
             deleteFile(id);
             if (journals[id]['currentlySelected']) {
-                console.log('this is the checked one');
                 delete journals[id];
                 let journalArr = Object.values(journals);
                 journalArr = journalArr.reverse();
                 for (const journal in journalArr) {
-                    console.log(journalArr);
                     if (journalArr[journal]['filter']) {
                         const journalDate = journalArr[journal]['date'];
-                        console.log('this is in the filter: '+ journalArr[journal]);
                         journals[journalDate]['currentlySelected'] = true;
                         updateText(journalDate);
                         writeFile(journals[journalDate], journalDate);
