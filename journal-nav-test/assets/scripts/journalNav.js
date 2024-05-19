@@ -91,12 +91,21 @@ function loadButtons() {
         mod.textContent = 'Last Modified: ' + listJournals[journal]['lastMod']; // add last modified date
         mod.style.color = returnColorForMood(listJournals[journal]['mood'])['mod'];
 
+        const delButton = document.createElement("button");
+        const delSpan = document.createElement("span");
+
+        delButton.setAttribute("class", "nav-delete-btn");
+        delSpan.className = "material-symbols-outlined";
+        delSpan.textContent = "delete";
+        delButton.appendChild(delSpan);
+
         label.appendChild(desc); // append the description and date modified
         label.appendChild(mod);
 
         buttonContainer.appendChild(calendarDiv); // append all to button container
         buttonContainer.appendChild(radioButton);
         buttonContainer.appendChild(label);
+        buttonContainer.appendChild(delButton);
 
         navButtonsList.appendChild(buttonContainer); // append each button to the overall list
     }
@@ -137,6 +146,32 @@ function buttonListeners() {
             console.log('activating button event');
             const gradBackground = document.getElementsByClassName('background')[0];
             gradBackground.style.background = `linear-gradient(360deg,${returnColorForMood(journals[id]['mood'])['background']},#fdfdfd)`;
+        });
+
+        const deleteButton = radioButton.parentElement.querySelector('.nav-delete-btn');
+        deleteButton.addEventListener('click', function(event) {
+            console.log('activate delete');
+            let journals = getJournals();
+            console.log(journals);
+            deleteFile(id);
+            if (journals[id]['currentlySelected']) {
+                console.log('this is the checked one');
+                delete journals[id];
+                let journalArr = Object.values(journals);
+                journalArr = journalArr.reverse();
+                for (const journal in journalArr) {
+                    console.log(journalArr);
+                    if (journalArr[journal]['filter']) {
+                        const journalDate = journalArr[journal]['date'];
+                        console.log('this is in the filter: '+ journalArr[journal]);
+                        journals[journalDate]['currentlySelected'] = true;
+                        updateText(journalDate);
+                        writeFile(journals[journalDate], journalDate);
+                    }
+                }
+            }
+            loadButtons();
+            buttonListeners();
         });
     });
 }

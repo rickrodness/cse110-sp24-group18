@@ -263,3 +263,18 @@ time.icon span
       background-position: 0% 50%;
     }
   }
+
+
+.nav-delete-btn {
+    position: absolute;
+    z-index: 101;
+    margin-left: 18em;
+    transform: translateY(-230%);
+    background: none;
+    border: none;
+    color: #8E8E8E;
+}
+
+.nav-delete-btn:hover {
+    color: #575757;
+}
