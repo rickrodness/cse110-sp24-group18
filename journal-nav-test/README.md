@@ -8,9 +8,10 @@
 - Filter by current month
 - Filter by string
 - Select journal from list
+- Journal added each day
+- Remove Journal
+- Write to journal
 ## TODO:
-- Add journal (requires text editor)
-- Remove journal
-- Write to journal (requires text editor)
 - Animations (?)
-- Better sorting/filtering options
+- Sort by Year/Month
+- Header section ('DevDiary', Title, Date)
