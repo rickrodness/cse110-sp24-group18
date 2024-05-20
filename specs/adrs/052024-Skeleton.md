@@ -3,7 +3,7 @@
 parent: Decisions
 nav_order: 100
 title: ADR Template
-status: proposed | rejected | accepted | deprecated
+status: Accepted
 date: YYYY-MM-DD when the decision was last updated
 
 # These are optional elements. Feel free to remove any of them.
