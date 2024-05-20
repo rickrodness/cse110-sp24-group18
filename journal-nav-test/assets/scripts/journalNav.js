@@ -87,11 +87,13 @@ function loadButtons() {
         let dots = ''; // default ellipsis to nothing in case short string
         const maxLen = 33; // set a maximum string length
         let length = maxLen;
-        if (listJournals[journal]['data'].length > maxLen) { // check if data exceeds max length
+        let displayString = listJournals[journal]['data'];
+        const filteredText = displayString.replace(/<[^>]*>/g, '');
+        if (filteredText.length > maxLen) { // check if data exceeds max length
             dots = '...'; // if data is long, then add ellipsis to the end of it
             length = length - 3; // accomodate for ellipsis being added
         }
-        desc.textContent = listJournals[journal]['data'].substring(0, length) + dots; // cut string short
+        desc.textContent = filteredText.substring(0, length) + dots; // cut string short
         desc.style.color = returnColorForMood(listJournals[journal]['mood'])['desc'];
 
         mod.textContent = 'Last Modified: ' + listJournals[journal]['lastMod']; // add last modified date
@@ -268,5 +270,7 @@ function init() {
 
     textEditorListeners();
     filterButtons();
-    attatchSplashListener()
+    attatchSplashListener();
+
+    widgetButtonListeners();
 }

@@ -1,5 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
 
+@media all {
+    html {
+        font-size: 0.55em;
+    }
+}
+@media (max-width: 1350px) {
+    html {
+        font-size: 0.65em;
+    }
+    .nav-delete-btn {
+        font-size: 0.98em;
+        margin-top: 1em;
+    }
+}
+@media (min-width: 1200px) {
+    html {
+        font-size: 0.65em;
+    }
+}
+@media (min-width: 1350px) {
+    html {
+        font-size: 0.75em;
+    }
+}
+@media (min-width: 1500px) {
+    html {
+        font-size: 0.8em;
+    }
+}
+@media (min-width: 1650px) {
+    html {
+        font-size: 0.9em;
+    }
+}
+@media screen and (min-width: 1800px) {
+    html {
+        font-size: 1em;
+    }
+}
+
+
 .wrapper {
     display: flex;
     color: red;

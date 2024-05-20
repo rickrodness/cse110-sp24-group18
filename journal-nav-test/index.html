@@ -19,6 +19,7 @@
     <script src="assets/scripts/journalNav.js"></script>
     <script src="assets/scripts/textEditor.js"></script>
     <script src="assets/scripts/splashScreen.js"></script>
+    <script src="assets/scripts/widgets.js"></script>
 </head>
 <body>
     <div id="splash-container">
@@ -82,6 +83,30 @@
                 </div>
             </div>
             <div id="content" contenteditable="true" spellcheck="false"></div> <!--Content box for editing text-->
-    </div>
+        </div>
+        <div id="widget-buttons">
+            <div id="sleep-toggle-btn" class="widget-btn">
+                <span class="material-symbols-outlined">
+                    bedtime
+                </span>
+            </div>
+            <div id="mood-toggle-btn" class="widget-btn">
+                <span class="material-symbols-outlined">
+                    add_reaction
+                </span>
+            </div>
+        </div>
+        <div id="widget-popouts">
+            <div id="sleep-widget-container" class="widget">
+                <div id="sleep-widget">
+                    this is the sleep widget
+                </div>
+            </div>
+            <div id="mood-widget-container" class="widget">
+                <div id="mood-widget">
+                    this is the mood widget
+                </div>
+            </div>
+        </div>
 </body>
 </html>
