@@ -1,82 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Developer Diary Dropdown</title>
-    <link rel="stylesheet" type="text/css" href="summary.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Button with Two Boxes</title>
+    <link rel="stylesheet" href="summary.css">
 </head>
 <body>
-
-<div class="dropdown">
-    <button onclick="toggleDropdown()" class="dropdown-button">Weekly Summary</button>
-    <div class="dropdown-content" id="dropdownContent">
-        <div class="column-titles">
-            <div>Day</div>
-            <div>Emotion</div>
-            <div>Sleep</div>
-            <div>Lines Coded</div>
-        </div>
-        <div id="day-entries">
-            <div class="day-entry">
-                <div class="day-label">Sunday</div>
-                <div class="emotion-select">
-                    <img src="path/to/emotion1.png" alt="emotion" class="emotion-image">
+    <div class="dropdown">
+        <button class="dropbtn">Weekly Summary</button>
+        <div class="dropdown-content">
+            <div class="box">
+                <div class="box">
+                    <h3>Mood History</h3>
+                    <div class="week">
+                        <div class="day">
+                            <p>Mon</p>
+                            <img src="summary-widget/media/faceAmazing.png" alt="smiley" class="mood-icon">
+                        </div>
+                        <div class="day">
+                            <p>Tue</p>
+                            <img src="smiley.png" alt="smiley" class="mood-icon">
+                        </div>
+                        <div class="day">
+                            <p>Wed</p>
+                            <img src="smiley.png" alt="smiley" class="mood-icon">
+                        </div>
+                        <div class="day">
+                            <p>Thu</p>
+                            <img src="smiley.png" alt="smiley" class="mood-icon">
+                        </div>
+                        <div class="day">
+                            <p>Fri</p>
+                            <img src="smiley.png" alt="smiley" class="mood-icon">
+                        </div>
+                        <div class="day">
+                            <p>Sat</p>
+                            <img src="smiley.png" alt="smiley" class="mood-icon">
+                        </div>
+                        <div class="day">
+                            <p>Sun</p>
+                            <img src="smiley.png" alt="smiley" class="mood-icon">
+                        </div>
+                    </div>
                 </div>
-                <input type="number" id="sleep-sunday" name="sleep-sunday" placeholder="Sleep">
-                <input type="number" id="lines-sunday" name="lines-sunday" placeholder="Lines Coded">
             </div>
-            <div class="day-entry">
-                <div class="day-label">Monday</div>
-                <div class="emotion-select">
-                    <img src="path/to/emotion1.png" alt="emotion" class="emotion-image">
+            <div class="box">
+                <h3>Hours of Sleep</h3>
+                <div class="bar-graph">
+                    <div class="bar" style="height: 60%;"></div>
+                    <div class="bar" style="height: 80%;"></div>
+                    <div class="bar" style="height: 40%;"></div>
+                    <div class="bar" style="height: 90%;"></div>
+                    <div class="bar" style="height: 34%;"></div>
+                    <div class="bar" style="height: 70%;"></div>
+                    <div class="bar" style="height: 98%;"></div>
                 </div>
-                <input type="number" id="sleep-monday" name="sleep-monday" placeholder="Sleep">
-                <input type="number" id="lines-monday" name="lines-monday" placeholder="Lines Coded">
+                
             </div>
-            <div class="day-entry">
-                <div class="day-label">Tuesday</div>
-                <div class="emotion-select">
-                    <img src="path/to/emotion1.png" alt="emotion" class="emotion-image">
-                </div>
-                <input type="number" id="sleep-tuesday" name="sleep-tuesday" placeholder="Sleep">
-                <input type="number" id="lines-tuesday" name="lines-tuesday" placeholder="Lines Coded">
-            </div>
-            <div class="day-entry">
-                <div class="day-label">Wednesday</div>
-                <div class="emotion-select">
-                    <img src="path/to/emotion1.png" alt="Emotion" class="emotion-image">
-                </div>
-                <input type="number" id="sleep-wednesday" name="sleep-wednesday" placeholder="Sleep">
-                <input type="number" id="lines-wednesday" name="lines-wednesday" placeholder="Lines Coded">
-            </div>
-            <div class="day-entry">
-                <div class="day-label">Thursday</div>
-                <div class="emotion-select">
-                    <img src="path/to/emotion1.png" alt="emotion" class="emotion-image">
-                </div>
-                <input type="number" id="sleep-thursday" name="sleep-thursday" placeholder="Sleep">
-                <input type="number" id="lines-thursday" name="lines-thursday" placeholder="Lines Coded">
-            </div>
-            <div class="day-entry">
-                <div class="day-label">Friday</div>
-                <div class="emotion-select">
-                    <img src="summary-widget/" alt="emotion" class="emotion-image">
-                </div>
-                <input type="number" id="sleep-friday" name="sleep-friday" placeholder="Sleep">
-                <input type="number" id="lines-friday" name="lines-friday" placeholder="Lines Coded">
-            </div>
-            <div class="day-entry">
-                <div class="day-label">Saturday</div>
-                <div class="emotion-select">
-                    <img src="path/to/emotion1.png" alt="Emotion" class="emotion-image">
-                </div>
-                <input type="number" id="sleep-saturday" name="sleep-saturday" placeholder="Sleep">
-                <input type="number" id="lines-saturday" name="lines-saturday" placeholder="Lines Coded">
+            <div class="box">
+                <h3>Lines Coded</h3>
+                <div class="bar-graph">
+                   <div class="bar" style="height: 60%;"></div>
+                   <div class="bar" style="height: 80%;"></div>
+                   <div class="bar" style="height: 40%;"></div>
+                   <div class="bar" style="height: 90%;"></div>
+                   <div class="bar" style="height: 34%;"></div>
+                   <div class="bar" style="height: 70%;"></div>
+                   <div class="bar" style="height: 98%;"></div>
+               </div>
             </div>
         </div>
     </div>
-</div>
 
-<script src="summary.js"></script>
-
+    <script src="summary.js"></script>
 </body>
 </html>
