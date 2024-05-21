@@ -25,8 +25,8 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+
   z-index: 1;
   padding: 10px;
   border-radius: 8px; /* Rounded corners for the dropdown content */
@@ -40,7 +40,7 @@ body {
   text-align: center;
   border-radius: 8px; /* Rounded corners for each box */
   border: none;
-  
+
 }
 
 .week {
@@ -55,12 +55,13 @@ body {
 
 .day p {
   margin: 5px 0;
+  font-weight: bold;
 }
 
 .mood-icon {
   width: 30px;
   height: 30px;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .show {
@@ -70,7 +71,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  height: 200px;
+  height: 150px;
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 8px; /* Rounded corners for the bar graph container */
