@@ -27,7 +27,7 @@
 - 
 
 ### Summary Widgets
-- 
+- Widget consists of a button dropdown that shows mood history using emojis as well as lines of code written and hours of sleep using bar charts. Tracks past weekly progress.
 
 ### Text Editor
 - 
