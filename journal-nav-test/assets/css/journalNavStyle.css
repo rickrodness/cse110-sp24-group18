@@ -79,7 +79,9 @@ h1 {
     overflow: hidden;
 }
 
-
+body{
+    padding-bottom: 5px;
+}
 
 
 
@@ -91,8 +93,9 @@ h1 {
     padding: 0.5em;
     font-family: "Poppins";
     overflow: hidden;
-    max-height: 92vh;
+    max-height: 90vh;
     scrollbar-gutter: stable;
+    height: 90%;
 }
 
 #nav-container:hover {

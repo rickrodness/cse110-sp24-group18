@@ -39,27 +39,32 @@
   max-height: 3em;
   padding: 0.5em 1em 0.5em 0;
   width: 50%;
+  text-align: center;
+  align-items: center;
 }
 
-.control-btn-container button, .control-btn-container input, #color-palette-button span{
+.control-btn-container button, .control-btn-container input{
   width: 2em;
   height: 2em;
-  padding: 0 0 0 0;
   padding: 0.1em;
-  margin: 0 0 0 0.2em;
+  margin: 0 0 0 0.5em;
   background-color: #F4F2F0;
   border-color: #F4F2F0;
   color: black;
 }
+.material-symbols-outlined{
+  text-align: center;
+  align-items: center;
+}
 
-.control-btn-container input {
+/* .control-btn-container input {
   height: 1.6em;
   width: 1.6em;
-}
+} */
 
-#bold-btn, #italic-btn {
-  transform: translateY(-5%);
-}
+/* #bold-btn, #italic-btn {
+  transform: translateY(-15%);
+} */
 
 #filename-input {
   margin-left: 10px;
@@ -69,7 +74,7 @@
   padding: 2em;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   outline: none;
-  height: 88vh;
+  height: 88%;
   margin: 30px 0;
   color: black;
   background-color: white;
@@ -85,7 +90,7 @@
 
 #widget-buttons {
   padding-top: 8em;
-  margin-left: -4em;
+  margin-left: -7em;
 }
 
 .widget-btn { 
@@ -111,6 +116,8 @@
 }
 
 #widget-popouts {
+  position: relative;
+  right:10em;
   width: 25em;
   margin-top: 8em;
   margin-left: -27em;
@@ -121,16 +128,17 @@
   background-color: red;
   height: 40em;
   width: 25em;
-  z-index: -1;
+  /* z-index: -1; */
   color: white;
+  display: none;
 }
 
-#sleep-widget-container {
+.widget#sleep-toggle {
   position: absolute;
   background-color: green;
 }
 
-#mood-widget-container {
+.widget#mood-toggle {
   position: absolute;
   background-color: #ffff;
 }
