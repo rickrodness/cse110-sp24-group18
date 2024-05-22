@@ -124,7 +124,7 @@
 }
 
 .widget {
-  position: relative;
+  position: absolute;
   background-color: red;
   height: 40em;
   width: 25em;
@@ -134,11 +134,17 @@
 }
 
 .widget#sleep-toggle {
-  position: absolute;
   background-color: green;
 }
 
 .widget#mood-toggle {
-  position: absolute;
   background-color: #ffff;
+}
+
+.widget#code-line-toggle {
+  background-color: #195B8B;
+}
+
+.widget#summary-toggle {
+  background-color: #000;
 }
