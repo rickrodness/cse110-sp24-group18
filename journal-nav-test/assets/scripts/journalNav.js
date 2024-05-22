@@ -124,6 +124,24 @@ function loadButtons() {
 function returnColorForMood(mood) {
     switch (mood) {
         case 'neutral':
+            return {'background':'#FFFFFF', 'text':'#195B8B', 'desc':'#1A76AE', 'mod':'#1A76AE', 'icon-top':'#195B8B', 'icon-bot':'#1CB6F0'};
+        case 'angry':
+            return {'background':'#FFFFFF', 'text':'#195B8B', 'desc':'#1A76AE', 'mod':'#1A76AE', 'icon-top':'#195B8B', 'icon-bot':'#1CB6F0'};
+        case 'happy':
+            return {'background':'#FFFFFF', 'text':'#195B8B', 'desc':'#1A76AE', 'mod':'#1A76AE', 'icon-top':'#195B8B', 'icon-bot':'#1CB6F0'};
+        case 'sad':
+            return {'background':'#FFFFFF', 'text':'#195B8B', 'desc':'#1A76AE', 'mod':'#1A76AE', 'icon-top':'#195B8B', 'icon-bot':'#1CB6F0'};
+        case 'excited':
+            return {'background':'#FFFFFF', 'text':'#195B8B', 'desc':'#1A76AE', 'mod':'#1A76AE', 'icon-top':'#195B8B', 'icon-bot':'#1CB6F0'};
+        default:
+            return {'background':'#FFFFFF', 'text':'#195B8B', 'desc':'#1A76AE', 'mod':'#1A76AE', 'icon-top':'#195B8B', 'icon-bot':'#1CB6F0'};
+    }
+}
+
+/**
+ * 
+ * switch (mood) {
+        case 'neutral':
             return {'background':'#C9F6FF', 'text':'#84A2A8', 'desc':'#9CBFC6', 'mod':'#70898E', 'icon-top':'#91D0DC', 'icon-bot':'#63BBCC'};
         case 'angry':
             return {'background':'#FBC3BC', 'text':'#A27F7A', 'desc':'#C19791', 'mod':'#886A66', 'icon-top':'#E6958B', 'icon-bot':'#D77265'};
@@ -136,7 +154,7 @@ function returnColorForMood(mood) {
         default:
             return {'background':'#C9F6FF', 'text':'#84A2A8', 'desc':'#9CBFC6', 'mod':'#70898E', 'icon-top':'#91D0DC', 'icon-bot':'#63BBCC'};
     }
-}
+ */
 
 /**
  * Attatches event listeners to all buttons that update text.
