@@ -17,14 +17,17 @@ function widgetButtonListeners() {
             const widgetTemp = document.getElementById(i.dataset.target);
             widgetTemp.style.display = 'none';
             widgetTemp.style.right = "-30em";
+            i.style.filter = "brightness(1)";
           }); 
           targetWidget.style.display = 'flex';
           targetWidget.style.right = "35em";
+          btn.style.filter = "brightness(0.9)";
         }
 
         else {
           targetWidget.style.display = 'none';
           targetWidget.style.right = "-30em";
+          btn.style.filter = "brightness(1)";
         }
       }
     });
