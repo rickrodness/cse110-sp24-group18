@@ -16,12 +16,15 @@ function widgetButtonListeners() {
           widgetButtons.forEach((i) => {
             const widgetTemp = document.getElementById(i.dataset.target);
             widgetTemp.style.display = 'none';
+            widgetTemp.style.right = "-30em";
           }); 
           targetWidget.style.display = 'flex';
+          targetWidget.style.right = "35em";
         }
 
         else {
           targetWidget.style.display = 'none';
+          targetWidget.style.right = "-30em";
         }
       }
     });
