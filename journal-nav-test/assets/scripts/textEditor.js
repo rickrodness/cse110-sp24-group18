@@ -39,19 +39,23 @@ function textEditorListeners() {
 
     // Enable editing of the note title on click
     noteTitle.addEventListener('click', () => {
-    const input = document.createElement('input');  // create new input element
-    input.type = 'text';  // set input element to text box
-    input.value = noteTitle.textContent;  // set current input value to current note title
-    input.className = 'title-input';  // set input element class name
-    noteTitle.replaceWith(input); // replace noteTitle element with input element
-    input.focus();  // focus on input element
+        let input = document.createElement('input');  // create new input element
+        input.type = 'text';  // set input element to text box
+        input.value = noteTitle.textContent;  // set current input value to current note title
+        input.className = 'title-input';  // set input element class name
+        noteTitle.replaceWith(input); // replace noteTitle element with input element
+        input.focus();  // focus on input element
   
         input.addEventListener('blur', () => {
-        const getId = noteTitle.id;
+            const getId = noteTitle.id;
             const newTitle = document.createElement('h4');  // create new newTitle element
             
             let journals = getJournals();
             let journal = journals[getId];
+            if (input.value === '') {
+                input.value = 'Untitled';
+            }
+
             journal['title'] = input.value;
             writeFile(journal, getId);
             loadButtons();

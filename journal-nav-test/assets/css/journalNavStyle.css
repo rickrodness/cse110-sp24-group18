@@ -40,18 +40,22 @@
     }
 }
 
-h1 {
-    color: #195B8B;
-    font-size: 30px;
-    font-weight: 600;
-    word-wrap: break-word;
-    padding-top: 10px;
-}
-
 .header {
     margin-left: 4vb;
     height: 12vh;
     padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.header h1 {
+    color: #195B8B;
+    font-weight: 600;
+    word-wrap: break-word;
+    padding-top: 10px;
+    width: 11em;
+    font-size: 3em;
 }
 
 .component-wrapper {
