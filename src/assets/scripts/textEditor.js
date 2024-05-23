@@ -23,6 +23,7 @@ function updateJournal(date, contentHTML) {
   }
 }
 
+
 export function textEditorListeners() {
   const boldBtn = document.querySelector('#bold-btn'); // old button element
   const underlineBtn = document.querySelector('#underline-btn'); // underline button element
