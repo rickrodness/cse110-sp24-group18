@@ -1,0 +1,149 @@
+.container {
+  /* Alignment, size properties */
+  width: 35em;
+  height: 40em;
+  border: 0.25em solid #000; /* Adjust border properties as needed */
+  border-radius: 1em; /* Adjust border radius as needed for rounding */
+  position: absolute;
+  top: 0em;
+
+  /* Background color property */
+  background-color: #f8f4f3;
+
+  /* Emotion gauge styling */
+  .gauge {
+    /* Alignment, size properties */
+    width: 5em;
+    height: 10em;
+    padding: 8em;
+    border-radius: 50%;
+
+    /* Background gradient properties (gauge visual) */
+    background:
+    radial-gradient(#f8f4f3 0 0) content-box,
+    conic-gradient(
+      from -90deg,
+      var(--c1) 36deg,
+      var(--c2) 0 72deg,
+      var(--c3) 0 108deg,
+      var(--c4) 0 144deg,
+      var(--c5) 0 180deg,
+      #0000 0
+    );
+
+    /* Alignment properties */
+    position: relative;
+    top: 27em;
+    left: 3.25em;
+
+    /* Emotion gauge needle styling */
+    .needle {
+      /* Alignment, size properties */
+      position: absolute;
+      width: 200px;  /* Reduced width */
+      height: 200px;  /* Reduced height */
+      padding: 85px;  /* Reduced padding */
+      left: 0em;  /* Adjusted to center the needle */
+      top: 0em;  /* Adjusted to center the needle */
+      /*translate: -14.75em -14.75em;*/
+      border-radius: 100em;
+
+      /* Background gradient properties (needle visual) */
+      background:
+        conic-gradient(
+          from 175deg at 50% 55%,
+          #ccc 1deg,
+          #46332a 3deg 7deg,
+          #ccc 8deg 10deg,
+          #0000 0
+        ) 0 -109px no-repeat,  /* Adjusted to match the new size */
+        radial-gradient(
+          #46332a 0 50%,
+          #ccc 51%
+        ) content-box;
+
+      /* Alignment properties */
+      rotate: calc(cos(var(--score) * 180deg / 100) * -90deg);
+    }
+
+
+    /* Emotion gauge score styling */
+    .score {
+      /* Alignment, font properties */
+      rotate: calc(cos(var(--score) * 180deg / 100) * 90deg);
+      font-size: 18px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 800;
+      color: #eee;
+    }
+
+  }
+
+}
+
+/* containerText styling */
+.containerText {
+  /* Alignment, size properties */
+  width: 80%;
+  height: 30%;
+  /* border: 2px solid #000; */ /* Adjust border properties as needed */
+  border-radius: 10px; /* Adjust border radius as needed for rounding */
+  position: absolute;
+  top: 3.25em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+
+  /* Text properties */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centers text horizontally */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+}
+
+/* containerFace styling */
+.containerFace {
+  /* Alignment, size properties */
+  width: 30%;
+  height: 23%;
+  /* border: 2px solid #000; */ /* Adjust border properties as needed */
+  border-radius: 10px; /* Adjust border radius as needed for rounding */
+  position: absolute;
+  top: 18em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* <img> tag within containerFace styling */
+.containerFace img {
+  /* Size properties */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* <p> tag within containerFace styling */
+.containerFace p{
+  /* Alignment properties */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Text properties */
+  text-align: center; /* Centers text horizontally */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.5em;
+  color: #000;
+}
+
+/* Variables for emotion gauge colors */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  --c1: #9d87f4;
+  --c2: #e3815c;
+  --c3: #b79f95;
+  --c4: #f4d376;
+  --c5: #a0b475;
+}

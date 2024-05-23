@@ -1,0 +1,161 @@
+.title {
+  color: #000;
+  font-size: 2em;
+  padding-top: 0.5em;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+}
+
+.title-container {
+  display: flex;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  padding-left: 2em;
+  min-height: 3em;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 1em;
+}
+
+.title-container input {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  min-height: 2em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.title {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  font-size: 2em;
+}
+
+.title-container span {
+  padding: 0 0 0 0.2em;
+  margin: 0 0 0 0;
+  font-size: 2em;
+}
+
+.control-btn-container {
+  display: flex;
+  justify-content: right;
+  background-color: #F4F2F0;
+  max-height: 3em;
+  padding: 0.5em 1em 0.5em 0;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.control-btn-container button, .control-btn-container input{
+  width: 2em;
+  height: 2em;
+  padding: 0.1em;
+  margin: 0 0 0 0.5em;
+  background-color: #F4F2F0;
+  border-color: #F4F2F0;
+  color: black;
+}
+.material-symbols-outlined{
+  text-align: center;
+  align-items: center;
+}
+
+/* .control-btn-container input {
+  height: 1.6em;
+  width: 1.6em;
+} */
+
+/* #bold-btn, #italic-btn {
+  transform: translateY(-15%);
+} */
+
+#filename-input {
+  margin-left: 10px;
+}
+
+#content {
+  padding: 2em;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  outline: none;
+  height: 88%;
+  margin: 30px 0;
+  color: black;
+  background-color: white;
+  overflow: auto;
+  scrollbar-gutter: stable;
+  font-size: 2em;
+}
+
+#text-container {
+  padding: 1em;
+  width: 80em;
+}
+
+#widget-buttons {
+  padding-top: 8em;
+  padding-right: 8em;
+  margin-left: -7em;
+}
+
+.widget-btn { 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+  position: relative;
+  background-color: #195B8B;
+  color: black;
+  width: 10em;
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5em;
+  margin-top: 1.5em;
+  border: 1px #195B8B solid;
+  z-index: 10;
+  user-select: none;
+}
+
+.widget-btn:hover {
+  filter: brightness(0.9);
+  cursor: grab;
+}
+
+#widget-popouts {
+  position: relative;
+  right: -20em;
+  width: 25em;
+  margin-top: 8em;
+  margin-left: -27em;
+}
+
+.widget {
+  position: absolute;
+  background-color: red;
+  right: -30em;
+  height: 40em;
+  width: 25em;
+  /* z-index: -1; */
+  color: white;
+  display: none;
+}
+
+.widget#sleep-toggle {
+  background-color: green;
+}
+
+.widget#mood-toggle {
+  background-color: #ffff;
+}
+
+.widget#code-line-toggle {
+  background-color: #195B8B;
+}
+
+.widget#summary-toggle {
+  background-color: #000;
+}
