@@ -1,7 +1,10 @@
+import { formatToday, getJournals, selectDate, writeFile } from './fileSys.js';
+import { loadButtons, buttonListeners } from './journalNav.js';
+
 /**
  * Sets the id of noteTitle element to the current date
  */
-function setDate() {
+export function setDate() {
   const noteTitle = document.querySelector('.title'); // note title element
   noteTitle.id = formatToday();
   updateText(formatToday());
@@ -20,7 +23,7 @@ function updateJournal(date, contentHTML) {
   }
 }
 
-function textEditorListeners() {
+export function textEditorListeners() {
   const boldBtn = document.querySelector('#bold-btn'); // old button element
   const underlineBtn = document.querySelector('#underline-btn'); // underline button element
   const italicBtn = document.querySelector('#italic-btn'); // italic button element
@@ -89,7 +92,7 @@ function textEditorListeners() {
   });
 }
 
-function updateText(date) {
+export function updateText(date) {
   let journals = getJournals();
   let currJournal = journals[date];
   if (!currJournal) {

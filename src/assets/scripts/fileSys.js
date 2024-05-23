@@ -2,7 +2,7 @@
  * Creates a file with basic text data.
  * @param {string} data text associated with date
  */
-function createFile(data) {
+export function createFile(data) {
   const dateToday = formatToday(); // todays date
   const journals = getJournals(); // dictionary of all journals
   const defaultTitle = dateToday; // default title when there is no title
@@ -33,7 +33,7 @@ function createFile(data) {
  * @param {string} date date created
  * @param {string} title display title
  */
-function forceCreate(data, date, title, mood) {
+export function forceCreate(data, date, title, mood) {
   const dateToday = formatToday(); // same as createFile() with ability to set certain fields
   const journals = getJournals();
 
@@ -65,9 +65,9 @@ function forceCreate(data, date, title, mood) {
   }
 }
 
-function selectDate(date) {
+export function selectDate(date) {
   const journals = getJournals();
-  for (journal in journals) {
+  for (const journal in journals) {
     if (journal === date) {
       journals[journal]['currentlySelected'] = true;
     } else {
@@ -83,7 +83,7 @@ function selectDate(date) {
  * @param {dict} newData replacement data
  * @param {string} date date to query
  */
-function writeFile(newData, date) {
+export function writeFile(newData, date) {
   const dateToday = formatToday(); // todays date
   const journals = getJournals(); // dictionary of all journals
 
@@ -103,7 +103,7 @@ function writeFile(newData, date) {
  * Deletes a given file.
  * @param {string} date date to query
  */
-function deleteFile(date) {
+export function deleteFile(date) {
   const journals = getJournals(); // dictionary of all journals
 
   if (date in journals) { // check that journal exists
@@ -121,7 +121,7 @@ function deleteFile(date) {
  * @param {string} date date to query
  * @returns dict of journal at given date, or null if it does not exist
  */
-function readFile(date) {
+export function readFile(date) {
   const journals = getJournals(); // dictionary of all journals
 
   if (date in journals) { // check that journal exists
@@ -137,53 +137,9 @@ function readFile(date) {
  * Lists files to and returns them.
  * @returns dictionary of journals
  */
-function listFiles() {
+export function listFiles() {
   const journals = getJournals(); // dictionary of all journals
   return journals; // returns all journals
-}
-
-/**
- * Sorts files by date created and reloads the buttons.
- * @param {number} val 1 for descending, other for ascending
- */
-function sortByDateCreated(val) {
-  const journals = getJournals(); // dictionary of all journals
-  const entries = Object.entries(journals); // convert dict to object to sort
-    
-  // sort ascending or descending based on parameter
-  if (val === 1) { // 1 for descending (default)
-    entries.sort((a,b) => b[1].date.localeCompare(a[1].date)); // comparison
-    console.log('Sort by descending');
-  } else { // anything else for ascending
-    entries.sort((a,b) => a[1].date.localeCompare(b[1].date));
-    console.log('Sort by ascending');
-  }
-  const sorted = Object.fromEntries(entries); // convert back to dictionary
-  const jsonString = JSON.stringify(sorted); // stringify and update local storage
-  localStorage.setItem('journals', jsonString);
-  loadButtons(); // regenerate all buttons
-}
-
-/**
- * Sorts files by date last modified and reloads the buttons.
- * @param {number} val 1 for descending, other for ascending
- */
-function sortByLastModified(val) {
-  const journals = getJournals(); // dictionary of all journals
-  const entries = Object.entries(journals); // convert dict to object to sort
-
-  // sort ascending or descending based on parameter
-  if (val === 1) { // 1 for descending (default)
-    entries.sort((a,b) => b[1].lastMod.localeCompare(a[1].lastMod)); // comparison
-    console.log('Sort by descending');
-  } else { // anything else for ascending
-    entries.sort((a,b) => a[1].lastMod.localeCompare(b[1].lastMod));
-    console.log('Sort by ascending');
-  }
-  const sorted = Object.fromEntries(entries); // convert back to dictionary
-  const jsonString = JSON.stringify(sorted); // stringify and update local storage
-  localStorage.setItem('journals', jsonString);
-  loadButtons(); // regenerate all buttons
 }
 
 /**
@@ -191,7 +147,7 @@ function sortByLastModified(val) {
  * @param {number} year year to query
  * @param {number} month month to query as number between 1 and 12
  */
-function filterDate(year, month) {
+export function filterDate(year, month) {
   const journals = getJournals(); // dictionary of all journals
   const targetYearMonth = `${year.toString().padStart(4, '0')}-${month.toString().padStart(2, '0')}`; // query string
 
@@ -215,7 +171,7 @@ function filterDate(year, month) {
  * Filters the files by phrase in file.
  * @param {string} str phrase to query
  */
-function filterWord(str) {
+export function filterWord(str) {
   const journals = getJournals(); // dictionary of all journals
   for (const journal in journals) { // filter through journal text for matching string
     if (journals[journal].data.toUpperCase().includes(str.toUpperCase())) { // ignore case sensitivity
@@ -232,7 +188,7 @@ function filterWord(str) {
 /**
  * Clears the current filtering options.
  */
-function clearFilter () {
+export function clearFilter () {
   const journals = getJournals(); // dictionary of all journals
   for (const journal in journals) { // iterate through journals and reset all filters
     journals[journal].filter = true;
@@ -247,7 +203,7 @@ function clearFilter () {
 /**
  * Clears the current localStorage.
  */
-function clearLocal() {
+export function clearLocal() {
   //localStorage.clear();
   localStorage.removeItem('journals'); // remove the current journal dictionary from local storage
     
@@ -258,7 +214,7 @@ function clearLocal() {
  * Gets current journals from local storage.
  * @returns dictionary of journals
  */
-function getJournals() {
+export function getJournals() {
   const journals = localStorage.getItem('journals'); // get journals string from local storage
   let journalObj = {}; // create blank journals object
   const jsonString = JSON.stringify(journalObj); // convert to string
@@ -276,7 +232,7 @@ function getJournals() {
  * Gets the date today and formats it.
  * @returns formatted date 'YYYY-MM-DD'
  */
-function formatToday() {
+export function formatToday() {
   const d = new Date(); // create a new date, defaults to today
   let month = `${  d.getMonth() + 1}`; // month string
   let day = `${  d.getDate()}`; // day string
@@ -297,7 +253,7 @@ function formatToday() {
  * Gets the year and month today.
  * @returns dictionary with year and month
  */
-function getCurrentYearAndMonth() {
+export function getCurrentYearAndMonth() {
   const currentDate = new Date(); // create new date, defaults to today
   const currentYear = currentDate.getFullYear(); // get year of today
   const currentMonth = currentDate.getMonth() + 1; // get month of today

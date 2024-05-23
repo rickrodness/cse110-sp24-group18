@@ -1,4 +1,4 @@
-function widgetButtonListeners() {
+export function widgetButtonListeners() {
   const widgetButtons = document.querySelectorAll('.widget-btn');
 
   widgetButtons.forEach((btn) => {
