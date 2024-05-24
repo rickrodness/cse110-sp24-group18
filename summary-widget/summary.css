@@ -14,7 +14,7 @@ body {
   font-size: 25px;
   border: none;
   cursor: pointer;
-  border-radius: 8px; /* Rounded corners for the button */
+  border-radius: 16px; /* Rounded corners for the button */
   font-weight: bold;
 }
 
@@ -25,12 +25,11 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-
-
   z-index: 1;
   padding: 10px;
-  border-radius: 8px; /* Rounded corners for the dropdown content */
+  border-radius: 16px; /* Rounded corners for the dropdown content */
   border: none;
+
 }
 
 .box {
@@ -38,7 +37,7 @@ body {
   padding: 20px;
   margin: 5px 0;
   text-align: center;
-  border-radius: 8px; /* Rounded corners for each box */
+  border-radius: 16px; /* Rounded corners for each box */
   border: none;
 
 }
@@ -71,18 +70,18 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  height: 150px;
+  height: 100px;
   border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 8px; /* Rounded corners for the bar graph container */
+  padding: 0px;
+  border-radius: 16px; /* Rounded corners for the bar graph container */
   background-color: #fff;
   align-self: flex-end;
-
+  border: none;
 }
 
 .bar {
-  width: 20px;
+  width: 40px;
   background-color: #4CAF50;
   border-radius: 5px 5px 0 0; /* Rounded corners for the bars */
-  align-self: flex-end;
+  height: 100%;
 }

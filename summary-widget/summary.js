@@ -15,14 +15,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
       }
   };
 });
-
-
-
-const dict = {
-  "2024-09-22":{
-    date: "2024-09-22",
-    mood: "happy",
-    sleep: 5,
-    linesCoded: 100
-  }
-}
