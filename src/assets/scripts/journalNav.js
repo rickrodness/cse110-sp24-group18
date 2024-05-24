@@ -1,9 +1,10 @@
-window.addEventListener('DOMContentLoaded', init); // set init to run on document load
+import { clearLocal, forceCreate, listFiles, createFile, getJournals, selectDate, deleteFile } from './fileSys.js';
+import { updateText } from './textEditor.js';
 
 /**
  * Refreshes the file navigation with current journals in storage.
  */
-function loadButtons() {
+export function loadButtons() {
   let currentMood = 'neutral';
   const navContainer = document.getElementById('nav-container'); // get the journals container
   navContainer.innerHTML = ''; // reset the HTML inside container
@@ -121,7 +122,7 @@ function loadButtons() {
   navContainer.appendChild(navButtonsList); // append the list to the navigation container
 }
 
-function returnColorForMood(mood) {
+export function returnColorForMood(mood) {
   switch (mood) {
     case 'neutral':
       return {'background':'#FFFFFF', 'text':'#195B8B', 'desc':'#1A76AE', 'mod':'#1A76AE', 'icon-top':'#195B8B', 'icon-bot':'#1CB6F0'};
@@ -159,7 +160,7 @@ function returnColorForMood(mood) {
 /**
  * Attatches event listeners to all buttons that update text.
  */
-function buttonListeners() {
+export function buttonListeners() {
   const navContainer = document.getElementById('nav-container'); // get navigation container
   const radioButtons = navContainer.querySelectorAll('input[type=\'radio\']'); // get all journal buttons
   radioButtons.forEach(radioButton => { // go through all journal buttons
@@ -208,7 +209,7 @@ function changeText(date) {
 /**
  * Adds event listeners to all filtering buttons.
  */
-function filterButtons() {
+export function filterButtons() {
   const latestButton = document.getElementById('latest'); // button to sort by latest
   const earliestButton = document.getElementById('earliest'); // button to sort by earliest
   const thisMonthButton = document.getElementById('thisMonth'); // button to filter this month's journals
@@ -257,10 +258,55 @@ function filterButtons() {
   });
 }
 
+
+/**
+ * Sorts files by date created and reloads the buttons.
+ * @param {number} val 1 for descending, other for ascending
+ */
+export function sortByDateCreated(val) {
+  const journals = getJournals(); // dictionary of all journals
+  const entries = Object.entries(journals); // convert dict to object to sort
+    
+  // sort ascending or descending based on parameter
+  if (val === 1) { // 1 for descending (default)
+    entries.sort((a,b) => b[1].date.localeCompare(a[1].date)); // comparison
+    console.log('Sort by descending');
+  } else { // anything else for ascending
+    entries.sort((a,b) => a[1].date.localeCompare(b[1].date));
+    console.log('Sort by ascending');
+  }
+  const sorted = Object.fromEntries(entries); // convert back to dictionary
+  const jsonString = JSON.stringify(sorted); // stringify and update local storage
+  localStorage.setItem('journals', jsonString);
+  loadButtons(); // regenerate all buttons
+}
+
+/**
+ * Sorts files by date last modified and reloads the buttons.
+ * @param {number} val 1 for descending, other for ascending
+ */
+export function sortByLastModified(val) {
+  const journals = getJournals(); // dictionary of all journals
+  const entries = Object.entries(journals); // convert dict to object to sort
+
+  // sort ascending or descending based on parameter
+  if (val === 1) { // 1 for descending (default)
+    entries.sort((a,b) => b[1].lastMod.localeCompare(a[1].lastMod)); // comparison
+    console.log('Sort by descending');
+  } else { // anything else for ascending
+    entries.sort((a,b) => a[1].lastMod.localeCompare(b[1].lastMod));
+    console.log('Sort by ascending');
+  }
+  const sorted = Object.fromEntries(entries); // convert back to dictionary
+  const jsonString = JSON.stringify(sorted); // stringify and update local storage
+  localStorage.setItem('journals', jsonString);
+  loadButtons(); // regenerate all buttons
+}
+
 /**
  * Generates an example.
  */
-function generateExample() {
+export function generateExample() {
   clearLocal();
   forceCreate('What is this? Where am I?', '2024-04-14', 'Who are you?', 'angry');
   forceCreate('I hope this works!', '2024-05-18', 'yay!', 'excited');
@@ -274,21 +320,6 @@ function generateExample() {
   buttonListeners();
 }
 
-function generateToday() {
+export function generateToday() {
   createFile('');
-}
-
-/**
- * Runs this on document load.
- */
-function init() {
-  generateExample();
-  setDate();
-  generateToday();
-
-  textEditorListeners();
-  filterButtons();
-  attatchSplashListener();
-
-  widgetButtonListeners();
 }
