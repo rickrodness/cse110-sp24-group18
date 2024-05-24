@@ -23,13 +23,21 @@ body {
 }
 
 .dropdown-content {
-  display: none;
+  visibility: hidden;
   position: absolute;
   z-index: 1;
   padding: 10px;
   border-radius: 16px; /* Rounded corners for the dropdown content */
   border: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
+.dropdown-content.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .box {
@@ -39,7 +47,6 @@ body {
   text-align: center;
   border-radius: 16px; /* Rounded corners for each box */
   border: none;
-
 }
 
 .week {
@@ -58,14 +65,11 @@ body {
 }
 
 .mood-icon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin-top: 10px;
 }
 
-.show {
-  display: block;
-}
 .bar-graph {
   display: flex;
   justify-content: space-around;
@@ -84,4 +88,5 @@ body {
   background-color: #4CAF50;
   border-radius: 5px 5px 0 0; /* Rounded corners for the bars */
   height: 100%;
+  background-image: linear-gradient(to top, #4CAF50, #FFC107);
 }
