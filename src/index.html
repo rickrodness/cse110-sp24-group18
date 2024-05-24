@@ -50,25 +50,38 @@
         <div class="component-wrapper"> <!--Wrapper for the side bar component-->
             <div id="nav-filter-options"> <!--Wrapper for the filtering options-->
                 <ul class="nav-filter-buttons"> <!--List to house the buttons-->
-                    <li>
-                        <input type="radio" id="latest" name="order" /> <!--Button to sort by descending order-->
-                        <label for="latest">Latest</label>
+                    <li id="filter-icon">
+                        <span class="material-symbols-outlined" style="color: #1CB6F0; font-size: 34px;">
+                            filter_alt
+                        </span>
                     </li>
                     <li>
-                        <input type="radio" id="earliest" name="order" /> <!--Button to sort by ascending order-->
-                        <label for="earliest">Earliest</label>
+                        <span class="material-symbols-outlined" style="color: #1CB6F0; font-size: 34px; padding-left: 0.2em; padding-right: 0.2em">
+                            search
+                        </span>
                     </li>
+
+                    
                     <li>
-                        <input type="checkbox" id="thisMonth" /> <!--Button to filter current month-->
-                        <label for="thisMonth">This month</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="select" /> <!--Button to filter by a text query-->
+                        <input type="checkbox" id="select"/> <!--Button to filter by a text query-->
                         <label for="select">
-                            Select
-                            <input type="text" id="textQuery"> <!--Text query to filter by-->
+                            <input type="text" id="textQuery" style="height: 26px; font-size: 16px;"> <!--Text query to filter by-->
                         </label>
                     </li>
+                    <div id="filter-options-div">
+                        <li class="filtering-tags">
+                            <input type="radio" id="latest" name="order"/> <!--Button to sort by descending order-->
+                            <label for="latest">Latest</label>
+                        </li>
+                        <li class="filtering-tags">
+                            <input type="radio" id="earliest" name="order" /> <!--Button to sort by ascending order-->
+                            <label for="earliest">Earliest</label>
+                        </li>
+                        <li class="filtering-tags"> 
+                            <input type="checkbox" id="thisMonth" /> <!--Button to filter current month-->
+                            <label for="thisMonth">This month</label>
+                        </li>
+                    </div>
                 </ul>
             </div>
             <div id="nav-container"> <!--Container to house the different file selections-->
@@ -80,18 +93,18 @@
             <div class="controls"> <!--Container for title and control button containers-->
                 
                 <div class="control-btn-container"> <!--Container for control buttons-->
-                    <button id="bold-btn" class="btn btn-dark control-btn"> <!--Button to bold text-->
-                        <span class="material-symbols-outlined">
+                    <button id="bold-btn" class="btn btn-dark control-btn" style="width: 3.5em; height: 3.5em;"> <!--Button to bold text-->
+                        <span class="material-symbols-outlined" style="color: #1CB6F0; font-size: 34px;">
                             format_bold
                         </span>
                     </button>
-                    <button id="underline-btn" class="btn btn-dark control-btn"> <!--Button to underline text-->
-                        <span class="material-symbols-outlined">
+                    <button id="underline-btn" class="btn btn-dark control-btn" style="width: 3.5em; height: 3.5em;"> <!--Button to underline text-->
+                        <span class="material-symbols-outlined" style="color: #1CB6F0; font-size: 34px;">
                             format_underlined
                         </span>
                     </button>
-                    <button id="italic-btn" class="btn btn-dark control-btn"> <!--Button to italicize text-->
-                        <span class="material-symbols-outlined">
+                    <button id="italic-btn" class="btn btn-dark control-btn" style="width: 3.5em; height: 3.5em;"> <!--Button to italicize text-->
+                        <span class="material-symbols-outlined" style="color: #1CB6F0; font-size: 34px;">
                             format_italic
                         </span>
                     </button>
@@ -104,23 +117,23 @@
         <!-- Widget Buttons -->
         <div id="widget-buttons">
             <div class="widget-btn" data-target="sleep-toggle">
-                <span class="widget-icon">
+                <span class="material-symbols-outlined" style="color: #195B8B; font-size: 70px;">
                     bedtime
                 </span>
             </div>
             <div class="widget-btn" data-target="mood-toggle">
-                <span class="widget-icon">
+                <span class="material-symbols-outlined" style="color: #195B8B; font-size: 70px;">
                     add_reaction
                 </span>
             </div>
             <div class="widget-btn" data-target="code-line-toggle">
-                <span class="widget-icon">
-                    code_line
+                <span class="material-symbols-outlined" style="color: #195B8B; font-size: 70px;">
+                    code
                 </span>
             </div>
             <div class="widget-btn" data-target="summary-toggle">
-                <span class="widget-icon">
-                    summary
+                <span class="material-symbols-outlined" style="color: #195B8B; font-size: 70px;">
+                    summarize
                 </span>
             </div>
         </div>
@@ -129,9 +142,64 @@
         <div id="widget-popouts">
             <div id="sleep-toggle" class="widget">
                 <div id="sleep-widget">
-                    this is the sleep widget
+                    <!-- <div class="container-sleep-widget"> -->
+                        <h3> How would you rate your sleep quality?</h3>
+                        <div class="slider-container">
+                           <div class="labels-container">
+                              <div class="label">
+                                 <p>Excellent</p>
+                                 <div class="time">
+                                    <img src="assets/sleep-widget/media/clock.png" alt="Worst" width="15px">
+                                    <span>7-9 HOURS</span>
+                                 </div>
+                              </div>
+                              <div class="label">
+                                 <p>Good</p>
+                                 <div class="time">
+                                    <img src="assets/sleep-widget/media/clock.png" alt="Worst" width="15px">
+                                    <span>6-7 HOURS</span>
+                                 </div>
+                              </div>
+                              <div class="label">
+                                 <p>Fair</p>
+                                 <div class="time">
+                                    <img src="assets/sleep-widget/media/clock.png" alt="Worst" width="15px">
+                                    <span>5 HOURS</span>
+                                 </div>
+                              </div>
+                              <div class="label">
+                                 <p>Poor</p>
+                                 <div class="time">
+                                    <img src="assets/sleep-widget/media/clock.png" alt="Worst" width="15px">
+                                    <span>3-4 HOURS</span>
+                                 </div>
+                              </div>
+                              <div class="label">
+                                 <p>Worst</p>
+                                 <div class="time">
+                                    <img src="assets/sleep-widget/media/clock.png" alt="Worst" width="15px">
+                                    <span>&lt; 3 HOURS</span>
+                                 </div>
+                              </div>
+                           </div>
+                            <input class="slider" type="range" min="1" max="5" value="3">    
+                            <div class="emojis-container">
+                              <img src="assets/sleep-widget/media/excellent.png" alt="Excellent" width="70px">
+                              <img src="assets/sleep-widget/media/good.png" alt="Good" width="70px">
+                              <img src="assets/sleep-widget/media/fair.png" alt="Fair" width="70px">
+                              <img src="assets/sleep-widget/media/poor.png" alt="Poor" width="70px">
+                              <img src="assets/sleep-widget/media/worst.png" alt="Worst" width="70px">
+                            </div>   
+                        <!-- </div> -->
+                    </div>
                 </div>
             </div>
+
+
+
+
+
+
             <div id="mood-toggle" class="widget">
                 <div id="mood-widget">
                     <div class="container"> <!--Container for entire widget-->
