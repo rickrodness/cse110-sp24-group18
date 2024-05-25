@@ -1,92 +1,92 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /* General body styling with a sans-serif font */
 }
 
 .dropdown {
-  position: relative;
+  position: relative; /* General body styling with a sans-serif font */
   display: inline-block;
 }
 
-.dropbtn {
-  background-color: #f9f9f9;
-  color: black;
-  padding: 10px 20px;
-  font-size: 25px;
-  border: none;
-  cursor: pointer;
+.dropbtn { /* Styling for the dropdown button */
+  background-color: #f9f9f9;/* Light grey background */
+  color: black;  /* Black text */
+  padding: 10px 20px; /* Padding for button */
+  font-size: 25px; /* Font size of the button text */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
   border-radius: 16px; /* Rounded corners for the button */
-  font-weight: bold;
+  font-weight: bold; /* Bold text */
 }
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #f1f1f1;
+.dropbtn:hover, .dropbtn:focus { /* Hover and focus effects for the dropdown button */
+  background-color: #f1f1f1; /* Slightly darker grey background on hover/focus */
 }
 
-.dropdown-content {
-  visibility: hidden;
-  position: absolute;
-  z-index: 1;
-  padding: 10px;
+.dropdown-content { /* Hidden dropdown content styling */
+  visibility: hidden; /* Hidden by default */
+  position: absolute; /* Positioned absolutely within the dropdown */
+  z-index: 1; /* Ensures it appears above other elements */
+  padding: 10px; /* Padding inside the dropdown content */
   border-radius: 16px; /* Rounded corners for the dropdown content */
-  border: none;
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  border: none; /* No border */
+  opacity: 0;  /* Invisible by default */
+  transform: translateY(-20px); /* Slightly off position */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition for appearance */
 }
 
-.dropdown-content.show {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
+.dropdown-content.show { /* Visible dropdown content styling */
+  visibility: visible; /* Visible when .show class is added */
+  opacity: 1;  /* Fully opaque */
+  transform: translateY(0); /* Correct position */
 }
 
-.box {
-  background-color: #f1f1f1;
-  padding: 20px;
-  margin: 5px 0;
-  text-align: center;
+.box { /* Styling for a generic box element */
+  background-color: #f1f1f1; /* Light grey background */
+  padding: 20px; /* Padding inside the box */
+  margin: 5px 0; /* Margin between boxes */
+  text-align: center; /* Centered text */
   border-radius: 16px; /* Rounded corners for each box */
-  border: none;
+  border: none; /* No border */
 }
 
-.week {
-  display: flex;
-  justify-content: space-around;
+.week { /* Flexbox container for week display */
+  display: flex; /* Flexbox layout */
+  justify-content: space-around;  space-around; /* Evenly spaced children */
 }
 
-.day {
-  text-align: center;
-  margin: 0 10px;
+.day { /* Individual day styling */
+  text-align: center; /* Centered text */
+  margin: 0 10px; /* Margin around each day */
 }
 
-.day p {
-  margin: 5px 0;
-  font-weight: bold;
+.day p { /* Paragraph styling within a day */
+  margin: 5px 0; /* Margin for paragraphs */
+  font-weight: bold;  /* Bold text */
 }
 
-.mood-icon {
-  width: 40px;
-  height: 40px;
-  margin-top: 10px;
+.mood-icon { /* Mood icon styling */
+  width: 40px;  /* Width of the icon */
+  height: 40px;  /* Height of the icon */
+  margin-top: 10px; /* Margin above the icon */
 }
 
-.bar-graph {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  height: 100px;
-  border: 1px solid #ccc;
-  padding: 0px;
+.bar-graph { /* Bar graph container styling */
+  display: flex; /* Flexbox layout */
+  justify-content: space-around;  /* Evenly spaced bars */
+  align-items: flex-end; /* Align bars to the bottom */
+  height: 100px; /* Height of the bar graph container */
+  border: 1px solid #ccc;  /* Light grey border */
+  padding: 0px; /* No padding */
   border-radius: 16px; /* Rounded corners for the bar graph container */
-  background-color: #fff;
-  align-self: flex-end;
-  border: none;
+  background-color: #fff; /* Rounded corners for the bar graph container */
+  align-self: flex-end; /* White background */
+  border: none; /* No border */
 }
 
-.bar {
-  width: 40px;
-  background-color: #4CAF50;
+.bar { /* Individual bar styling */
+  width: 40px; /* Width of each bar */
+  background-color: #4CAF50;  /* Green background */
   border-radius: 5px 5px 0 0; /* Rounded corners for the bars */
-  height: 100%;
-  background-image: linear-gradient(to top, #4CAF50, #FFC107);
+  height: 100%; /* Full height within the container */
+  background-image: linear-gradient(to top, #4CAF50, #FFC107); /* Gradient background for bars */
 }
