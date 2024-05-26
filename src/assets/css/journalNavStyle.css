@@ -40,6 +40,9 @@
     }
 }
 
+
+
+
 .header {
     margin-left: 4vb;
     height: 12vh;
@@ -98,7 +101,7 @@ body{
     font-family: "Poppins";
     overflow: hidden;
     max-height: 90vh;
-    scrollbar-gutter: stable;
+    scrollbar-gutter: stable both-edges;
     height: 90%;
 }
 
@@ -106,86 +109,58 @@ body{
     overflow:auto;
 }
 
+.journalEntry button {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    align-items: center;
 
-.nav-buttons-list {
-    list-style-type:none;
-    margin: 0 0 0 0;
-    padding: 0 0.5em 0 0.5em;
-    display: flex;
-    flex-direction: column;
+    border: 2px #195B8B solid;
+    border-radius: 2em;
+    padding: 0.5em;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0.5em;
 }
 
-.nav-buttons-list li {
-    width:20em;
-    height:5em;
-    position:relative;
-    margin: auto;
-    margin-bottom: 0.8em;
-    font-size: 1.5em;
-    overflow: hidden;
-}
-
-.nav-buttons-list li:hover label {
-    filter: brightness(0.95);
-}
-
-.nav-buttons-list label, .nav-buttons-list input {
-   display:block;
-   position:absolute;
-   top:0;
-   left:0;
-   right:0;
-   bottom:0;
-   border-radius: 1.5em;
-   margin: auto;
-}
-
-.nav-buttons-list label:hover, .nav-buttons-list input:hover {
-    cursor:grab;
-}
-
-.nav-buttons-list input[type="radio"] {
-   opacity:0.011;
-   z-index:100;
-}
-
-.nav-buttons-list input[type="radio"]:checked + label {
+.journalEntry button:hover {
     filter: brightness(0.9);
 }
 
-.nav-buttons-list label {
-    padding: 0.6em;
-    background-color: #C9F6FF;
-    cursor:pointer;
-    z-index: 90;
-    padding-left: 5em;
-    color: #1A76AE;
-    font-weight: 600;
+.journalEntry text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5em;
 }
 
-.nav-buttons-list label p {
-    font-size: 0.7em;
-    color: #1CB6F0;
+.journalEntry text h1 {
+    font-size: 1.3em;
+    font-weight: 500;
     margin: 0 0 0 0;
-    max-width: 50em;
-    overflow: hidden;
-    font-weight: 300;
+    float: left;
+    color: #195B8B;
 }
 
-.nav-buttons-list label h2 {
-    font-size: 0.5em;
-    padding-bottom: 0;
-    padding-top: 0.1em;
-    color:#1A76AE;
-    font-weight: 400;
+.journalEntry text h3 {
+    font-size: 0.8em;
+    font-weight: 200;
+    margin: 0 0 0 0;
+    float: left;
+    color: #195B8B;
 }
 
-.nav-buttons-list li:hover h2, .nav-buttons-list li:hover p, .nav-buttons-list li:hover label {
-    color: #575757;
+.journalEntry delButton span{
+    font-size: 1.8em;
+    float: right;
+    padding-right: 0.2em;
 }
 
-.nav-buttons-list label:hover {
-    background:#E0E0DF;
+.journalEntry delButton div:hover {
+    color: red;
+}
+
+.currentlySelected {
+    filter: brightness(0.95);
 }
 
 
@@ -199,10 +174,11 @@ body{
 .nav-filter-buttons {
     list-style-type: none;
     margin: 0 0 0 0;
-    padding:0 0 0 1em;
+    padding: 1em 1em 1em 1em;
     display: flex;
     flex-direction: row;
     list-style-position: inside;
+    scrollbar-gutter: stable both-edges;
 }
 
 .nav-filter-buttons li {
@@ -211,22 +187,13 @@ body{
     padding-right: 0.1em;
 }
 
-.nav-filter-buttons input[type="text"] {
-    margin-left: 0.3em;
-    max-width: 9.2em;
-    border-radius: 0.5em;
-    border: 1.5px solid #F4F2F0;
-    font-family: 'Poppins';
-    height: 1.3em;
-}
-
-.nav-filter-buttons input[type="radio"], .nav-filter-buttons input[type="checkbox"]{
+.nav-filter-buttons input[type="radio"] {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
 
-.nav-filter-buttons label {
+.nav-filter-buttons label, .nav-filter-buttons select {
     background: #FDFDFD;
     padding: 0.5em;
     border-radius: 0.8em;
@@ -242,9 +209,9 @@ body{
     color: #141415;
 }
 
-.nav-filter-buttons input[type="checkbox"]:checked + label {
+.nav-filter-buttons input[type="radio"] + label {
     background: #F4F2F0;
-    color: #141415;
+    color: #8E8E8E;
 }
 
 .nav-filter-buttons label:hover, .nav-filter-buttons input:hover {
@@ -332,7 +299,7 @@ time.icon span
     overflow: hidden;
     z-index: -10;
     filter: brightness(1.1);
-    background: linear-gradient(360deg,#c9f6ff,#fdfdfd);
+    /* background: linear-gradient(360deg,#c9f6ff,#fdfdfd); */
     background-size: 120% 120%;
     animation: gradient-animation 2s ease infinite;
 }
