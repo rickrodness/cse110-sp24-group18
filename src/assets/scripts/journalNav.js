@@ -27,7 +27,7 @@ export function loadButtons() {
     const button = document.createElement('button');
     button.setAttribute('id', id);
     if (listJournals[journal]['currentlySelected']) {
-      button.setAttribute('class', 'currentlySelected')
+      button.setAttribute('class', 'currentlySelected');
     }
 
     const text = document.createElement('text');
@@ -40,7 +40,7 @@ export function loadButtons() {
     const spanDate = document.createElement('span');
     const date = document.createElement('h3');
     date.textContent = `${journal}`;
-    spanDate.appendChild(date)
+    spanDate.appendChild(date);
 
     text.appendChild(spanTitle);
     text.appendChild(spanDate);
@@ -116,7 +116,7 @@ export function buttonListeners() {
     const deleteButton = journalEntryDiv.querySelector('delButton').querySelector('span');
     deleteButton.addEventListener('click', function(event) {
       const journals = getJournals();
-      const deleteid = deleteButton.parentElement.parentElement.parentElement.id
+      const deleteid = deleteButton.parentElement.parentElement.parentElement.id;
       deleteFile(deleteid);
       if (journals[deleteid]['currentlySelected']) {
         delete journals[deleteid];
@@ -151,7 +151,7 @@ function changeText(date) {
  */
 export function filterButtons() {
   const journals = getJournals();
-  let yearsList = [];
+  const yearsList = [];
   for (const journal in journals) {
     const dateOf = new Date(journal);
     yearsList.push(dateOf.getFullYear());
@@ -201,7 +201,7 @@ export function filterButtons() {
 }
 
 export function letterMonthToNumber (monthStr) {
-  const monthsArr = [1,2,3,4,5,6,7,8,9,10,11,12]
+  const monthsArr = [1,2,3,4,5,6,7,8,9,10,11,12];
   const monthStrsArr = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   for (const i in monthsArr) {
     if (monthStrsArr[i] === monthStr) {
