@@ -15,7 +15,14 @@
 
 ## Quick Review on Past Sprint
 ### Skeleton
-- 
+* Formulated the design outline & wireframe through Figma
+* Started with making basic skeleton code through Figma-to-code converter (HTML & CSS)
+  --> Modified various parts to make it fit into our design 
+* Made div and section elements for each widget and functionality
+* Made interactable buttons for widgets
+* Found the widget icon images through Google Fonts
+* Chose the default font for the theme
+* Enhance the interactability through extra modification in CSS
 
 ### Sleep Widget
 - 
