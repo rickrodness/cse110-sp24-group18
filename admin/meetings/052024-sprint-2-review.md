@@ -25,7 +25,15 @@
 * Enhance the interactability through extra modification in CSS
 
 ### Sleep Widget
-- 
+- Came up with rough design of the sleep widget: intuitive UI Design and appropriate form to be displayed in the pop-up screen. 
+- ***Sleep widget design features:***
+- -->Five selectable options for sleep hours.
+- -->An intuitive emoji for each option.
+- -->A vertical slider bar to choose the option.
+- -->The font color of the label for the selected option changes.
+- Initially started with a horizontal slider, but switched to a vertical orientation. Although the implementation became slightly more complicated, it was more suitable for display on a vertical rectangular pop-up screen.
+- Created five emotive emoji pictures.
+- To prevent the format from being corrupted when rotating the slider to a vertical orientation, an additional container was used.
 
 ### Emotion Widget
 * Came up with rough design of the emotion widget: similar to slider widget from warm-up with a few UI changes to improve aesthetic
