@@ -150,6 +150,7 @@ export function listFiles() {
 export function filterDate(year, month) {
   const journals = getJournals(); // dictionary of all journals
   const targetYearMonth = `${year.toString().padStart(4, '0')}-${month.toString().padStart(2, '0')}`; // query string
+  console.log(targetYearMonth);
 
   for (const journal in journals) { // filter through journals for matching year + month
     const journalDate = journals[journal].date; // get journal date
@@ -163,8 +164,8 @@ export function filterDate(year, month) {
   }
 
   const jsonString = JSON.stringify(journals); // stringify and update local storage
+  console.log(jsonString);
   localStorage.setItem('journals', jsonString);
-  loadButtons(); // regenerate all buttons
 }
 
 /**

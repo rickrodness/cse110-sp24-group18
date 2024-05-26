@@ -29,9 +29,7 @@
     </style>
 </head>
 <body>
-    <div id="splash-container">
-        <p class="tracking-in-expand" id="splashtext">{ DevDiary }</p>
-    </div>
+    <div id="splash-container"><p class="tracking-in-expand" id="splashtext">{ DevDiary }</p></div>
     <div class="background">
 
     </div>
@@ -49,44 +47,73 @@
     <div class="wrapper"> <!--Wrapper for entire test-->
 
         <div class="component-wrapper"> <!--Wrapper for the side bar component-->
-            <div id="nav-filter-options"> <!--Wrapper for the filtering options-->
                 <ul class="nav-filter-buttons"> <!--List to house the buttons-->
-                    <li id="filter-icon">
-                        <span class="material-symbols-outlined" style="color: #1CB6F0; font-size: 34px;">
-                            filter_alt
-                        </span>
-                    </li>
-                    <li>
-                        <span class="material-symbols-outlined" style="color: #1CB6F0; font-size: 34px; padding-left: 0.2em; padding-right: 0.2em">
-                            search
-                        </span>
-                    </li>
-
                     
-                    <li>
-                        <input type="checkbox" id="select"/> <!--Button to filter by a text query-->
-                        <label for="select">
-                            <input type="text" id="textQuery" style="height: 26px; font-size: 16px;"> <!--Text query to filter by-->
-                        </label>
+                    <li> 
+                        <select name="years" id="years">
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                        </select>
                     </li>
-                    <div id="filter-options-div">
-                        <li class="filtering-tags">
-                            <input type="radio" id="latest" name="order"/> <!--Button to sort by descending order-->
-                            <label for="latest">Latest</label>
-                        </li>
-                        <li class="filtering-tags">
-                            <input type="radio" id="earliest" name="order" /> <!--Button to sort by ascending order-->
-                            <label for="earliest">Earliest</label>
-                        </li>
-                        <li class="filtering-tags"> 
-                            <input type="checkbox" id="thisMonth" /> <!--Button to filter current month-->
-                            <label for="thisMonth">This month</label>
-                        </li>
-                    </div>
+                    <li> 
+                        <select name="months" id="months">
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </li>
+                    <li>
+                        <input type="radio" id="latest" name="order"/> <!--Button to sort by descending order-->
+                        <label for="latest">Latest</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="earliest" name="order" /> <!--Button to sort by ascending order-->
+                        <label for="earliest">Earliest</label>
+                    </li>
                 </ul>
-            </div>
             <div id="nav-container"> <!--Container to house the different file selections-->
-                
+                <div class="journalEntry">
+                    <button id="2024-05-25">
+                        <text>
+                            <span><h1>Titlessssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</h1></span>
+                            <span><h3>2024-05-25</h3></span>
+                        </text>
+                        <delButton>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    Delete
+                                </span>
+                            </div>
+                        </delButton>
+                    </button>
+                </div>
+                <div class="journalEntry">
+                    <button id="2024-05-25" class="currentlySelected">
+                        <text>
+                            <span><h1>Title</h1></span>
+                            <span><h3>2024-05-25</h3></span>
+                        </text>
+                        <delButton>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    Delete
+                                </span>
+                            </div>
+                        </delButton>
+                    </button>
+                </div>
             </div>
         </div>
 

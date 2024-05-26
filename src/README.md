@@ -11,7 +11,6 @@
 - Journal added each day
 - Remove Journal
 - Write to journal
-## TODO:
-- Animations (?)
-- Sort by Year/Month
 - Header section ('DevDiary', Title, Date)
+## TODO:
+- Sort by Year/Month

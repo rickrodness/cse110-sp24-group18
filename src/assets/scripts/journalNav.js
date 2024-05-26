@@ -1,4 +1,4 @@
-import { clearLocal, forceCreate, listFiles, createFile, getJournals, selectDate, deleteFile } from './fileSys.js';
+import { clearLocal, forceCreate, listFiles, createFile, getJournals, selectDate, deleteFile, filterDate, writeFile } from './fileSys.js';
 import { updateText } from './textEditor.js';
 
 /**
@@ -8,8 +8,6 @@ export function loadButtons() {
   let currentMood = 'neutral';
   const navContainer = document.getElementById('nav-container'); // get the journals container
   navContainer.innerHTML = ''; // reset the HTML inside container
-
-  const name = 'journal-nav'; // name of radio buttons to link them together
     
   const listJournals = listFiles(); // get all the journals as a dictionary
 
@@ -22,104 +20,47 @@ export function loadButtons() {
       continue;
     }
 
-    // create all elements for the calendar icon
-    const calendarDiv = document.createElement('div'); // calendar icon wrapper
-    const calendar = document.createElement('time'); // calendar icon
-    const week = document.createElement('em'); // week text
-    const month = document.createElement('strong'); // month text
-    const day = document.createElement('span'); // day text
-
-    const desc = document.createElement('p'); // journal description
-    const mod = document.createElement('h2'); // journal last date modified
-
-    const buttonContainer = document.createElement('li'); // journal button container
-
     const id = listJournals[journal]['date']; // use the journal date as the key
-    const dateObj = new Date(id); // create date object from journal date
 
-    const dayNames = [ // day of week array to check string against
-      'Sunday', 'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'
-    ];
-    const monthNames = [ // day of month array to check string against
-      'January', 'February', 'March', 'April', 'May', 'June', 
-      'July', 'August', 'September', 'October', 'November', 'December'
-    ];
+    const journalEntry = document.createElement('div');
+    journalEntry.setAttribute('class', 'journalEntry');
 
-    calendar.setAttribute('datetime', id); // set datetime to the date
-    calendar.setAttribute('class', 'icon'); // set the class
-    calendarDiv.setAttribute('class', 'calendar-icon'); // set the class of overall div
-
-    week.textContent = dayNames[dateObj.getDay()]; // update text for week
-    month.textContent = monthNames[dateObj.getMonth()]; // update text for month
-    day.textContent = id.slice(-2); // update text for day
-
-    month.style.backgroundColor = returnColorForMood(listJournals[journal]['mood'])['icon-top'];
-    month.style.boxShadow = `0 2px 0 ${  returnColorForMood(listJournals[journal]['mood'])['icon-top']}`;
-    month.style.borderBottom = `1px dashed ${  returnColorForMood(listJournals[journal]['mood'])['icon-bottom']}`;
-
-    week.style.color = returnColorForMood(listJournals[journal]['mood'])['icon-top'];
-    day.style.color = returnColorForMood(listJournals[journal]['mood'])['icon-bot'];
-
-    calendar.appendChild(week); // append all to calendar
-    calendar.appendChild(month);
-    calendar.appendChild(day);
-
-    calendarDiv.appendChild(calendar); // append calendar to container div
-
-    const radioButton = document.createElement('input'); // create actual journal entry selector
-    radioButton.setAttribute('type', 'radio'); // set all attributes
-    radioButton.setAttribute('id', id);
-    radioButton.setAttribute('name', name);
-
+    const button = document.createElement('button');
+    button.setAttribute('id', id);
     if (listJournals[journal]['currentlySelected']) {
-      radioButton.checked = true;
-      currentMood = listJournals[journal]['mood'];
-      const gradBackground = document.getElementsByClassName('background')[0];
-      gradBackground.style.background = `linear-gradient(360deg,${returnColorForMood(currentMood)['background']},#fdfdfd)`;
+      button.setAttribute('class', 'currentlySelected')
     }
 
-    const label = document.createElement('label'); // create label for journal entry
-    label.setAttribute('for', id); // attatch label to button
-    label.textContent = listJournals[journal]['title']; // set text for label
-    label.style.backgroundColor = returnColorForMood(listJournals[journal]['mood'])['background'];
-    label.style.color = returnColorForMood(listJournals[journal]['mood'])['text'];
+    const text = document.createElement('text');
 
-    // add logic to create a max length for description
-    let dots = ''; // default ellipsis to nothing in case short string
-    const maxLen = 33; // set a maximum string length
-    let length = maxLen;
-    const displayString = listJournals[journal]['data'];
-    const filteredText = displayString.replace(/<[^>]*>/g, '');
-    if (filteredText.length > maxLen) { // check if data exceeds max length
-      dots = '...'; // if data is long, then add ellipsis to the end of it
-      length = length - 3; // accomodate for ellipsis being added
-    }
-    desc.textContent = filteredText.substring(0, length) + dots; // cut string short
-    desc.style.color = returnColorForMood(listJournals[journal]['mood'])['desc'];
+    const spanTitle = document.createElement('span');
+    const title = document.createElement('h1');
+    title.textContent = `${listJournals[journal]['title']}`;
+    spanTitle.appendChild(title);
 
-    mod.textContent = `Last Modified: ${  listJournals[journal]['lastMod']}`; // add last modified date
-    mod.style.color = returnColorForMood(listJournals[journal]['mood'])['mod'];
+    const spanDate = document.createElement('span');
+    const date = document.createElement('h3');
+    date.textContent = `${journal}`;
+    spanDate.appendChild(date)
 
-    const delButton = document.createElement('button');
+    text.appendChild(spanTitle);
+    text.appendChild(spanDate);
+
+    const delButton = document.createElement('delButton');
+    const delDiv = document.createElement('div');
     const delSpan = document.createElement('span');
+    delSpan.textContent = 'Delete';
+    delSpan.setAttribute('class', 'material-symbols-outlined');
+    delDiv.appendChild(delSpan);
+    delButton.appendChild(delDiv);
 
-    delButton.setAttribute('class', 'nav-delete-btn');
-    delSpan.className = 'material-symbols-outlined';
-    delSpan.textContent = 'delete';
-    delButton.appendChild(delSpan);
+    button.appendChild(text);
+    button.appendChild(delButton);
 
-    label.appendChild(desc); // append the description and date modified
-    label.appendChild(mod);
+    journalEntry.appendChild(button);
 
-    buttonContainer.appendChild(calendarDiv); // append all to button container
-    buttonContainer.appendChild(radioButton);
-    buttonContainer.appendChild(label);
-    buttonContainer.appendChild(delButton);
-
-    navButtonsList.appendChild(buttonContainer); // append each button to the overall list
+    navContainer.appendChild(journalEntry);
   }
-
-  navContainer.appendChild(navButtonsList); // append the list to the navigation container
 }
 
 export function returnColorForMood(mood) {
@@ -162,28 +103,28 @@ export function returnColorForMood(mood) {
  */
 export function buttonListeners() {
   const navContainer = document.getElementById('nav-container'); // get navigation container
-  const radioButtons = navContainer.querySelectorAll('input[type=\'radio\']'); // get all journal buttons
-  radioButtons.forEach(radioButton => { // go through all journal buttons
-    const id = radioButton.id; // take the current date of journal
-    radioButton.addEventListener('click', function(event) {
+  const journalEntries = navContainer.querySelectorAll('.journalEntry'); // get all journal buttons
+  journalEntries.forEach(journalEntryDiv => { // go through all journal buttons
+    const journalButton = journalEntryDiv.querySelector('button');
+    const id = journalButton.id; // take the current date of journal
+    journalButton.addEventListener('click', function(event) {
       changeText(id); // change the text of text field based on data in queried data
       selectDate(id); // keep current journal selected
-
-      const journals = getJournals();
-      const gradBackground = document.getElementsByClassName('background')[0];
-      gradBackground.style.background = `linear-gradient(360deg,${returnColorForMood(journals[id]['mood'])['background']},#fdfdfd)`;
+      loadButtons();
+      buttonListeners();
     });
 
-    const deleteButton = radioButton.parentElement.querySelector('.nav-delete-btn');
+    const deleteButton = journalEntryDiv.querySelector('delButton').querySelector('span');
     deleteButton.addEventListener('click', function(event) {
       const journals = getJournals();
-      deleteFile(id);
-      if (journals[id]['currentlySelected']) {
-        delete journals[id];
+      const deleteid = deleteButton.parentElement.parentElement.parentElement.id
+      deleteFile(deleteid);
+      if (journals[deleteid]['currentlySelected']) {
+        delete journals[deleteid];
         let journalArr = Object.values(journals);
         journalArr = journalArr.reverse();
         for (const journal in journalArr) {
-          if (journalArr[journal]['filter']) {
+          if (journalArr[journal]['filter'] && journal != deleteid) {
             const journalDate = journalArr[journal]['date'];
             journals[journalDate]['currentlySelected'] = true;
             updateText(journalDate);
@@ -210,11 +151,27 @@ function changeText(date) {
  * Adds event listeners to all filtering buttons.
  */
 export function filterButtons() {
+  const journals = getJournals();
+  let yearsList = [];
+  for (const journal in journals) {
+    const dateOf = new Date(journal);
+    yearsList.push(dateOf.getFullYear());
+  }
+  const yearsSet = new Set(yearsList.sort());
+
   const latestButton = document.getElementById('latest'); // button to sort by latest
   const earliestButton = document.getElementById('earliest'); // button to sort by earliest
-  const thisMonthButton = document.getElementById('thisMonth'); // button to filter this month's journals
-  const selectButton = document.getElementById('select'); // button to activate text query
-  const textField = document.getElementById('textQuery'); // text field to enter text query
+  const yearSelect = document.getElementById('years');
+  const monthSelect = document.getElementById('months');
+
+  yearSelect.innerHTML = '';
+  const yearsArr = Array.from(yearsSet);
+  for (const year in yearsArr) {
+    const newOption = document.createElement('option');
+    newOption.value = yearsArr[year];
+    newOption.textContent = `${yearsArr[year]}`;
+    yearSelect.appendChild(newOption);
+  }
 
   // init
   latestButton.checked = true; // default to descending order
@@ -231,31 +188,28 @@ export function filterButtons() {
     buttonListeners(); // re-attatch event listeners
   });
 
-  thisMonthButton.addEventListener('change', function(event) {
-    if (thisMonthButton.checked) { // check if filter is activated
-      const yAndM = getCurrentYearAndMonth(); // get the current year and month as numbers
-      filterDate(yAndM['year'], yAndM['month']); // filter by the year and month
-    } else {
-      clearFilter(); // clear all filters
-    }
-    buttonListeners(); // re-attatch event listeners
+  yearSelect.addEventListener('change', function(event) {
+    filterDate(yearSelect.value, letterMonthToNumber(monthSelect.value));
+    loadButtons();
+    buttonListeners();
   });
 
-  textField.addEventListener('input', function(event) {
-    if (selectButton.checked) { // check if select is checked
-      filterWord(textField.value); // filter by text field
-      buttonListeners(); // re-attatch event listeners
-    }
+  monthSelect.addEventListener('change', function(event) {
+    filterDate(yearSelect.value, letterMonthToNumber(monthSelect.value));
+    loadButtons();
+    buttonListeners();
   });
+}
 
-  selectButton.addEventListener('change', function(event) {
-    if (selectButton.checked) { // filter when select is checked
-      filterWord(textField.value); // filter by text field
-    } else {
-      clearFilter(); // clear all filters
+function letterMonthToNumber (monthStr) {
+  const monthsArr = [1,2,3,4,5,6,7,8,9,10,11,12]
+  const monthStrsArr = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  for (const i in monthsArr) {
+    if (monthStrsArr[i] === monthStr) {
+      return monthsArr[i];
     }
-    buttonListeners(); // re-attatch event listeners
-  });
+  }
+  return -1;
 }
 
 

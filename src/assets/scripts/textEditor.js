@@ -1,5 +1,5 @@
 import { formatToday, getJournals, selectDate, writeFile } from './fileSys.js';
-import { loadButtons, buttonListeners } from './journalNav.js';
+import { loadButtons, buttonListeners, generateToday } from './journalNav.js';
 
 /**
  * Sets the id of noteTitle element to the current date
@@ -96,12 +96,14 @@ export function textEditorListeners() {
 export function updateText(date) {
   let journals = getJournals();
   let currJournal = journals[date];
+  console.log(currJournal);
   if (!currJournal) {
     generateToday();
     journals = getJournals();
     currJournal = journals[date];
   }
 
+  console.log(currJournal);
   const text = currJournal.data;
   const title = currJournal.title;
 
