@@ -40,7 +40,23 @@
     }
 }
 
+.filtering-tags {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px #195B8B solid;
+    align-self: center;
+    border-radius: 20px;
+    
+}
 
+#filter-options-div {
+    display: none;
+}
+
+
+
+#filter-icon:hover + .nav-buttons-list {
+    background-color: #141415;
+}
 
 
 .header {
