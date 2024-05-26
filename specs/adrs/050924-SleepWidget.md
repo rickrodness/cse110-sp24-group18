@@ -38,5 +38,5 @@ We choose option 2, as our pop-up screen was a vertical rectangle so that vertic
 <!-- This is an optional element. Feel free to remove. -->
 ### Consequences
 
-* Good, because our pop-up screen was vertical rectangle, so option2 was more suitable.
+* Good, it is consistent as one function within the entire application.
 * Bad, because implementing a vertical slidebar was not trivial problem in html and css, so that the source code became a little complicated.
