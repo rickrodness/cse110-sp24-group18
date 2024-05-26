@@ -62,7 +62,7 @@
 *   Made final adjustments to to centering. 
   
 ### Summary Widgets
-- Widget consists of a button dropdown that shows mood history using emojis as well as lines of code written and hours of sleep using bar charts. Tracks past weekly progress.
+- Widget consists of a button dropdown that shows mood history using emojis as well as lines of code written and hours of sleep using bar charts. Tracks past weekly progress. All done.
 
 ### Text Editor
 - 
@@ -74,7 +74,11 @@
 - 
 
 ### Date
-- 
+- A simple data chooser widget / UI that lets the user to pick the date of the journal.
+- The designs are made to be simple (without needing to use complex javascript to pull it off), yet more than just the default dropdown layouts.
+- All functionalities are done and only needs to be integrated to the main / skeleton code.
 
 ## Notes On What We Should Do Next Time
-- 
+- We should be a lot more organized in order to see what is done and what isn't.
+- We should pick up the pace with integrating all of the codes so we have time to get feedbacks.
+- We should also update the previous admin things like the graph for our CI/CD to be more updated.
