@@ -79,7 +79,11 @@ The text editor consists of a text area where journal entries can be edited with
 The backend consisted on a file system that interfaced with the local storage through the use of JSON files. This would let the different components interact with the existing journal database in the local storage and affect different elements like color, data, etc. We used JSON strings for this because it was an easy way to convert dictionaries into a string format that could be stored. This also allowed us to store a lot of information easily and locally, which is something we focused on. The main component visually worked on alongside the backend was the journal navigation because changes to the journal navigation had to refresh this component to match. Overall, this involved the creation of the file system with a database, a file navigation/search system, and filtering integrated.
 
 ### Animation
-- 
+- Implemented class-based animations for widgets to adapt to layout changes
+- Developed a burger menu to toggle visibility of widgets
+- Added slide down animations for burger menu to display weidgets
+- Added hover effect with vibration animation for widget buttons
+
 
 ### Date
 - A simple data chooser widget / UI that lets the user to pick the date of the journal.
