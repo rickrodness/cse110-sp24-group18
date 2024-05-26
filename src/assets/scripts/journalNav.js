@@ -5,7 +5,6 @@ import { updateText } from './textEditor.js';
  * Refreshes the file navigation with current journals in storage.
  */
 export function loadButtons() {
-  let currentMood = 'neutral';
   const navContainer = document.getElementById('nav-container'); // get the journals container
   navContainer.innerHTML = ''; // reset the HTML inside container
     
@@ -201,7 +200,7 @@ export function filterButtons() {
   });
 }
 
-function letterMonthToNumber (monthStr) {
+export function letterMonthToNumber (monthStr) {
   const monthsArr = [1,2,3,4,5,6,7,8,9,10,11,12]
   const monthStrsArr = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   for (const i in monthsArr) {
