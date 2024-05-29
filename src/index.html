@@ -17,6 +17,7 @@
             integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
             crossorigin="anonymous"
         />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!--ADDED 5/27/24 Changing font color icon-->
     <script src="assets/scripts/main.js" type="module"></script>
     <script src="assets/scripts/fileSys.js" type="module"></script>
     <script src="assets/scripts/journalNav.js" type="module"></script>
@@ -137,7 +138,8 @@
                             format_italic
                         </span>
                     </button>
-                    <input id="color-btn" type="color" class="control-btn" /> <!--Button to color text-->
+                    <input id="color-btn" type="color" class="control-btn"/> <!--Button to color text-->
+                    
                 </div>
             </div>
             <div id="content" contenteditable="true" spellcheck="false"></div> <!--Content box for editing text-->
@@ -213,11 +215,11 @@
                            </div>
                             <input class="slider" type="range" min="1" max="5" value="3">    
                             <div class="emojis-container">
-                              <img src="assets/sleep-widget/media/excellent.png" alt="Excellent" width="70px">
-                              <img src="assets/sleep-widget/media/good.png" alt="Good" width="70px">
-                              <img src="assets/sleep-widget/media/fair.png" alt="Fair" width="70px">
-                              <img src="assets/sleep-widget/media/poor.png" alt="Poor" width="70px">
-                              <img src="assets/sleep-widget/media/worst.png" alt="Worst" width="70px">
+                              <img src="assets/sleep-widget/media/faceAmazing.png" alt="Excellent" width="75px">
+                              <img src="assets/sleep-widget/media/faceGood.png" alt="Good" width="75px">
+                              <img src="assets/sleep-widget/media/faceMeh.png" alt="Fair" width="75px">
+                              <img src="assets/sleep-widget/media/faceSad.png" alt="Poor" width="75px">
+                              <img src="assets/sleep-widget/media/faceMiserable.png" alt="Worst" width="75px">
                             </div>   
                         <!-- </div> -->
                     </div>
@@ -232,7 +234,7 @@
             <div id="mood-toggle" class="widget">
                 <!--Container for icon-->
                 <div class="widget-header-icon">
-                    <span class="material-symbols-outlined" style="color: #ffff; font-size: 70px;">
+                    <span class="material-symbols-outlined" style="color: #195B8B; font-size: 70px;">
                         add_reaction
                     </span>
                 </div>
@@ -257,12 +259,6 @@
 
 
             <div id="code-line-toggle" class="widget">
-                <div class="widget-header-icon">
-                    <span class="material-symbols-outlined" style="color: #ffff; font-size: 70px;">
-                        code
-                    </span>
-                </div>
-                <div class="container-widget-text">
                     <div class="lines-widget-content">                      
                         <div class="widget-header-text">
                             How many lines have you coded today?
@@ -274,7 +270,6 @@
                             <button onclick="increment()">+</button>
                         </div>                       
                     </div>
-                </div>
             </div>
 
 

@@ -22,6 +22,7 @@
   position: absolute;
   display: flex;
   background-color: #f8f4f3;
+  border-radius: 10px;
 }
 
 
@@ -33,7 +34,13 @@
   align-items: center;
 }
 
-
+.lines-widget-content .widget-header-text {
+  padding: 1em;
+  text-align: center;
+  color: #f8f4f3;
+  font-size: 24px;
+  align-items: center;
+}
 
 
 
@@ -136,9 +143,10 @@
 }
 
 #widget-buttons {
-  padding-top: 8em;
+  padding-top: 10.7em;
   padding-right: 8em;
   margin-left: -7em;
+  justify-content: space-between;
 }
 
 .widget-btn { 
@@ -146,8 +154,8 @@
   position: relative;
   background-color: #1A76AE;
   color: black;
-  width: 10em;
-  height: 10em;
+  width: 8.5em;
+  height: 8.5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,7 +221,10 @@
 
 
 
-
+h3 {
+  padding-bottom: 10%;
+  text-align: center;
+}
 .container-sleep-widget {
   width: 80%;
   padding: 20px;
@@ -232,7 +243,7 @@
 
 .slider {
   appearance: none; 
-  margin-left: -155px;
+  margin-left: -140px;
   margin-right: -120px;
   width: 450px;
   height: 18px;
@@ -241,7 +252,7 @@
   border-radius: 50px; 
   margin-top: 225px; /*half size of width*/
   transform: rotate(270deg); 
-  box-shadow: 4px 4px rgba(0, 0, 0, 0.25)
+  box-shadow: 1px 1px 90px rgba(188, 188, 188, 0.25);
 }
 
 .slider:hover {
@@ -264,7 +275,7 @@
   justify-content: space-between;
   height: 100%;
   font-size: 15px;
-  color: #929298;
+  color: #e6e6e6;
   font-weight: 900;
 }
 
@@ -277,6 +288,8 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  position: relative;
+  left: -15px;
 }
 
 .time img {

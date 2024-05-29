@@ -11,7 +11,7 @@
 }
 
 /* Ensures that the content of the widget is properly centered */
-.container-widget-text .lines-widget-content {
+.lines-widget-content {
     z-index: 1; /* Ensure content appears above the canvas */
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@
 
 
 /* Style for the controls container within the widget */
-.container-widget-text .controls {
+.lines-widget-content .controls {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,9 +29,9 @@
 }
 
 /* Style for buttons within the widget */
-.container-widget-text button {
-    background-color: #195B8B;
-    color: white;
+.lines-widget-content button {
+    background-color: #f8f4f3;
+    color: #195B8B;
     border: none;
     border-radius: 50%;
     width: 40px;
@@ -43,24 +43,25 @@
 }
 
 /* Style for button hover effect within the widget */
-.container-widget-text button:hover {
-    background-color: #195B8B; /* Darker blue on hover */
+.lines-widget-content button:hover {
+    background-color: #1CB6F0; /* Darker blue on hover */
 }
 
 /* Style for button focus effect within the widget */
-.container-widget-text button:focus {
+.lines-widget-content button:focus {
     outline: none;
 }
 
 /* Style for the number input field within the widget */
-.container-widget-text .number {
-    font-size: 60px;
+.lines-widget-content .number {
+    font-size: 40px;
     margin: 0 20px;
     width: 60px; /* Decreased width */
     text-align: center;
     height: 60px;
     border: none;
     background-color: #f8f4f3;
+    border-radius: 50%;
     color: #195B8B;
     
     /* Hide the spinners */
@@ -68,15 +69,15 @@
 }
 
 /* Remove arrows from number input field in WebKit browsers */
-.container-widget-text .number::-webkit-outer-spin-button,
-.container-widget-text .number::-webkit-inner-spin-button {
+.lines-widget-content .number::-webkit-outer-spin-button,
+.lines-widget-content .number::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
 /* Style for the confirm button within the widget */
-.container-widget-text .confirm-btn {
-    background-color: #195B8B;
+.lines-widget-content .confirm-btn {
+    background-color: #f8f4f3;
     color: white;
     border: none;
     border-radius: 10px;
@@ -88,12 +89,12 @@
 }
 
 /* Style for confirm button hover effect within the widget */
-.container-widget-text .confirm-btn:hover {
-    background-color: #195B8B; /* Darker blue on hover */
+.lines-widget-content .confirm-btn:hover {
+    background-color: #f8f4f3; /* Darker blue on hover */
 }
 
 /* Style for confirm button focus effect within the widget */
-.container-widget-text .confirm-btn:focus {
+.lines-widget-content .confirm-btn:focus {
     outline: none;
 }
 
@@ -109,7 +110,7 @@
 /* Style for h3 elements within the confirmation message */
 .confirmation-message h3 {
     margin: 5px 0; /* Reduced spacing between text */
-    color: #195B8B;
+    color: #f8f4f3;
     font-size: 24px; /* Increased font size */
 }
 
