@@ -8,6 +8,8 @@ body {
 }
 
 .dropbtn { /* Styling for the dropdown button */
+  position: relative;
+  margin-left: 50vb;
   background-color: #f9f9f9;/* Light grey background */
   color: black;  /* Black text */
   padding: 10px 20px; /* Padding for button */
@@ -15,11 +17,11 @@ body {
   border: none; /* No border */
   cursor: pointer; /* Pointer cursor on hover */
   border-radius: 16px; /* Rounded corners for the button */
-  font-weight: bold; /* Bold text */
 }
 
 .dropbtn:hover, .dropbtn:focus { /* Hover and focus effects for the dropdown button */
-  background-color: #f1f1f1; /* Slightly darker grey background on hover/focus */
+  background-color: #1CB6F0; /* Slightly darker grey background on hover/focus */
+  color: #f9f9f9;
 }
 
 .dropdown-content { /* Hidden dropdown content styling */
