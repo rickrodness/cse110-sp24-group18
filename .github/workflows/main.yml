@@ -33,12 +33,3 @@ jobs:
         run: npm install
       - name: Unit Test
         run: npm test
-
-  codacy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Upload Coverage to Codacy
-        run: |
-          curl -Ls https://coverage.codacy.com/get.sh | bash
-        env:
-          CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
