@@ -54,15 +54,15 @@
 
 /* Style for the number input field within the widget */
 .lines-widget-content .number {
-    font-size: 40px;
+    font-size: 80px;
     margin: 0 20px;
     width: 60px; /* Decreased width */
     text-align: center;
-    height: 60px;
+    height: 80px;
     border: none;
-    background-color: #f8f4f3;
     border-radius: 50%;
-    color: #195B8B;
+    color: #FFF;
+    background-color: #195B8B;
     
     /* Hide the spinners */
     -moz-appearance: textfield;

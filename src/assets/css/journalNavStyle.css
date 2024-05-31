@@ -47,7 +47,7 @@
     margin-left: 4vb;
     height: 12vh;
     padding: 20px;
-
+    max-height: 12vh;
     display: flex;
     flex-direction: row;
 }
@@ -82,7 +82,7 @@
 .wrapper {
     display: flex;
     color: red;
-    max-height: 100vh;
+    max-height: 88vh;
     overflow: hidden;
 }
 
