@@ -33,7 +33,7 @@
       position: absolute;
       width: 14em;  
       height: 14em;  
-      padding: 5.5em; 
+      padding: 5.3em; 
       left: 2em;  /* Adjusted to center the needle */
       top: 2em;  /* Adjusted to center the needle */
       border-radius: 100em;
@@ -46,7 +46,7 @@
           #46332a 3deg 7deg,
           #ccc 8deg 10deg,
           #0000 0
-        ) 0em -9.5em no-repeat, 
+        ) 0em -8.7em no-repeat, 
         radial-gradient(
           #46332a 0 50%,
           #ccc 51%

@@ -16,20 +16,30 @@
 }
 
 .container-widget-text {
-  margin-top: 11.5em;
   width: 26em;
-  height: 30em;
+  height: 42em;
   position: absolute;
   display: flex;
-  background-color: #f8f4f3;
+  background-color: #195B8B;
   border-radius: 10px;
+}
+
+.containerFace #emotionText {
+  color: #f8f4f3;
+  align-items: center;
+}
+
+.containerFace {
+  margin-top: 10%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 
 .widget-header-text {
   padding: 1em;
   text-align: center;
-  color: #195B8B;
+  color: #f8f4f3;
   font-size: 24px;
   align-items: center;
 }
@@ -195,6 +205,7 @@
   display: none;
 }
 
+
 .widget#sleep-toggle {
   background-color: #195B8B;
 }
@@ -303,4 +314,96 @@ h3 {
 
 .highlight-color {
   color: #4f4b49;  
+}
+
+
+/* Summary widget */
+
+/* Dropdown container */
+.dropdown {
+  position: relative; 
+  display: inline-block;
+}
+
+
+/* Hover and focus effects for dropdown button */
+.dropbtn:hover, .dropbtn:focus { 
+  background-color: #f1f1f1; 
+}
+
+/* Hidden dropdown content styling */
+.dropdown-content { 
+  visibility: hidden; 
+  position: absolute; 
+  z-index: 1; 
+  padding: 10px; 
+  border-radius: 16px; 
+  border: none; 
+  opacity: 0;  
+  transform: translateY(-20px); 
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+/* Visible dropdown content styling */
+.dropdown-content.show { 
+  visibility: visible; 
+  opacity: 1;  
+  transform: translateY(0); 
+}
+
+/* Box styling */
+.box { 
+  background-color: #f1f1f1; 
+  padding: 20px; 
+  margin: 5px 0; 
+  text-align: center; 
+  border-radius: 16px; 
+  border: none; 
+}
+
+/* Flexbox container for week display */
+.week { 
+  display: flex;
+}
+
+/* Individual day styling */
+.day { 
+  text-align: center; 
+  margin: 0 10px; 
+}
+
+/* Paragraph styling within a day */
+.day p { 
+  margin: 5px 0; 
+  font-weight: bold;  
+}
+
+/* Mood icon styling */
+.mood-icon { 
+  width: 40px;  
+  height: 40px;  
+  margin-top: 10px; 
+}
+
+/* Bar graph container styling */
+.bar-graph { 
+  display: flex; 
+  justify-content: space-around;  
+  align-items: flex-end; 
+  height: 100px; 
+  border: 1px solid #ccc;  
+  padding: 0px; 
+  border-radius: 16px; 
+  background-color: #fff; 
+  align-self: flex-end; 
+  border: none; 
+}
+
+/* Individual bar styling */
+.bar { 
+  width: 40px; 
+  background-color: #4CAF50;  
+  border-radius: 5px 5px 0 0; 
+  height: 100%; 
+  background-image: linear-gradient(to top, #4CAF50, #FFC107); 
 }
